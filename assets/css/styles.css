@@ -10,6 +10,44 @@
   font-size: 0.785rem;
 }
 
+/* Images */
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  grid-gap: 0.5em 1em;
+  background-color: rgb(173, 134, 134);
+}
+
+.images-right .banner {
+  width: 100%;
+  height: auto;
+}
+
+.images-right .pic01 {
+  width: 25%;
+  height: auto;
+  float: left;
+  margin-right: 1em;
+}
+
+.images-right .pic02 {
+  width: 25%;
+  height: auto;
+}
+
+.texthead {
+  display: block;
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+.images-right-right img {
+  align-items: center;
+  background-color: red;
+}
+/* Box */
+
 /* footer */
 
 footer {
