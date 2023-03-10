@@ -9,6 +9,14 @@
   font-family: "Roboto", sans-serif;
   font-size: 0.785rem;
 }
+/* Images */
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* box */
 
 /* footer */
 
