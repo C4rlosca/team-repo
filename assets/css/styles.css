@@ -148,7 +148,8 @@ div.add div.text div h3{
   font-weight: 300;
   color: #2e2e2e;
   letter-spacing: -0.2rem;
-  margin-top: 2em;
+  margin-top: 7.5em;
+  margin-left: -5.5em;
   /* margin-left: 30rem; */
   /* font-size: 3rem;
   font-weight: 300;
@@ -160,12 +161,16 @@ div.add div.text div h3{
 div.add div.text div.rightAdditional{
   justify-content: right;
   padding-top: 3em;
+  font-size: x-large;
 }
 div.add div.text div.rightAdditional h2{
   font-size: 4rem;
   font-weight: 100;
   color: #0e0e0e;
   letter-spacing: -0.1rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-left: 10rem;
   /* margin-top: 3rem;
   width: 60%;
   height: 100%;
@@ -173,10 +178,37 @@ div.add div.text div.rightAdditional h2{
 }
 div.add div.text div.rightAdditional div.rightParagraph{
   width: 100%;
-    height: 40%;
+    height: 60%;
     margin-bottom: 5rem;
+    margin-top: -8rem;
+    line-height: 1.5em;
 }
-
+div.add div.text div.rightAdditional p.finallyParagraph{
+  margin-left: -8em;
+  margin-bottom: 10em;
+}
+div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph .firstSpan{
+  font-weight: bold;
+}
+div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph .italic{
+  font-style: italic;
+}
+div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph code{
+  background-color: #f2f2f2;
+  padding: 0.6rem;
+  border-radius: 7px;
+  font-family: var(--code);
+  font-size: smaller;
+  letter-spacing: -0.8px;
+  color: black;
+  font-weight: 100;
+}
+div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph a{
+  color: black;
+}
+div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph a:hover {
+  color:  #47d3e5;
+}
 /*estilos de las listas desordenadas/ordenadas*/
 
 /* Lista desordenada */
