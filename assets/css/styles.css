@@ -6,7 +6,7 @@
   outline: none;
 }
 :root {
-   font-family: 'Inter', sans-serif;
+   font-family: var(--default);
   font-size: 0.785rem;
 
   /* COLORS /
@@ -66,7 +66,8 @@ div.header div h1.secondword {
 
 div.header div.codeteam p.firstp {
   font-size: 2.9em;
-  font-weight: 300;
+  font-family: var(--default);
+  font-weight: 200;
   padding-top: 1.2em;
   line-height: 1.8em;
   margin: 3em;
@@ -83,17 +84,18 @@ div.header div.codeteam p a:hover {
   color:  #47d3e5;
 }
 div.header div.codeteam p.secondp {
-  font-size: 2.4em;
-  font-weight: 300;
+  font-size: 2.3em;
+  font-weight: 200;
   line-height: 1.7em;
   margin-left: 2.5em;
   margin-top: -1em;
   margin-right: 5em;
   letter-spacing: -.8px;
-  color: black;
+  
 }
 div.header div.codeteam p strong {
   color: black;
+  font-weight: 400;
 }
 
 div.header div.codeteam p.secondp .backgroundword {
@@ -101,7 +103,7 @@ div.header div.codeteam p.secondp .backgroundword {
   padding: 0.6rem;
   border-radius: 7px;
   font-family: var(--code);
-  font-size: smaller;
+  font-size: 1.1em;
   letter-spacing: -0.8px;
   color: black;
   font-weight: 100;
@@ -167,10 +169,10 @@ div.add div.text div.rightAdditional{
   font-size: x-large;
 }
 div.add div.text div.rightAdditional h2{
-  font-size: 4rem;
-  font-weight: 100;
+  font-size: 2.7em;
+  font-weight: 200;
   color: #0e0e0e;
-  letter-spacing: -0.1rem;
+  letter-spacing: -.5rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
   margin-left: 10rem;
