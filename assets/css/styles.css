@@ -4,22 +4,46 @@
   box-sizing: border-box;
   outline: none;
 }
-:root {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.785rem;  
+  :root {
+font-family: 'Inter', sans-serif;
+font-size: 0.78em;
 }
-.add {
-  display: grid;
-  grid-template-columns: 25% 75%;
-display: flex;
+div.add .general{
+  grid-template-columns: 1fr  2.5fr;
+  font-size: 2em;
+  display: flex;
+  margin: auto;
+ 
+}
+div.add div.general div.left h2 {
+font-size: 2em;
+padding-top: 3em;
+margin-left: 6em;
+padding-top: 1em;
+
 
 }
-.form2{
-padding-top: 10em;
-padding-bottom: 10em;
-margin: auto
+div.add div.general div.right {
+  text-align: center;
+margin-left: 5em;
+padding-top: 1em;
 }
-label,{
-display:
 
+div.add div.general div.right form div.unoinput, div.dosinput{
+  padding-bottom: 2em;
+  padding-top: 1em;
+display: inline-block;
+
+
+}
+.formulario-label1{
+display: block;
+margin-top: 20px;
+padding-right: 9em;
+}
+
+.formulario-label2{
+  display: block;
+  margin-top: 30px;
+ 
 }
