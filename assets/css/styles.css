@@ -4,72 +4,62 @@
   box-sizing: border-box;
   outline: none;
 }
-  :root {
-font-family: 'Inter', sans-serif;
-font-size: 0.78em;
-
+:root {
+  font-family: "Inter", sans-serif;
+  font-size: 0.78em;
 }
-div.add .general{
-  grid-template-columns: 1fr  2.5fr;
+div.add .general {
+  grid-template-columns: 1fr 2.5fr;
   font-size: 2em;
   display: flex;
   margin: auto;
- 
 }
 div.add div.general div.left h2 {
   font-weight: normal;
   font-size: 2em;
-padding-top: 3em;
-margin-left: 6em;
-padding-top: 1em;
-
-
+  padding-top: 3em;
+  margin-left: 6em;
+  padding-top: 1em;
 }
 div.add div.general div.right {
   text-align: center;
-margin-left: 5em;
-padding-top: 1em;
-
+  margin-left: 5em;
+  padding-top: 1em;
 }
 
-div.add div.general div.right form div.unoinput, div.dosinput{
+div.add div.general div.right form div.unoinput,
+div.dosinput {
   padding-bottom: 2em;
   padding-top: 1em;
-display: inline-block;
+  display: inline-block;
 }
-div.add div.general div.right form div.unoinput label.formulario-label1{
-display: block;
-margin-top: 20px;
-padding-right: 9em;
+div.add div.general div.right form div.unoinput label.formulario-label1 {
+  display: block;
+  margin-top: 20px;
+  padding-right: 9em;
 }
-div.add div.general div.right form div.unoinput input.primer-input{
+div.add div.general div.right form div.unoinput input.primer-input {
   width: 100%;
-  height: 40px
-
+  height: 40px;
 }
-div.add div.general div.right form div.dosinput label.formulario-label2{
+div.add div.general div.right form div.dosinput label.formulario-label2 {
   display: block;
   margin-top: 30px;
   padding-right: 9em;
 }
-div.add div.general div.right form div.dosinput input.segundo-input{
+div.add div.general div.right form div.dosinput input.segundo-input {
   width: 100%;
-  height: 40px
+  height: 40px;
 }
-div.add div.general div.right form div.detachable{
-  padding-right: 9em;
-}
-div.add div.general div.right form div.detachable label[for="department"]{
+
+div.add div.general div.right form div.detachable label[for="department"] {
   display: block;
-  padding-right: 9em;
- }
+  padding-right: 23.5em;
+}
 
-
-div.add div.general div.right form div.detachable select.select-category{
-  width: 90%;
-height: 40px;
-padding: 0.5rem 1rem;
-margin-left: 20px;
-margin-top: 20px;
-
+div.add div.general div.right form div.detachable select.select-category {
+  width: 80%;
+  height: 40px;
+  padding: 0.5rem 1rem;
+  margin: 20px 20px 20px 0;
 }
