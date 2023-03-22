@@ -6,7 +6,7 @@
   outline: none;
 }
 :root {
-   font-family: var(--default);
+  font-family: var(--default);
   font-size: 0.785rem;
 
   /* COLORS /
@@ -22,8 +22,8 @@
 
   / FONTS */
 
-  --default: 'Inter', sans-serif;
-  --code: 'Cutive Mono', monospace;
+  --default: "Inter", sans-serif;
+  --code: "Cutive Mono", monospace;
 }
 /*estilos del header*/
 div.header {
@@ -43,7 +43,7 @@ div.header div.codeteam h1.team {
   margin-left: 6rem;
   font-size: 8rem;
   color: black;
-  font-weight:100;
+  font-weight: 100;
   font-style: italic;
   width: 70%;
   max-height: 0;
@@ -52,7 +52,7 @@ div.header div.codeteam h1.team {
 h1 #firstword {
   color: #e03636;
   font-size: 1em;
-  font-weight:600;
+  font-weight: 600;
   letter-spacing: -7px;
   margin-left: -0.2em;
   margin-right: -0.1em;
@@ -61,7 +61,6 @@ div.header div h1.secondword {
   font-size: 0.9em;
   /* color: #161616;
   font-weight:00; */
-
 }
 
 div.header div.codeteam p.firstp {
@@ -81,7 +80,7 @@ div.header div.codeteam p a {
   font-weight: 400;
 }
 div.header div.codeteam p a:hover {
-  color:  #47d3e5;
+  color: #47d3e5;
 }
 div.header div.codeteam p.secondp {
   font-size: 2.3em;
@@ -90,8 +89,7 @@ div.header div.codeteam p.secondp {
   margin-left: 2.5em;
   margin-top: -1em;
   margin-right: 5em;
-  letter-spacing: -.8px;
-  
+  letter-spacing: -0.8px;
 }
 div.header div.codeteam p strong {
   color: black;
@@ -133,8 +131,98 @@ button {
   margin-left: 3em;
   margin-top: 3em;
 }
-/* estilos de Text  */
- div.add div.text{
+/* -----------Addittional Elements  */
+div.add div.additionalElements {
+  width: 100%;
+  border-top: 0.1em solid #cccccc;
+}
+div.add div.additionalElements h2 {
+  font-size: 4.8em;
+  font-weight: 100;
+  font-family: var(--default);
+  color: #0e0e0e;
+  margin-left: 16em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  letter-spacing: -0.2rem;
+}
+div.add div.additionalElements p.finallyParagraph {
+  font-size: 2em;
+  margin-bottom: -8em;
+  margin-left: 25em;
+}
+
+div.add div.text {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  width: 75%;
+  margin: auto;
+  grid-gap: 0.5em 1em;
+  /* border-top: 0.1em solid #cccccc; */
+}
+div.add div.text div.leftText {
+  padding-top: 1em;
+  margin: auto;
+  justify-content: left;
+  padding-top: 1em;
+}
+
+div.add div.text div.leftText h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #2e2e2e;
+  letter-spacing: -0.2rem;
+  margin-top: 7.5em;
+  margin-left: -6.8em;
+}
+
+div.add div.text div.rightParagraph {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 5rem;
+  margin-top: -8rem;
+  line-height: 1.5em;
+}
+div.add div.text div.rightParagraph p.spansParagraph {
+  width: 100%;
+  height: 40%;
+  font-size: 2em;
+  margin-top: 20em;
+  line-height: 1.5em;
+}
+div.add div.text div.rightParagraph p.spansParagraph .firstSpan {
+  font-weight: bold;
+}
+div.add div.text div.rightParagraph p.spansParagraph .italic {
+  font-style: italic;
+}
+
+div.add div.text div.rightParagraph p.spansParagraph {
+  width: 100%;
+  height: 40%;
+  margin-bottom: 5rem;
+}
+div.add div.text div.rightParagraph .underline {
+  text-decoration: underline;
+}
+div.add div.text div.rightParagraph p.spansParagraph code {
+  background-color: #f2f2f2;
+  padding: 0.6rem;
+  border-radius: 7px;
+  font-family: var(--code);
+  font-size: x-large;
+  letter-spacing: -0.8px;
+  color: black;
+  font-weight: 100;
+}
+div.add div.text div.rightParagraph p.spansParagraph a {
+  color: black;
+}
+div.add div.text div.rightParagraph p.spansParagraph a:hover {
+  color: #47d3e5;
+}
+/* -----------------headings------------------ */
+div.add div.headings {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   width: 75%;
@@ -142,161 +230,73 @@ button {
   grid-gap: 0.5em 1em;
   border-top: 0.1em solid #cccccc;
 }
-div.add div.text div.leftText{
+div.add div.headings div.leftHeadings {
   padding-top: 1em;
   margin: auto;
   justify-content: left;
   padding-top: 1em;
 }
-div.add div.text div h3{
+div.add div.headings div.leftHeadings h3 {
   font-size: 3rem;
   font-weight: 300;
   color: #2e2e2e;
   letter-spacing: -0.2rem;
-  margin-top: 7.5em;
+  margin-top: -25em;
   margin-left: -6.8em;
-  /* margin-left: 30rem; */
-  /* font-size: 3rem;
-  font-weight: 300;
-  color: #2e2e2e;
-  letter-spacing: -0.2rem;
-  margin-top: 3em;
-  display:flex;  */
 }
-div.add div.text div.rightAdditional{
-  justify-content: right;
-  padding-top: 3em;
-  font-size: x-large;
-}
-div.add div.text div.rightAdditional h2{
-  font-size: 2.7em;
-  font-weight: 200;
-  color: #0e0e0e;
-  letter-spacing: -.5rem;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-  margin-left: 10rem;
-  /* margin-top: 3rem;
-  width: 60%;
-  height: 100%;
-  justify-content: right; */
-}
-div.add div.text div.rightAdditional div.rightParagraph{
-  width: 100%;
-    height: 60%;
-    margin-bottom: 5rem;
-    margin-top: -8rem;
-    line-height: 1.5em;
-}
-div.add div.text div.rightAdditional p.finallyParagraph{
-  margin-left: -8em;
-  margin-bottom: 10em;
-}
-div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph .firstSpan{
-  font-weight: bold;
-}
-div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph .italic{
-  font-style: italic;
-}
-
-div.add div.text div.rightAdditional div.rightParagraph .underline{
-text-decoration:underline;
-
-}
-div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph code{
-  background-color: #f2f2f2;
-  padding: 0.6rem;
-  border-radius: 7px;
-  font-family: var(--code);
-  font-size: smaller;
-  letter-spacing: -0.8px;
-  color: black;
-  font-weight: 100;
-}
-div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph a{
-  color: black;
-}
-div.add div.text div.rightAdditional div.rightParagraph p.spansParagraph a:hover {
-  color:  #47d3e5;
-}
-
-div.add div.headings{
-  display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    width: 75%;
-    margin: auto;
-    grid-gap: 0.5em 1em;
-    border-top: 0.1em solid #cccccc;
-
-}
-div.add div.headings div.leftHeadings{
-   padding-top: 1em;
-    margin: auto;
-    justify-content: left;
-    padding-top: 1em;
-}
-div.add div.headings div.leftHeadings h3{
-  font-size: 3rem;
-    font-weight: 300;
-    color: #2e2e2e;
-    letter-spacing: -0.2rem;
-    margin-top: -25em;
-    margin-left: -6.8em;
-}
-div.add div.headings div.rightHeadings{
+div.add div.headings div.rightHeadings {
   justify-content: right;
   padding-top: 3em;
 }
-div.add div.headings div.rightHeadings div h1{
+div.add div.headings div.rightHeadings div h1 {
   font-size: 7em;
-  font-weight:100;
+  font-weight: 100;
   margin-top: 0.8em;
 }
-div.add div.headings div.rightHeadings div h2{
+div.add div.headings div.rightHeadings div h2 {
   font-size: 4.5em;
   font-weight: 100;
   margin-top: 0.8em;
-
 }
-div.add div.headings div.rightHeadings div h3{
+div.add div.headings div.rightHeadings div h3 {
   font-size: 3em;
   font-weight: 100;
   margin-top: 1em;
 }
-div.add div.headings div.rightHeadings div h4{
+div.add div.headings div.rightHeadings div h4 {
   font-size: 2.5em;
   font-weight: 100;
   margin-top: 1.2em;
 }
-div.add div.headings div.rightHeadings div h5{
+div.add div.headings div.rightHeadings div h5 {
   font-size: 1.8em;
   font-weight: 100;
   margin-top: 1.8em;
 }
-div.add div.headings div.rightHeadings div h6{
+div.add div.headings div.rightHeadings div h6 {
   font-size: 1.5em;
   font-weight: 100;
   margin-top: 2em;
   margin-bottom: 5em;
 }
-div.add div.headings div.rightHeadings div p{
+div.add div.headings div.rightHeadings div p {
   font-size: 2em;
   margin-top: 2em;
-line-height: 1.5em;
-text-align: justify;
+  line-height: 1.5em;
+  text-align: justify;
 }
-div.add div.headings div.rightHeadings div.bottom{
+div.add div.headings div.rightHeadings div.bottom {
   border-top: 0.1em solid #cccccc;
   margin-bottom: 5em;
 }
-div.add div.headings div.rightHeadings div.bottom h3.italic{
+div.add div.headings div.rightHeadings div.bottom h3.italic {
   font-style: italic;
 }
 
 /*estilos de las listas desordenadas/ordenadas*/
 
 /* Lista desordenada */
-div.listUn{
+div.listUn {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   width: 75%;
@@ -308,7 +308,7 @@ div.listUn{
   display: flex;*/
 }
 
-div.add div.listUn div.Unordered{
+div.add div.listUn div.Unordered {
   justify-content: right;
   padding-top: 3em;
   /* padding-top: 1em;
@@ -320,7 +320,7 @@ div.add div.listUn div.Unordered{
   /* padding-bottom: 2em; */
 }
 
-div.Unordered h3{
+div.Unordered h3 {
   font-size: 3rem;
   font-weight: 300;
   color: #2e2e2e;
@@ -329,7 +329,7 @@ div.Unordered h3{
   /* margin-left: 30rem; */
   /* display:flex;  */
 }
-div.partRight-Unordered{
+div.partRight-Unordered {
   justify-content: right;
   padding-top: 3em;
   padding-bottom: 3em;
@@ -339,7 +339,7 @@ div.partRight-Unordered{
   /* width: 60%;
   height: 100%; */
 }
- h4{
+h4 {
   font-size: 2rem;
   font-weight: 300;
   color: #0e0e0e;
@@ -347,29 +347,30 @@ div.partRight-Unordered{
   /* margin-top: 1rem; */
   /* margin-bottom: 2rem; */
 }
-div.listUnordered, div.Alternate{
+div.listUnordered,
+div.Alternate {
   width: 100%;
   height: 40%;
   padding-bottom: 3em;
   padding-top: 3em;
   /* margin-bottom: 3rem; */
 }
-div.listUnordered ul li{
+div.listUnordered ul li {
   color: rgb(35, 33, 33);
   font-size: x-large;
   padding: 0.5rem;
-  margin-left:  2rem;
+  margin-left: 2rem;
   font-weight: 300;
 }
-div.partRight-Unordered div.listUnordered ul{
+div.partRight-Unordered div.listUnordered ul {
   margin-top: 2.5rem;
   margin-bottom: 4rem;
 }
-div.Alternate p{
+div.Alternate p {
   color: black;
   font-size: 2.3em;
   padding: 0.8rem;
-  margin-left:  -0.5rem;
+  margin-left: -0.5rem;
   margin-top: 2rem;
   font-weight: 100;
   border-top: 0.1em solid #cccccc;
@@ -383,9 +384,8 @@ div.Alternate p{
   border-width: 1px;
 } */
 
-
 /* Lista ordenada */
-div.listOr{
+div.listOr {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   width: 75%;
@@ -394,7 +394,7 @@ div.listOr{
   border-top: 0.1em solid #cccccc;
 }
 
-div.add div.listUn div div.Ordered{
+div.add div.listUn div div.Ordered {
   justify-content: right;
   padding-top: 3em;
   /* padding-top: 1em;
@@ -406,7 +406,7 @@ div.add div.listUn div div.Ordered{
   margin: auto;
   justify-content: left; */
 }
-div.Ordered h3{
+div.Ordered h3 {
   font-size: 3rem;
   font-weight: 300;
   color: #2e2e2e;
@@ -424,14 +424,14 @@ div.Ordered h3{
   margin-top: 3em;
   margin-bottom: 4rem;
 } */
-div.add div.listOr div.listOrdered ol li{
+div.add div.listOr div.listOrdered ol li {
   color: black;
   font-size: 2.3em;
   padding: 0.8rem;
-  margin-left:  2rem;
+  margin-left: 2rem;
   font-weight: 100;
 }
-div.add div.listOr div.listOrdered{
+div.add div.listOr div.listOrdered {
   width: 100%;
   height: 40%;
   margin-bottom: 5rem;
@@ -443,8 +443,7 @@ div.add div.listOr div.listOrdered{
   margin-left:  20rem;
   font-weight: 300; */
 }
-div.listOr div ol{
+div.listOr div ol {
   margin-top: 6rem;
   margin-bottom: 4rem;
 }
-
