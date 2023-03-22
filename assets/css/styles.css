@@ -29,49 +29,49 @@
 div.header {
   width: 100%;
   height: 100%;
-  color: black;
   background-color: white;
   display: flex;
 }
 div.codeteam {
   width: 50%;
-  margin-top: 12rem;
-  margin-left: 2rem;
+  /* margin-top: 12em; */
+  margin: auto;
+  margin-left: 2em;
 }
 
 div.header div.codeteam h1.team {
-  margin-left: 6rem;
-  font-size: 8rem;
+  margin-left: 1em;
+  font-size: 7em;
   color: black;
   font-weight: 100;
   font-style: italic;
-  width: 70%;
-  max-height: 0;
+  /* max-height: 0; */
 }
 
 h1 #firstword {
   color: #e03636;
   font-size: 1em;
   font-weight: 600;
-  letter-spacing: -7px;
-  margin-left: -0.2em;
-  margin-right: -0.1em;
+  letter-spacing: -0.05em;
+  /* margin-left: -0.2em;
+  margin-right: -0.1em; */
 }
-div.header div h1.secondword {
-  font-size: 0.9em;
-  /* color: #161616;
-  font-weight:00; */
+div.header div h1 .secondword {
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: -0.05em;
+  margin-left: -0.1em;
 }
 
-div.header div.codeteam p.firstp {
-  font-size: 2.9em;
+div.header div.codeteam div p.firstp {
+  font-size: 2.8em;
   font-family: var(--default);
   font-weight: 200;
-  padding-top: 1.2em;
   line-height: 1.8em;
-  margin: 3em;
-  margin-left: 2em;
-  margin-right: 5em;
+  /* margin: 3em;
+  margin-left: 2em; */
+  margin: 2em 5em 2em 2em;
+  /* margin-right: 5em; */
   color: black;
   letter-spacing: -1px;
 }
@@ -82,13 +82,12 @@ div.header div.codeteam p a {
 div.header div.codeteam p a:hover {
   color: #47d3e5;
 }
-div.header div.codeteam p.secondp {
+div.header div.codeteam div p.secondp {
   font-size: 2.3em;
   font-weight: 200;
   line-height: 1.7em;
   margin-left: 2.5em;
-  margin-top: -1em;
-  margin-right: 5em;
+  margin-right: 3.5em;
   letter-spacing: -0.8px;
 }
 div.header div.codeteam p strong {
@@ -115,41 +114,43 @@ div.header div.img-banner {
 }
 div.header div.img-banner img {
   width: 100%;
+  height: 100%;
   aspect-ratio: 1/1;
   object-position: center;
   object-fit: cover;
   justify-content: right;
+  /* width: 100%;
+  height: auto;
+  display: block; */
 }
 button {
   font-size: x-large;
-  width: 30%;
-  padding: 1.5em 0.5em;
+  padding: 1.2em 3.5em;
   background-color: white;
   border: 1px solid #cccccc;
-  border-color: #d3d9e0;
   border-radius: 50px;
   margin-left: 3em;
   margin-top: 3em;
 }
 /* -----------Addittional Elements  */
 div.add div.additionalElements {
-  width: 100%;
   border-top: 0.1em solid #cccccc;
+  width: 100%;
 }
 div.add div.additionalElements h2 {
+  width: 100%;
   font-size: 4.8em;
   font-weight: 100;
-  font-family: var(--default);
   color: #0e0e0e;
-  margin-left: 16em;
   margin-top: 2em;
   margin-bottom: 1em;
   letter-spacing: -0.2rem;
+  text-align: center;
 }
 div.add div.additionalElements p.finallyParagraph {
   font-size: 2em;
   margin-bottom: -8em;
-  margin-left: 25em;
+  text-align: center;
 }
 
 div.add div.text {
@@ -158,13 +159,10 @@ div.add div.text {
   width: 75%;
   margin: auto;
   grid-gap: 0.5em 1em;
-  /* border-top: 0.1em solid #cccccc; */
 }
 div.add div.text div.leftText {
-  padding-top: 1em;
-  margin: auto;
-  justify-content: left;
-  padding-top: 1em;
+  justify-content: right;
+  padding-top: 12em;
 }
 
 div.add div.text div.leftText h3 {
@@ -172,22 +170,28 @@ div.add div.text div.leftText h3 {
   font-weight: 300;
   color: #2e2e2e;
   letter-spacing: -0.2rem;
-  margin-top: 7.5em;
-  margin-left: -6.8em;
+  margin-top: 5em;
+  margin-left: 0em;
+  /* margin-top: 10em; */
+  /* margin-left: -7em; */
 }
 
 div.add div.text div.rightParagraph {
-  width: 100%;
+  /* width: 100%;
   height: 60%;
   margin-bottom: 5rem;
   margin-top: -8rem;
-  line-height: 1.5em;
+  line-height: 1.5em; */
+  width: 100%;
+  height: 40%;
+  padding-bottom: 3em;
+  padding-top: 3em;
 }
 div.add div.text div.rightParagraph p.spansParagraph {
   width: 100%;
   height: 40%;
   font-size: 2em;
-  margin-top: 20em;
+  margin-top: 12em;
   line-height: 1.5em;
 }
 div.add div.text div.rightParagraph p.spansParagraph .firstSpan {
@@ -210,7 +214,7 @@ div.add div.text div.rightParagraph p.spansParagraph code {
   padding: 0.6rem;
   border-radius: 7px;
   font-family: var(--code);
-  font-size: x-large;
+  font-size: 1em;
   letter-spacing: -0.8px;
   color: black;
   font-weight: 100;
@@ -231,21 +235,27 @@ div.add div.headings {
   border-top: 0.1em solid #cccccc;
 }
 div.add div.headings div.leftHeadings {
-  padding-top: 1em;
+  /* padding-top: 1em;
   margin: auto;
   justify-content: left;
-  padding-top: 1em;
+  padding-top: 1em; */
+  justify-content: right;
+  padding-top: 3em;
 }
 div.add div.headings div.leftHeadings h3 {
   font-size: 3rem;
   font-weight: 300;
   color: #2e2e2e;
   letter-spacing: -0.2rem;
-  margin-top: -25em;
-  margin-left: -6.8em;
+  margin-left: 0em;
+  margin-top: 2em;
 }
 div.add div.headings div.rightHeadings {
-  justify-content: right;
+  /* justify-content: right;
+  padding-top: 3em; */
+  width: 100%;
+  height: 40%;
+  padding-bottom: 3em;
   padding-top: 3em;
 }
 div.add div.headings div.rightHeadings div h1 {
@@ -339,8 +349,9 @@ div.partRight-Unordered {
   /* width: 60%;
   height: 100%; */
 }
+/* -------preguntar como poner este h4 con sus padres--------- */
 h4 {
-  font-size: 2rem;
+  font-size: 2.3em;
   font-weight: 300;
   color: #0e0e0e;
   letter-spacing: -0.1rem;
@@ -357,7 +368,7 @@ div.Alternate {
 }
 div.listUnordered ul li {
   color: rgb(35, 33, 33);
-  font-size: x-large;
+  font-size: 2.3em;
   padding: 0.5rem;
   margin-left: 2rem;
   font-weight: 300;
@@ -365,24 +376,16 @@ div.listUnordered ul li {
 div.partRight-Unordered div.listUnordered ul {
   margin-top: 2.5rem;
   margin-bottom: 4rem;
-}
-div.Alternate p {
+} 
+div.add div.listUn div.partRight-Unordered div.Alternate p {
   color: black;
   font-size: 2.3em;
-  padding: 0.8rem;
   margin-left: -0.5rem;
   margin-top: 2rem;
-  font-weight: 100;
+  font-weight: 300;
   border-top: 0.1em solid #cccccc;
+  line-height: 2em;
 }
-/* div.Alternate hr{
-  margin-top: 1rem;
-  margin-bottom: -1rem;
-  margin-left: auto;
-  margin-right: 15rem;
-  border-style: inset;
-  border-width: 1px;
-} */
 
 /* Lista ordenada */
 div.listOr {
@@ -412,6 +415,7 @@ div.Ordered h3 {
   color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 2em;
+}
   /* margin-left: 30rem;
   font-size: 3rem;
   font-weight: 300;
@@ -419,7 +423,7 @@ div.Ordered h3 {
   letter-spacing:-0.2rem;
   margin-top: 6rem;
   display:flex; */
-}
+
 /* div.add div.listOr div.listOrdered ol{
   margin-top: 3em;
   margin-bottom: 4rem;
@@ -429,7 +433,7 @@ div.add div.listOr div.listOrdered ol li {
   font-size: 2.3em;
   padding: 0.8rem;
   margin-left: 2rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 div.add div.listOr div.listOrdered {
   width: 100%;
