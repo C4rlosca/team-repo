@@ -38,11 +38,20 @@ div.buttons {
 }
 
 div.buttons-right button {
-  /* margin: 3em 0.8em 1.5em 0; */
   background-color: white;
   border: 0.01rem solid grey;
   border-radius: 2rem;
 }
+
+div.buttons-right button:hover {
+  background-color: #47d1d2;
+  border-color: transparent;
+}
+
+div .button1 {
+  margin-top: 2.5em;
+}
+
 div.button1 button {
   margin: 1em 2em 2em 0;
   padding: 1.3em 2em;
@@ -113,6 +122,21 @@ div.button6 button:last-of-type {
   color: grey;
 }
 
+div.button6 button:first-of-type:hover {
+  background-color: #47d1d2;
+  border-color: transparent;
+}
+
+div.button6 button:last-of-type:hover {
+  background-color: transparent;
+}
+
+div.button2 .button-small:hover {
+  color: white;
+  background-color: #47d1d2;
+  border-color: transparent;
+}
+
 div.buttons-right .black {
   background-color: #050505;
   color: white;
@@ -134,14 +158,18 @@ div.actions {
 div.action1 button {
   padding: 1em;
   border-radius: 2rem;
-  margin: 1em 1em 1.5em 0;
+  margin: 1em 1em 2em 0;
   width: 9em;
+}
+div.actions-right button:hover {
+  background-color: #47d1d2;
+  border-color: transparent;
 }
 
 div.action2 button {
   padding: 1em;
   border-radius: 2rem;
-  margin: 1em 1em 1.5em 0;
+  margin: 1em 1em 2em 0;
   width: 10em;
   font-size: xx-small;
 }
@@ -150,7 +178,7 @@ div.action3 button {
   display: block;
   padding: 1em;
   border-radius: 2rem;
-  margin: 1em 1em 1.5em 0;
+  margin: 1em 1em 2em 0;
   width: 9em;
   font-size: small;
 }
@@ -194,7 +222,6 @@ div.images {
   width: 75%;
   margin: auto;
   grid-gap: 0.5em 1em;
-  /* border-top: 0.1em solid rgb(82, 81, 81); */
 }
 
 div.images-left {
@@ -205,7 +232,7 @@ div.images-right {
   padding-bottom: 3em;
 }
 div.images-right .text-left-right {
-  font-size: x-large;
+  font-size: large;
   font-weight: 200;
 }
 
@@ -250,14 +277,13 @@ div.box {
   grid-gap: 0.5em 1em;
   border-top: 0.1em solid rgb(82, 81, 81);
 }
-
 div.box .box-right {
   font-size: medium;
   margin: 2em 0 5em 0;
   border-radius: 0.4rem;
   padding: 1.7em;
   border: 0.1em solid rgb(168, 168, 168);
-  font-size: x-large;
+  font-size: large;
   font-weight: 200;
 }
 
@@ -271,20 +297,36 @@ footer {
   padding: 5em 1em;
 }
 
-.made {
+footer div.made {
   text-align: center;
 }
-.iconos {
+
+footer div.made span a {
+  text-align: center;
+  text-decoration: none;
+  color: #47d1d2;
+}
+footer div.iconos {
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
 }
-.iconos i {
+footer div.iconos i {
   border: 10px solid #7da596;
   background-color: #7da596;
   border-radius: 90rem;
+  width: 30px;
+  height: 30px;
   margin: 0 10px;
 }
-.images-right img {
+
+footer div.iconos i:hover {
+  cursor: pointer;
+  border: 5px transparent #47d1d2;
+  background-color: #47d1d2;
+  outline: 1px solid #47d1d2;
+  border-radius: 50%;
+}
+footer div.images-right img {
   align-items: center;
 }
