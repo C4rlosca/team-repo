@@ -127,6 +127,10 @@ div.button6 button:first-of-type:hover {
   border-color: transparent;
 }
 
+div.button6 button:last-of-type:hover {
+  background-color: transparent;
+}
+
 div.button2 .button-small:hover {
   color: white;
   background-color: #47d1d2;
@@ -303,12 +307,17 @@ footer div.iconos i {
   border: 10px solid #7da596;
   background-color: #7da596;
   border-radius: 90rem;
+  width: 30px;
+  height: 30px;
   margin: 0 10px;
 }
 
 footer div.iconos i:hover {
+  cursor: pointer;
   border: 5px transparent #47d1d2;
   background-color: #47d1d2;
+  outline: 1px solid #47d1d2;
+  border-radius: 50%;
 }
 footer div.images-right img {
   align-items: center;
