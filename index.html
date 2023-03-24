@@ -1,153 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEB</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="allContainer"></div>
-    <div class="header"></div>
-    <div class="spotlight"></div>
-    <div class="gallery"></div>
-    <div class="items"></div>
-    <div class="add">
-      <div class="general">
-        <div class="left">
-          <h2>Form</h2>
-        </div>
-        <div class="right">
-          <form>
-            <div class="unoinput">
-              <label for="name" class="formulario-label1">Name</label>
-              <input type="text" id="name" name="name" class="primer-input" />
-            </div>
-            <div class="dosinput">
-              <label for="email" class="formulario-label2">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="segundo-input"
-              />
-            </div>
-            <div class="detachable">
-              <label for="department">Department</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEB</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
 
-              <select name="category" id="pet-select" class="select-category">
-                <option value="">-Category-</option>
-                <option value="category 1">Category 1</option>
-                <option value="category 2">Category 2</option>
-                <option value="category 3">Category 3</option>
-                <option value="category 4">Category 4</option>
-                <option value="category 5">Category 5</option>
-                <option value="category 6">Category 6</option>
-              </select>
-            </div>
-            <div class="priority">
-              <div class="checkbox-container">
-                <input type="checkbox" name="low" class="priority-checkbox" />
-                <label for="low-priority" class="priority-label"
-                  >Low Priority</label
-                >
-              </div>
-              <div class="checkbox-container">
-                <input
-                  type="checkbox"
-                  name="normal"
-                  class="priority-checkbox"
-                />
-                <label for="normal-priority" class="priority-label"
-                  >Normal Priority</label
-                >
-              </div>
-              <div class="checkbox-container">
-                <input type="checkbox" name="high" class="priority-checkbox" />
-                <label for="high-priority" class="priority-label"
-                  >High Priority</label
-                >
-              </div>
-            </div>
-            <div class="texarea">
-              <div class="message"><label>Message</label></div>
-              <div class="textarea">
-                <textarea
-                  name="Message"
-                  id="message"
-                  cols="93"
-                  rows="15"
-                ></textarea>
-              </div>
-            </div>
-            <div class="selection">
-              <input type="checkbox" name="week" /> Email me a copy of this
-              message <input type="checkbox" name="week" /> I am a human and not
-              a robot
-            </div>
-            <div>
-              <button type="submit">Send Message</button>
-            </div>
-          </form>
-        </div>
-        <div></div>
+<body>
+  <div class="allContainer"></div>
+  <div class="header"></div>
+  <div class="spotlight"></div>
+  <div class="gallery"></div>
+  <div class="items"></div>
+  <div class="add">
+    <div class="general">
+      <div class="left">
+        <h3>Form</h3>
       </div>
-    
-    
-      <div class="tablas">
+      <div class="right">
+        <form>
+          <div class="unoinput">
+            <label for="name" class="formulario-label1">Name</label>
+            <input type="text" id="name" name="name" class="primer-input" />
+          </div>
+          <div class="dosinput">
+            <label for="email" class="formulario-label2">Email</label>
+            <input type="email" id="email" name="email" class="segundo-input" />
+          </div>
+          <div class="detachable">
+            <label for="department">Department</label>
+
+            <select name="category" class="select-category">
+              <option value="">-Category-</option>
+              <option value="category 1">Category 1</option>
+              <option value="category 2">Category 2</option>
+              <option value="category 3">Category 3</option>
+              <option value="category 4">Category 4</option>
+              <option value="category 5">Category 5</option>
+              <option value="category 6">Category 6</option>
+            </select>
+          </div>
+          <div class="priority">
+            <div class="checkbox-container">
+              <input type="checkbox" name="low" class="priority-checkbox" />
+              <label for="low-priority" class="priority-label">Low Priority</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" name="normal" class="priority-checkbox" />
+              <label for="normal-priority" class="priority-label">Normal Priority</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" name="high" class="priority-checkbox" />
+              <label for="high-priority" class="priority-label">High Priority</label>
+            </div>
+          </div>
+          <div class="texarea">
+            <div class="message"><label>Message</label></div>
+            <div class="textarea">
+              <textarea name="Message" id="message"></textarea>
+            </div>
+          </div>
+          <div class="selection">
+            <input type="checkbox" name="week" /> Email me a copy of this
+            message <input type="checkbox" name="week" /> I am a human and not
+            a robot
+          </div>
+          <div>
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+
+    <div class="tablas">
+      <h3 class="left">Table</h3>
       <table>
         <tr class="titulos">
           <th>Name</th>
           <th>Description</th>
           <th>Price</th>
-          </tr>
-          <tr class="file1">
-            <td>Item 1</td>
-            <td>Lorem ipsum dolor sit amet.</td>
-            <td>29.99</td>
-          </tr>
-          <tr class="file2">
-            <td>Item 2</td>
-            <td>Lorem ipsum dolor sit amet consectetur.</td>
-            <td>19.99</td>
-          </tr>
-          <tr class="file3">
-            <td>Item 3</td>
-            <td>Lorem ipsum dolor sit amet.</td>
-            <td>29.99</td>
-          </tr>
-          <tr class="file4">
-            <td>Item 4</td>
-            <td>Lorem ipsum dolor sit.</td>
-            <td>19.99</td>
-          </tr>
-          <tr class="file5">
-            <td>Item 5</td>
-            <td>Lorem ipsum dolor sit amet.</td>
-            <td>29.99</td>
-          </tr>
-          <tr class="file6">
-            <td></td>
-            <td></td>
-            <td>100.00</td>
-          </tr>
+        </tr>
+        <tr class="file1">
+          <td>Item 1</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>29.99</td>
+        </tr>
+        <tr class="file2">
+          <td>Item 2</td>
+          <td>Lorem ipsum dolor sit amet consectetur.</td>
+          <td>19.99</td>
+        </tr>
+        <tr class="file3">
+          <td>Item 3</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>29.99</td>
+        </tr>
+        <tr class="file4">
+          <td>Item 4</td>
+          <td>Lorem ipsum dolor sit.</td>
+          <td>19.99</td>
+        </tr>
+        <tr class="file5">
+          <td>Item 5</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>29.99</td>
+        </tr>
+        <tr class="file6">
+          <td></td>
+          <td></td>
+          <td>100.00</td>
+        </tr>
       </table>
     </div>
-    
-    </div>
-  </body>
+
+  </div>
+</body>
+
 </html>
