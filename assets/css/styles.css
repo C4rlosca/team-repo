@@ -52,21 +52,21 @@ div.spotlight div.c1 {
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-image: url("../images/spotlight01.jpg");
+  background-image: url("../../images/spotlight01.jpg");
 }
 div.spotlight div.c2 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 4;
-  background-image: url("../images/spotlight02.jpg");
+  background-image: url("../../images/spotlight02.jpg");
 }
 div.spotlight div.c3 {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-image: url("../images/spotlight03.jpg");
+  background-image: url("../../images/spotlight03.jpg");
 }
 div.spotlight div.t1 {
   grid-row-start: 1;
