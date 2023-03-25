@@ -46,7 +46,7 @@ div.header div.codeteam h1.team {
   font-weight: 100;
   font-style: italic;
 }
-div.header div.codeteam h1.team i{
+div.header div.codeteam h1.team i {
   margin-left: -0.2em;
 }
 h1 #firstword {
@@ -57,7 +57,7 @@ h1 #firstword {
   margin-left: -0.3em;
 }
 div.header div h1 .secondword {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 200;
   letter-spacing: -0.1em;
   margin-left: -0.1em;
@@ -122,6 +122,10 @@ div.header div.codeteam div button {
   border-radius: 50px;
   margin-left: 3.5em;
   margin-top: 3em;
+}
+div.header div.codeteam div button:hover {
+  border: 1px solid var(--hover);
+  color: var(--hover);
 }
 
 /* ----------SPOTLIGHT---------- */
@@ -300,7 +304,7 @@ div.add div.additionalElements p.finallyParagraph {
   font-weight: 300;
   margin-bottom: -8em;
   margin-left: 0.3em;
-  text-align:center;
+  text-align: center;
 }
 div.add div.text {
   /* display: grid;
@@ -326,15 +330,15 @@ div.add div.text div.leftText h3 {
 }
 div.add div.text div.rightParagraph {
   width: 70%;
-  padding-top: 3em; 
+  padding-top: 3em;
   /* margin-left: -7em; */
 }
 div.add div.text div.rightParagraph p.spansParagraph {
-  width: 100% ;
+  width: 100%;
   font-size: 1.7rem;
   font-weight: 300;
   margin-top: 12em;
-  line-height: 1.8em; 
+  line-height: 1.8em;
   margin-bottom: 3em;
 }
 div.add div.text div.rightParagraph p.spansParagraph .firstSpan {
@@ -438,7 +442,7 @@ div.add div.headings div.rightHeadings div.bottom h3.italic {
   font-size: 2.4rem;
   font-weight: 200;
 }
-div.add div.headings div.rightHeadings div.bottom h4{
+div.add div.headings div.rightHeadings div.bottom h4 {
   font-size: 2.2rem;
   font-style: italic;
   font-weight: 200;
@@ -450,7 +454,6 @@ div.add div.headings div.rightHeadings div p {
   line-height: 1.5em;
   text-align: justify;
 }
-
 
 /*estilos de las listas desordenadas/ordenadas*/
 
@@ -491,13 +494,14 @@ div.partRight-Unordered {
   padding-top: 3em;
   padding-bottom: 3em;
 }
- div.listUn div.partRight-Unordered div.listUnordered h4, div.listUn div.partRight-Unordered div.Alternate h4 {
+div.listUn div.partRight-Unordered div.listUnordered h4,
+div.listUn div.partRight-Unordered div.Alternate h4 {
   font-size: 2rem;
   font-weight: 300;
   color: #0e0e0e;
   letter-spacing: -0.1em;
 }
-div.listUn div.partRight-Unordered  div.listUnordered{
+div.listUn div.partRight-Unordered div.listUnordered {
   padding-bottom: 3em;
   padding-top: 3em;
 }
@@ -511,7 +515,7 @@ div.listUnordered ul li {
 div.partRight-Unordered div.listUnordered ul {
   margin-top: 2.5em;
   margin-bottom: 4em;
-} 
+}
 div.add div.listUn div.partRight-Unordered div.Alternate p + p {
   color: black;
   font-size: 1.7rem;
@@ -522,7 +526,7 @@ div.add div.listUn div.partRight-Unordered div.Alternate p + p {
   border-top: 0.1em solid #cccccc;
   line-height: 2em;
 }
-div.add div.listUn div.partRight-Unordered div.Alternate h4 + p{
+div.add div.listUn div.partRight-Unordered div.Alternate h4 + p {
   color: black;
   font-size: 1.7rem;
   margin-left: -0.5em;
@@ -546,8 +550,8 @@ div.listOr {
   border-bottom: 0.1em solid #cccccc;
 }
 div.add div.listOr div.Ordered {
-  justify-content: right; 
-   padding-top: 3em;
+  justify-content: right;
+  padding-top: 3em;
   width: 30%;
 }
 div.Ordered h3 {
@@ -557,7 +561,7 @@ div.Ordered h3 {
   letter-spacing: -0.2rem;
   margin-top: 1em;
 }
-div.add div.listOr div.listOrdered ol{
+div.add div.listOr div.listOrdered ol {
   margin-left: 1em;
 }
 div.add div.listOr div.listOrdered ol li {
@@ -573,3 +577,230 @@ div.add div.listOr div.listOrdered {
   padding-bottom: 3em;
 }
 
+/* ----------SPOTLIGHT---------- */
+div.spotlight {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 5fr 4fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+div.spotlight div.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 5/4;
+}
+div.spotlight div.card,
+div.spotlight div.text {
+  border-bottom: 1px solid var(--lines);
+}
+div.spotlight div.c1,
+div.spotlight div.t1 {
+  border-top: 1px solid var(--lines);
+}
+div.spotlight div.c1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url("../../images/spotlight01.jpg");
+}
+div.spotlight div.c2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-image: url("../../images/spotlight02.jpg");
+}
+div.spotlight div.c3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url("../../images/spotlight03.jpg");
+}
+div.spotlight div.t1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+div.spotlight div.t2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+div.spotlight div.t3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+div.spotlight div.text {
+  flex-grow: 6;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  padding: 6em;
+}
+div.spotlight h2 {
+  font-size: 3.5em;
+  font-weight: 200;
+}
+div.spotlight p {
+  font-size: 1.7em;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+div.spotlight p strong {
+  font-weight: 300;
+}
+div.spotlight span.code {
+  font-family: var(--code);
+  background-color: var(--highligh);
+  color: black;
+  font-weight: lighter;
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+  font-size: 1.05em;
+}
+div.spotlight a {
+  color: black;
+}
+div.spotlight div button {
+  background-color: inherit;
+  border: 1px solid var(--lines);
+  border-radius: 2em;
+  padding: 1.2em 2em;
+  font-family: var(--default);
+}
+div.spotlight div button:hover {
+  border: 1px solid var(--hover);
+  color: var(--hover);
+}
+div.spotlight a:hover {
+  color: var(--hover);
+}
+
+/* ---------GALLERY--------- */
+div.gallery {
+  display: flex;
+  flex-direction: column;
+}
+div.gallery div.text {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 7em;
+}
+div.gallery h2 {
+  font-size: 3.5em;
+  font-weight: 200;
+  padding-bottom: 1em;
+}
+div.gallery p {
+  font-size: 1.7em;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+div.gallery p strong {
+  font-weight: 300;
+}
+div.gallery span.code {
+  font-family: var(--code);
+  background-color: var(--highligh);
+  color: black;
+  font-weight: lighter;
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+  font-size: 1.05em;
+}
+div.gallery a {
+  color: black;
+}
+div.gallery div.pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+div.gallery div.pics img {
+  max-width: 45em;
+  object-position: center;
+  object-fit: cover;
+}
+
+/* ------------Definition List---------- */
+div.add div.definition {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  border-top: 0.1em solid #cccccc;
+}
+div.add div.definition div.definitionList {
+  width: 30%;
+}
+div.add div.definition div.definitionList h3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #2e2e2e;
+  letter-spacing: -0.2rem;
+  margin-top: 2.5em;
+  margin-left: 0em;
+}
+div.add div.definition div.rightDefinition {
+  width: 70%;
+  padding-top: 3em;
+}
+div.add div.definition div.rightDefinition dt {
+  margin-top: 2.8em;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+div.add div.definition div.rightDefinition dd{
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-left: 2em;
+  margin-top: 2em;
+  line-height: 1.5em;
+}
+
+div.add div.definition div.rightDefinition dd:last-child{
+  margin-bottom: 3em;
+}
+/* -----------------Blockquote ---------------*/
+div.add div.blockquote{
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  border-top: 0.1em solid var(--lines);
+}
+div.add div.blockquote div.leftBl{
+  width: 30%;
+}
+div.add div.blockquote div.leftBl h3{
+  font-size: 2.8rem;
+    font-weight: 300;
+    color: #2e2e2e;
+    letter-spacing: -0.2rem;
+    margin-top: 2.5em;
+    margin-left: 0em;
+}
+div.add div.blockquote div.rightBl{
+  width: 70%;
+  padding-top: 3em; 
+}
+div.add div.blockquote div.rightBl blockquote {
+  font-size: 1.7rem;
+  font-weight: 300;
+  font-style: italic;
+  border-left: 0.3em solid var(--lines);
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  padding-left: 2em;
+  padding: 1em;
+  line-height: 1.8em;
+}
