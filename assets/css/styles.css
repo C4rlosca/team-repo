@@ -4,10 +4,12 @@
   border: 0;
   box-sizing: border-box;
   outline: none;
+  font-family: "Inter", sans-serif;
 }
 :root {
   font-family: "Inter", sans-serif;
   font-size: 0.785rem;
+  font-family: var(--default);
 
   /* COLORS */
   --reddish: #e03636;
@@ -28,15 +30,24 @@
 
 /* Buttons */
 div.buttons {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  width: 75%;
+  display: flex;
+  padding-top: 2em;
   margin: auto;
-  margin-bottom: 5em;
-  grid-gap: 0.5em 1em;
-  border-bottom: 1em rgb(82, 81, 81);
+  border-bottom: 1px solid rgb(82, 81, 81);
+  max-width: 1400px;
+  font-family: var(--default);
 }
 
+div.buttons-right {
+  width: 70%;
+  margin-bottom: 5em;
+}
+div.headertext-buttons-span {
+  padding-top: 2em;
+  font-size: 2rem;
+  font-weight: 300;
+  width: 30%;
+}
 div.buttons-right button {
   background-color: white;
   border: 0.01rem solid grey;
@@ -44,28 +55,32 @@ div.buttons-right button {
 }
 
 div.buttons-right button:hover {
+  border-color: var(--hover);
+  color: var(--hover);
+}
+div.buttons-right button.black:hover {
   background-color: #47d1d2;
-  border-color: transparent;
+  color: white;
 }
 
 div .button1 {
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 
 div.button1 button {
-  margin: 1em 2em 2em 0;
-  padding: 1.3em 2em;
+  margin: 1em 1.5em 2em 0;
+  padding: 1.2em 2em;
   width: 10em;
 }
 
 div.button2 button:first-of-type {
   margin: 0 2em 2em 0;
-  padding: 1.7em 2em;
+  padding: 1.5em 2em;
   width: 10em;
 }
 div.button2 button {
   margin: 0 2em 2em 0;
-  padding: 1.3em 2em;
+  padding: 1em 2em;
   width: 10em;
 }
 div.button2 {
@@ -78,18 +93,18 @@ div.button2 button:last-of-type {
   width: 7em;
   color: #47d3e5;
   font-size: x-small;
-  border-color: #47d3e5;
+  border-color: var(--hover);
   border-top: grey;
 }
 
 div.button3 button {
-  margin: 0 2em 3em 0;
-  padding: 1.3em 2em;
+  margin: 0 1em 3em 0;
+  padding: 1em 1.5em;
   width: 12em;
 }
 
 div.button4 button {
-  margin: 0 2em 3em 0;
+  margin: 0 1em 3em 0;
   padding: 0.9em 2em;
   width: 12em;
 }
@@ -103,8 +118,9 @@ div.button5 button {
 div.button6 button:first-of-type {
   padding: 1.3em 2em;
   width: 10em;
-  background-color: rgb(161, 161, 161);
   color: white;
+  background-color: rgb(161, 161, 161);
+  margin-right: 2em;
 }
 
 div.button5 button i {
@@ -112,28 +128,29 @@ div.button5 button i {
 }
 
 div.button6 button {
-  margin: 1em 2em 1em 0;
-  border: transparent;
-  margin: 1.7em 3em 0 0;
+  margin: 1.7em 2em 0 0;
 }
 
 div.button6 button:last-of-type {
-  border: transparent;
+  padding: 1.3em 2.5em;
+  border: 1px solid;
   color: grey;
 }
 
 div.button6 button:first-of-type:hover {
-  background-color: #47d1d2;
+  background-color: var(--hover);
   border-color: transparent;
 }
 
 div.button6 button:last-of-type:hover {
+  border-color: var(--hover);
   background-color: transparent;
+  color: #47d1d2;
 }
 
 div.button2 .button-small:hover {
   color: white;
-  background-color: #47d1d2;
+  background-color: var(--hover);
   border-color: transparent;
 }
 
@@ -149,11 +166,28 @@ div button:active {
 
 /* Actions */
 div.actions {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  width: 75%;
+  display: flex;
+  max-width: 1400px;
+  padding: 2em 0 5em 0;
   margin: auto;
-  grid-gap: 0.5em 1em;
+  border-bottom: 1px solid rgb(82, 81, 81);
+}
+
+div.actions-right {
+  width: 70%;
+  padding: 4em 0 1em 0;
+}
+div.headertext-actions {
+  padding: 0em 22em 0 0em;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 2em 0 0 0;
+  width: 30%;
+}
+
+div.actions-right span {
+  font-size: medium;
+  font-weight: 300;
 }
 div.action1 button {
   padding: 1em;
@@ -161,13 +195,18 @@ div.action1 button {
   margin: 1em 1em 2em 0;
   width: 9em;
 }
-div.actions-right button:hover {
+
+div.actions-right button.black-action:hover {
   background-color: #47d1d2;
   border-color: transparent;
 }
+div.actions-right button.grey-action:hover {
+  color: var(--hover);
+  border-color: var(--hover);
+}
 
 div.action2 button {
-  padding: 1em;
+  padding: 1.5em;
   border-radius: 2rem;
   margin: 1em 1em 2em 0;
   width: 10em;
@@ -188,7 +227,7 @@ div.action4 button {
   padding: 1em;
   border-radius: 2rem;
   margin: 1em 1em 1.5em 0;
-  width: 20em;
+  width: 22em;
   font-size: small;
 }
 
@@ -201,37 +240,36 @@ div.action4 button {
   border: 0.1em solid grey;
 }
 
-div.headertext-actions {
-  font-size: 2rem;
-  font-weight: 300;
-  padding-left: 2em;
-}
-
 /* Images */
 div.images {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  width: 75%;
+  display: flex;
+  max-width: 1400px;
+  padding-bottom: 2em;
   margin: auto;
-  grid-gap: 0.5em 1em;
+  border-bottom: 1px solid rgb(82, 81, 81);
 }
 
 div.images-left {
   padding-top: 5em 0 1 3em;
+  width: 30%;
 }
 
 div.images-right {
-  padding-bottom: 3em;
+  width: 70%;
+  margin-bottom: 3em;
 }
 div.images-right .text-left-right {
-  font-size: large;
+  font-size: x-large;
   font-weight: 200;
 }
 
-div.headertext-span {
-  padding: 2em 0 0 2em;
+div.headertext-images-span {
+  padding-bottom: 68em;
+  width: 30%;
   font-size: 2rem;
   font-weight: 300;
+  max-width: 1400px;
+  margin: auto;
 }
 div.images-right .banner {
   width: 100%;
@@ -256,33 +294,42 @@ div.images-right .texthead {
   display: block;
   font-size: 2em;
   margin: 2em 0 1em 0;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /* Box */
 
 div.box {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  width: 80%;
+  display: flex;
+  max-width: 1400px;
+  padding: 1em 0 0 0;
   margin: auto;
-  grid-gap: 0.5em 1em;
-  border-top: 0.1em solid rgb(82, 81, 81);
+  border-bottom: 1px solid rgb(82, 81, 81);
 }
+
+div.headertext-box-span {
+  padding: 0em 10em 10em 0em;
+  font-size: x-large;
+  font-weight: 300;
+  margin: auto;
+  width: 30%;
+}
+
 div.box .box-right {
   font-size: medium;
   margin: 2em 0 5em 0;
   border-radius: 0.4rem;
   padding: 1.7em;
   border: 0.1em solid rgb(168, 168, 168);
-  font-size: large;
+  font-size: x-large;
   font-weight: 200;
+  width: 70%;
 }
 
 /* footer */
-
 footer {
   color: white;
+  min-height: 150px;
   bottom: 0;
   width: 100%;
   background-color: #544454;
@@ -294,31 +341,34 @@ footer div.made {
 }
 
 footer div.made span a {
+  color: var(--footer-icon);
   text-align: center;
+}
+
+footer div.made span a:hover {
   text-decoration: none;
   color: #47d1d2;
 }
 footer div.iconos {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 2em;
 }
 footer div.iconos i {
-  border: 10px solid #7da596;
-  background-color: #7da596;
+  position: relative;
+  border: 10px solid var(--footer-icon);
+  background-color: var(--footer-icon);
   border-radius: 90rem;
-  width: 30px;
-  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
   margin: 0 10px;
 }
 
 footer div.iconos i:hover {
   cursor: pointer;
-  border: 5px transparent #47d1d2;
-  background-color: #47d1d2;
-  outline: 1px solid #47d1d2;
+  border: 1px transparent #47d1d2;
+
+  outline: 1px solid var(--hover);
   border-radius: 50%;
-}
-footer div.images-right img {
-  align-items: center;
 }
