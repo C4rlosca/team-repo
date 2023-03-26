@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,30 +9,267 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/80d98a0268.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"/>
   </head>
   <body>
     <div class="allContainer">
-      <div class="header"></div>
-      <div class="spotlight"></div>
-      <div class="gallery"></div>
-      <div class="items"></div>
-      <div class="add"></div>
-    </div>
+    
+      <!------------ HEADER ------------>
+      <div class="header">
+        <div class="codeteam">
+          <h1 class="team">
+            <i class="fa-solid fa-terminal xs"></i>
+            <span id="firstword">CODE</span>
+            <span class="secondword">Team</span>
+          </h1>
+          <div>
+            <p class="firstp">
+              A responsive single-page template (modular, highly modifiable)
+              designed by <a href="">CODE SPACE</a> and released for free under
+              the <a href="">Creative Commons.</a>
+            </p>
+          </div>
+          <div>
+            <p class="secondp">
+              This is a <strong>Banner</strong> component, and is usually used
+              as an intro or opening statement. You can customize its appearance
+              with a number of modifiers, as well as assign it an optional
+              <span class="backgroundword">onload</span> or
+              <span class="backgroundword">onscroll</span> transition modifier
+              (<a href="">details</a>).
+            </p>
+          </div>
+          <div>
+            <button>GET STARTED</button>
+          </div>
+        </div>
+        <div class="img-banner"><img src="/team-repo/images/banner.jpg" /></div>
+     </div>
 
-    <!-- Buttons -->
+      <!------------ SPOTLIGHT ------------>
+      <div class="spotlight">
+        <div class="card c1"></div>
+        <div class="text t1">
+          <h2>Spotlight</h2>
+          <p>
+            This is <strong>Spotlight</strong> element, and it's generally used
+            . as the name suggests - to highlight a particular feature, subject,
+            or pretty much anything. You can customise its appearance with a
+            choice of modifiers, as well as assign it an optional
+            <span class="code">onload</span> or
+            <span class="code">onscroll</span> transition modifier (<a href=""
+              >details</a
+            >).
+          </p>
+          <button>LEARN MORE</button>
+        </div>
+        <div class="card c2"></div>
+        <div class="text t2">
+          <h2>Spotlight</h2>
+          <p>
+            This is <strong>Spotlight</strong> element, and it's generally used
+            . as the name suggests - to highlight a particular feature, subject,
+            or pretty much anything. You can customise its appearance with a
+            choice of modifiers, as well as assign it an optional
+            <span class="code">onload</span> or
+            <span class="code">onscroll</span> transition modifier (<a href=""
+              >details</a
+            >).
+          </p>
+          <button>LEARN MORE</button>
+        </div>
+        <div class="card c3"></div>
+        <div class="text t3">
+          <h2>Spotlight</h2>
+          <p>
+            This is <strong>Spotlight</strong> element, and it's generally used
+            . as the name suggests - to highlight a particular feature, subject,
+            or pretty much anything. You can customise its appearance with a
+            choice of modifiers, as well as assign it an optional
+            <span class="code">onload</span> or
+            <span class="code">onscroll</span> transition modifier (<a href=""
+              >details</a
+            >).
+          </p>
+          <button>LEARN MORE</button>
+        </div>
+      </div>
+
+      <!------------ GALLERY ------------>
+      <div class="gallery">
+        <div class="text">
+          <h2>Gallery</h2>
+          <p>
+            This is a <strong>Gallery</strong> component. It can behave as a
+            <span class="code">lightbox</span> (when given the lightbox class),
+            and you can customise its appearance with a number of modifiers, as
+            well as assign it an optional <span class="code">onload</span> or
+            <span class="code">onscroll</span> transition modifier (<a href=""
+              >details</a
+            >).
+          </p>
+        </div>
+        <div class="pics">
+          <img src="images/gallery/fulls/01.jpg" alt="" />
+          <img src="images/gallery/fulls/02.jpg" alt="" />
+          <img src="images/gallery/fulls/03.jpg" alt="" />
+          <img src="images/gallery/fulls/04.jpg" alt="" />
+        </div>
+      </div>
+
+      <!------------ ITEMS ------------>
+      <div class="items"></div>
+
+      <!------------ ADDITIONAL ELEMENTS ------------>
+      <div class="add">
+
+        <!------------ Additional Elements Title ------------>
+        <div class="additionalElements">
+          <h2>Additional Elements</h2>
+          <p class="finallyParagraph">
+            Finally, here are some additional items that you <em>may</em> find
+            useful (and yes, they go well with any look).
+          </p>
+        </div>
+
+        <!------------ Text ------------>
+        <div class="text">
+          <div class="leftText"><h3>Text</h3></div>
+          <div class="rightParagraph">
+            <p class="spansParagraph">
+              This is <span class="firstSpan">bold</span> and this is
+              <strong>strong</strong>. This is
+              <span class="italic">italic</span> and this is
+              <em>emphasized.</em> This is <sup>superscript</sup> text and this
+              is <sub>subscript</sub> text. This is
+              <span class="underline">underline</span> and this is code:
+              <code>for (;;) { ... }</code> . Finally, this is a
+              <a href="">link</a>.
+            </p>
+          </div>
+        </div>
+
+        <!------------ Headings ------------>
+        <div class="headings">
+          <div class="leftHeadings"><h3>Headings</h3></div>
+          <div class="rightHeadings">
+            <div>
+              <h1 class="h1">Heading Level 1</h1>
+              <h2 class="h2">Heading Level 2</h2>
+              <h3 class="h3">Heading Level 3</h3>
+              <h4 class="h4">Heading Level 4</h4>
+              <h5 class="h5">Heading Level 5</h5>
+              <h6 class="h6">Heading Level 6</h6>
+            </div>
+            <div class="bottom">
+              <h1>Heading with a Subtitle</h1>
+              <h3 class="italic">
+                Lorem ipsum dolor sit amet nullam id egestas urna aliquam
+              </h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+                praesentium quo aliquid similique magnam unde dolorem in.
+                Cupiditate vero aliquid facilis unde laboriosam sed magnam
+                temporibus perspiciatis velit doloremque? Nostrum ducimus quo.
+              </p>
+            </div>
+            <div class="bottom">
+              <h2>Heading with a Subtitle</h2>
+              <h3 class="italic">
+                Lorem ipsum dolor sit amet nullam id egestas urna aliquam
+              </h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+                praesentium quo aliquid similique magnam unde dolorem in.
+                Cupiditate vero aliquid facilis unde laboriosam sed magnam
+                temporibus perspiciatis velit doloremque? Nostrum ducimus quo.
+              </p>
+            </div>
+            <div class="bottom">
+              <h3>Heading with a Subtitle</h3>
+              <h4>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+                praesentium quo aliquid similique magnam unde dolorem in.
+                Cupiditate vero aliquid facilis unde laboriosam sed magnam
+                temporibus perspiciatis velit doloremque? Nostrum ducimus quo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!------------ Ordered list ------------>
+        <div class="listUn">
+          <div class="Unordered"><h3>Unordered List</h3></div>
+          <div class="partRight-Unordered">
+            <!--engloga div listUnordered y div Alternate-->
+            <div class="listUnordered">
+              <h4>Default</h4>
+              <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <div class="Alternate">
+              <h4>Alternate</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <p>Lorem ipsum dolor sit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div>
+
+        <!------------ Unordered list ------------>
+        <div class="listOr">
+          <div class="Ordered"><h3>Ordered List</h3></div>
+          <div class="listOrdered">
+            <ol>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ol>
+          </div>
+        </div>
+
+        <!------------ Definition List ------------>
+        <div class="definition">
+          <div class="definitionList"><h3>Definition List</h3></div>
+          <div class="rightDefinition">
+            <dl>
+              <dt>Interdum adipisicing odio</dt>
+              <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus voluptas praesentium esse odio nisi eligendi officiis, molestiae adipisci quam ratione expedita a earum deserunt eos veniam perferendis soluta minima quasi consequuntur. Eveniet ipsum ad vitae.</dd>
+              <dt>Interdum adipisicing odio</dt>
+              <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus voluptas praesentium esse odio nisi eligendi officiis, molestiae adipisci quam ratione expedita a earum deserunt eos veniam perferendis soluta minima quasi consequuntur. Eveniet ipsum ad vitae.</dd>
+              <dt>Interdum adipisicing odio</dt>
+              <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus voluptas praesentium esse odio nisi eligendi officiis, molestiae adipisci quam ratione expedita a earum deserunt eos veniam perferendis soluta minima quasi consequuntur. Eveniet ipsum ad vitae.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <!------------ Blockquote ------------>
+        <div class="blockquote">
+          <div class="leftBl">
+            <h3>Blockquote</h3>
+          </div>
+          <div class="rightBl">
+            <blockquote cite="https://es.lipsum.com/feed/html">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nibh ex, gravida vitae vestibulum eu, vestibulum id nisl. Sed suscipit risus felis, quis volutpat mauris lacinia ac. Duis vitae lacus in sem volutpat consectetur. Ut et diam luctus, venenatis mi.
+            </blockquote>
+          </div>
+        </div>
+        
+          <!---------- Buttons ---------->
     <div class="buttons">
       <div class="headertext-buttons-span">
         <span>Buttons</span>
@@ -72,7 +309,7 @@
       </div>
     </div>
 
-    <!-- Actions -->
+    <!---------- Actions ---------->
     <div class="actions">
       <div class="headertext-actions">
         <span>Actions</span>
@@ -100,7 +337,7 @@
         </div>
       </div>
     </div>
-    <!-- Images -->
+    <!---------- Images ---------->
     <div class="images">
       <div class="headertext-images-span">
         <span>Images</span>
@@ -152,7 +389,7 @@
         </span>
       </div>
     </div>
-    <!-- Box -->
+    <!---------- Box ---------->
 
     <div class="box">
       <div class="headertext-box-span">
@@ -172,7 +409,7 @@
       </div>
     </div>
 
-    <!-- Footer -->
+    <!---------- FOOTER ---------->
     <footer>
       <div class="iconos">
         <i class="fa-brands fa-twitter"></i>
@@ -184,9 +421,11 @@
       <div class="made">
         <span
           >Made with <i class="fa-solid fa-heart" style="color: red"></i> by
-          <a href="">CODE SPACE</a> Team.</span
-        >
+          <a href="">CODE SPACE</a> Team.</span>
       </div>
     </footer>
+    </div> 
   </body>
+  <script src="https://kit.fontawesome.com/80d98a0268.js" crossorigin="anonymous"></script> <!-- Cayetano -->
+  <script src="https://kit.fontawesome.com/a38ca133cb.js" crossorigin="anonymous"></script> <!-- Estefania -->
 </html>
