@@ -33,6 +33,12 @@ button:active {
   cursor: pointer;
   transform: scale(0.95);
 }
+div.buttons-right button {
+  background-color: white;
+  border: 0.01rem solid var(--lines);
+  border-radius: 2rem;
+  /* padding: 1.2em 2em; */
+}
 
 /*---------HEADER---------*/
 div.header {
@@ -83,7 +89,7 @@ div.header div.codeteam p a {
   font-weight: 200;
 }
 div.header div.codeteam p a:hover {
-  color: #47d3e5;
+  color: var(--hover);
 }
 div.header div.codeteam div p.secondp {
   font-size: 1.9em;
@@ -94,17 +100,15 @@ div.header div.codeteam div p.secondp {
   letter-spacing: -0.8px;
 }
 div.header div.codeteam p strong {
-  color: black;
   font-weight: 400;
 }
 div.header div.codeteam p.secondp .backgroundword {
-  background-color: #f2f2f2;
+  background-color: var(--highligh);
   padding: 0.6rem;
   border-radius: 7px;
   font-family: var(--code);
   font-size: 1.1em;
   letter-spacing: -0.8px;
-  color: black;
   font-weight: 100;
 }
 div.header div.codeteam p a.details {
@@ -122,10 +126,11 @@ div.header div.img-banner img {
   justify-content: right;
 }
 div.header div.codeteam div button {
+  /* SUSTITUIR */
   font-size: large;
   padding: 1.2em 3.5em;
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--lines);
   border-radius: 50px;
   margin-left: 3.5em;
   margin-top: 3em;
@@ -217,7 +222,6 @@ div.spotlight p strong {
 div.spotlight span.code {
   font-family: var(--code);
   background-color: var(--highligh);
-  color: black;
   font-weight: lighter;
   padding: 0.2em 0.4em;
   border-radius: 0.3em;
@@ -269,8 +273,6 @@ div.gallery p strong {
 div.gallery span.code {
   font-family: var(--code);
   background-color: var(--highligh);
-  color: black;
-  font-weight: lighter;
   padding: 0.2em 0.4em;
   border-radius: 0.3em;
   font-size: 1.05em;
@@ -302,7 +304,6 @@ div.add div.additionalElements {
 div.add div.additionalElements h2 {
   font-size: 3.8rem;
   font-weight: 200;
-  color: #0e0e0e;
   margin-top: 2.5em;
   margin-bottom: 1em;
   letter-spacing: -0.2rem;
@@ -330,7 +331,6 @@ div.add div.text div.leftText {
 div.add div.text div.leftText h3 {
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 4.5em;
   margin-left: 0em;
@@ -358,19 +358,18 @@ div.add div.text div.rightParagraph .underline {
   text-decoration: underline;
 }
 div.add div.text div.rightParagraph p.spansParagraph code {
-  background-color: #f2f2f2;
+  background-color: var(--highligh);
   padding: 0.5em;
   border-radius: 8px;
   font-family: var(--code);
   font-size: 1em;
   letter-spacing: -0.8px;
-  color: black;
 }
 div.add div.text div.rightParagraph p.spansParagraph a {
   color: black;
 }
 div.add div.text div.rightParagraph p.spansParagraph a:hover {
-  color: #47d3e5;
+  color: var(--hover);
 }
 
 /* -----------------Add. HEADINGS------------------ */
@@ -388,7 +387,6 @@ div.add div.headings div.leftHeadings {
 div.add div.headings div.leftHeadings h3 {
   font-size: 2.8em;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-left: 0em;
   margin-top: 2em;
@@ -466,7 +464,6 @@ div.add div.listUn div.Unordered {
 div.add div.listUn div.Unordered h3 {
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 1em;
 }
@@ -480,7 +477,6 @@ div.listUn div.partRight-Unordered div.listUnordered h4,
 div.listUn div.partRight-Unordered div.Alternate h4 {
   font-size: 2rem;
   font-weight: 300;
-  color: #0e0e0e;
   letter-spacing: -0.1em;
 }
 div.listUn div.partRight-Unordered div.listUnordered {
@@ -488,7 +484,6 @@ div.listUn div.partRight-Unordered div.listUnordered {
   padding-top: 3em;
 }
 div.listUnordered ul li {
-  color: rgb(35, 33, 33);
   font-size: 1.7rem;
   padding: 0.5em;
   margin-left: 2em;
@@ -499,7 +494,6 @@ div.partRight-Unordered div.listUnordered ul {
   margin-bottom: 4em;
 }
 div.add div.listUn div.partRight-Unordered div.Alternate p + p {
-  color: black;
   font-size: 1.7rem;
   margin-left: -0.5em;
   padding-top: 1em;
@@ -509,7 +503,6 @@ div.add div.listUn div.partRight-Unordered div.Alternate p + p {
   line-height: 2em;
 }
 div.add div.listUn div.partRight-Unordered div.Alternate h4 + p {
-  color: black;
   font-size: 1.7rem;
   margin-left: -0.5em;
   padding-top: 1em;
@@ -533,7 +526,6 @@ div.add div.listOr div.Ordered {
 div.Ordered h3 {
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 1em;
 }
@@ -541,7 +533,6 @@ div.add div.listOr div.listOrdered ol {
   margin-left: 1em;
 }
 div.add div.listOr div.listOrdered ol li {
-  color: black;
   font-size: 1.7rem;
   padding: 0.5em;
   font-weight: 300;
@@ -566,7 +557,6 @@ div.add div.definition div.definitionList {
 div.add div.definition div.definitionList h3 {
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 2.5em;
   margin-left: 0em;
@@ -604,7 +594,6 @@ div.add div.blockquote div.leftBl {
 div.add div.blockquote div.leftBl h3 {
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 2.5em;
   margin-left: 0em;
@@ -642,25 +631,22 @@ div.headertext-buttons-span {
   width: 30%;
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   /* margin-top: 1em; */
 }
 div.buttons-right button {
   background-color: white;
-  border: 0.01rem solid grey;
+  border: 0.01rem solid var(--lines);
   border-radius: 2rem;
+  /* padding: 1.2em 2em; */
 }
 div.buttons-right button:hover {
   border-color: var(--hover);
   color: var(--hover);
 }
 div.buttons-right button.black:hover {
-  background-color: #47d1d2;
+  background-color: var(--hover);
   color: white;
-}
-div.buttons-right div.button1 {
-  /* margin-top: 3.5em; */
 }
 div.buttons-right div.button1 button {
   margin: 0em 1.5em 2em 0;
@@ -684,10 +670,10 @@ div.buttons-right div.button2 {
 div.buttons-right div.button2 button:last-of-type {
   padding: 1em 2em;
   width: 7em;
-  color: #47d3e5;
+  color: var(--hover);
   font-size: x-small;
   border-color: var(--hover);
-  border-top: grey;
+  border-top: var(--lines);
 }
 div.buttons-right div.button2 .button-small:hover {
   color: white;
@@ -714,7 +700,7 @@ div.buttons-right div.button6 button:first-of-type {
   padding: 1.3em 2em;
   width: 10em;
   color: white;
-  background-color: rgb(161, 161, 161);
+  background-color: var(--primary);
   margin-right: 2em;
 }
 div.buttons-right div.button5 button i {
@@ -722,11 +708,12 @@ div.buttons-right div.button5 button i {
 }
 div.buttons-right div.button6 button {
   margin: 1.7em 2em 0 0;
+  border: none;
 }
 div.buttons-right div.button6 button:last-of-type {
   padding: 1.3em 2.5em;
   border: 1px solid;
-  color: grey;
+  color: var(--lines);
 }
 div.buttons-right div.button6 button:first-of-type:hover {
   background-color: var(--hover);
@@ -735,10 +722,10 @@ div.buttons-right div.button6 button:first-of-type:hover {
 div.buttons-right div.button6 button:last-of-type:hover {
   border-color: var(--hover);
   background-color: transparent;
-  color: #47d1d2;
+  color: var(--hover);
 }
 div.buttons-right .black {
-  background-color: #050505;
+  background-color: black;
   color: white;
   font-size: small;
 }
@@ -759,7 +746,6 @@ div.headertext-actions {
   width: 30%;
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 1em;
 }
@@ -775,7 +761,7 @@ div.action1 button {
   width: 9em;
 }
 div.actions-right button.black-action:hover {
-  background-color: #47d1d2;
+  background-color: var(--hover);
   border-color: transparent;
 }
 div.actions-right button.grey-action:hover {
@@ -838,7 +824,6 @@ div.images div.headertext-images-span {
   width: 30%;
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 1em;
 }
@@ -876,7 +861,6 @@ div.headertext-box-span {
   width: 30%;
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 1em;
 }
@@ -914,7 +898,7 @@ footer div.made span a {
 }
 footer div.made span a:hover {
   text-decoration: none;
-  color: #47d1d2;
+  color: var(--hover);
 }
 footer div.iconos {
   display: flex;
