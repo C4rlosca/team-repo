@@ -814,6 +814,245 @@ div.actions .grey-action {
   border: 0.1em solid grey;
 }
 
+div.add .general {
+  border-bottom: 0.1em solid var(--lines);
+  /* font-size: 0.78em; */
+  font-family: "Inter", sans-serif;
+  /* grid-template-columns: 1fr 2.5fr; */
+  font-size: 2em;
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+}
+div.add div.general div.left {
+  padding-top: 3em;
+  width: 30%;
+}
+div.add div.general div.left h3 {
+  font-weight: 300;
+  font-size: 2.8rem;
+  letter-spacing: -0.2rem;
+  color: #2e2e2e;
+  /* padding-top: 3em;
+  margin-left: 6em;
+  padding-top: 1em; */
+}
+
+/* ------RIGHT----- */
+div.add div.general div.right {
+  width: 70%;
+  padding-top: 3em;
+}
+
+/* ------Name & Email----- */
+div.add div.general div.right form div.register {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  /* min-width: 100%; */
+  justify-content: space-between;
+}
+
+div.add div.general div.right form div.unoinput,
+div.dosinput {
+  min-width: 48%;
+}
+div.add div.general div.right form div.unoinput .formulario-label1,
+div.add div.general div.right form div.dosinput .formulario-label2 {
+  display: block;
+}
+div.add div.general div.right form div.unoinput .primer-input,
+div.add div.general div.right form div.dosinput .segundo-input {
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 2px solid var(--lines);
+  margin: 1em 0;
+  width: 100%;
+}
+
+/* ------Department----- */
+div.add div.general div.right form div.detachable {
+  margin-top: .7em;
+}
+div.add div.general div.right form div.detachable label[for="department"] {
+  display: block;
+}
+div.add div.general div.right form div.detachable .select-category {
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 2px solid var(--lines);
+  margin: 1em 0;
+  width: 100%;
+  background-color: white;
+}
+
+/* ------Priority----- */
+div.add div.general div.right form div.priority {
+  display: flex;
+  justify-content: flex-start;
+  /* padding-top: 1em; */
+  /* padding-bottom: 4em; */
+  margin: 2em 0;
+}
+
+/* ------Radio----- */
+div.add div.general div.right form div.priority div.radio-container {
+  width: 33.333%;
+  /* align-items: flex-end;
+  align-content: center; */
+}
+div.add
+  div.general
+  div.right
+  form
+  div.priority
+  div.radio-container
+  .priority-radio {
+  transform: scale(3);
+  border-radius: 50%;
+  margin-left: 1em;
+}
+
+div.add
+  div.general
+  div.right
+  form
+  div.priority
+  div.radio-container
+  .priority-label {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+/* ------TextArea----- */
+div.add div.general div.right form div.texarea div.message {
+  display: block;
+  /* padding-right: 24em;*/
+  /* margin-top: -2.5em; */
+}
+
+div.add div.general div.right form div.texarea div.textarea textarea {
+  margin-top: 1em;
+  /*  max-width: 900px;*/
+  width: 100%;
+  height: 18em;
+  padding-right: 10em;
+  /*margin-left: 2em;*/
+  border-radius: 8px;
+  border: 2px solid var(--lines);
+}
+
+/* ------Checkbox----- */
+div.add div.general div.right form div.selection {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1em 0;
+}
+div.add div.general div.right form div.selection div {
+  width: 50%;
+  align-content: center;
+}
+div.add div.general div.right form div.selection div [type="checkbox"] { 
+vertical-align: middle;
+}
+div.add div.general div.right form div.selection div label {
+  margin-left: .5em;
+}
+
+div.add div.general div.right form div.selection div input.myCheck {
+  border-radius: 10px;
+  height: 3em;
+  width: 3em;
+  border: 2px solid var(--lines);
+}
+/* ------Button----- */
+/* ----APLICAR ESTILO DE BOTONES DE MAIN---- */
+
+
+/* ------TABLAS------ */
+div.add div.tablas {
+  /* padding-top: 20em;
+  text-align: center; */
+  /*display: flex;*/
+  /*margin: auto;*/
+  border-bottom: 0.1em solid var(--lines);
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+}
+div.add div.tablas div.izquierda {
+  padding-top: 12em;
+  width: 30%;
+}
+
+div.add div.tablas div.izquierda h3 {
+  margin-top: 4.5em;
+  margin-left: 0em;
+}
+div.add div.tablas div.table1 {
+  /* padding: 9em;
+  text-align: center;
+ width: 80%; */
+  width: 70%;
+  padding-top: 23em;
+}
+
+div.add div.tablas div.table1 h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #0e0e0e;
+  letter-spacing: -0.1em;
+  padding-right: 9em;
+}
+
+div.add div.tablas div.table1 table {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 1em;
+  line-height: 3em;
+  border-spacing: 0px;
+}
+div.add div.tablas div.table1 table tr td {
+  border-top: 0.1em solid var(--lines);
+}
+div.add div.tablas div.table1 table thead tr.titulos th:nth-child(2) {
+  text-align: left;
+  padding-left: 1.4em;
+}
+div.add div.tablas div.table1 table tbody tr td {
+  padding-left: 1.5em;
+}
+div.add div.tablas div.table1 table tbody tr.color {
+  background-color: var(--highligh);
+}
+div.add div.tablas div.table2 {
+  padding-top: 10em;
+  margin-bottom: 3em;
+}
+
+div.add div.tablas div.table2 table {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 1em;
+  line-height: 3em;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+div.add div.tablas div.table2 table td {
+  border-left: 2px solid var(--lines); /* Agregar borde izquierdo a todas las celdas */
+  border-right: 2px solid var(--lines); /* Agregar borde derecho a todas las celdas */
+  padding-left: 1.5em;
+}
+
+div.add div.tablas div.table2 tr:last-child td {
+  border: none;
+  border-top: 2px solid var(--lines); /* Agregar borde a la penúltima fila */
+  border-right: none;
+  border-left: none;
+}
+
 /* ------------Images------------ */
 div.images {
   display: flex;
