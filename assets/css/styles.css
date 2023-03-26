@@ -43,10 +43,12 @@ div.buttons-right {
   margin-bottom: 5em;
 }
 div.headertext-buttons-span {
-  padding-top: 2em;
-  font-size: 2rem;
-  font-weight: 300;
   width: 30%;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #2e2e2e;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
 }
 div.buttons-right button {
   background-color: white;
@@ -159,10 +161,6 @@ div.buttons-right .black {
   color: white;
   font-size: small;
 }
-div button:active {
-  cursor: pointer;
-  transform: scale(0.95);
-}
 
 /* Actions */
 div.actions {
@@ -178,11 +176,12 @@ div.actions-right {
   padding: 4em 0 1em 0;
 }
 div.headertext-actions {
-  padding: 0em 22em 0 0em;
-  font-size: 2rem;
-  font-weight: 300;
-  padding: 2em 0 0 0;
   width: 30%;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #2e2e2e;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
 }
 
 div.actions-right span {
@@ -264,12 +263,12 @@ div.images-right .text-left-right {
 }
 
 div.headertext-images-span {
-  padding-bottom: 68em;
   width: 30%;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 300;
-  max-width: 1400px;
-  margin: auto;
+  color: #2e2e2e;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
 }
 div.images-right .banner {
   width: 100%;
@@ -304,15 +303,15 @@ div.box {
   max-width: 1400px;
   padding: 1em 0 0 0;
   margin: auto;
-  border-bottom: 1px solid rgb(82, 81, 81);
 }
 
 div.headertext-box-span {
-  padding: 0em 10em 10em 0em;
-  font-size: x-large;
-  font-weight: 300;
-  margin: auto;
   width: 30%;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #2e2e2e;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
 }
 
 div.box .box-right {
@@ -334,10 +333,15 @@ footer {
   width: 100%;
   background-color: #544454;
   padding: 5em 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 footer div.made {
+  display: inline-block;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 footer div.made span a {
@@ -357,18 +361,24 @@ footer div.iconos {
 }
 footer div.iconos i {
   position: relative;
-  border: 10px solid var(--footer-icon);
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  padding: 1.5em 1em;
+  width: 3em;
+  height: 3em;
   background-color: var(--footer-icon);
-  border-radius: 90rem;
-  min-width: 30px;
-  min-height: 30px;
-  margin: 0 10px;
+  border-radius: 50%;
+}
+
+footer div.iconos .fa-facebook-f {
+  padding-left: 1.15em;
 }
 
 footer div.iconos i:hover {
   cursor: pointer;
-  border: 1px transparent #47d1d2;
-
-  outline: 1px solid var(--hover);
+  color: var(--hover);
+  background-color: white;
+  outline: 2px solid var(--hover);
   border-radius: 50%;
 }
