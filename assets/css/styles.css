@@ -637,8 +637,8 @@ div.headertext-buttons-span {
 div.buttons-right button {
   background-color: white;
   border: 0.01rem solid var(--lines);
-  border-radius: 2rem;
-  /* padding: 1.2em 2em; */
+  border-radius: 4rem;
+  /* padding: 1.2em 2em; - */
 }
 div.buttons-right button:hover {
   border-color: var(--hover);
@@ -800,11 +800,10 @@ div.actions .grey-action {
   border: 0.1em solid grey;
 }
 
+/* ------------Form------------ */
 div.add .general {
   border-bottom: 0.1em solid var(--lines);
-  /* font-size: 0.78em; */
   font-family: "Inter", sans-serif;
-  /* grid-template-columns: 1fr 2.5fr; */
   font-size: 2em;
   display: flex;
   margin: auto;
@@ -819,9 +818,6 @@ div.add div.general div.left h3 {
   font-size: 2.8rem;
   letter-spacing: -0.2rem;
   color: #2e2e2e;
-  /* padding-top: 3em;
-  margin-left: 6em;
-  padding-top: 1em; */
 }
 
 /* ------RIGHT----- */
@@ -845,15 +841,18 @@ div.dosinput {
 div.add div.general div.right form div.unoinput .formulario-label1,
 div.add div.general div.right form div.dosinput .formulario-label2 {
   display: block;
+  font-size: large;
 }
 div.add div.general div.right form div.unoinput .primer-input,
 div.add div.general div.right form div.dosinput .segundo-input {
-  font-size: 1em;
-  padding: 0.5em;
+  padding: 0.65em;
   border-radius: 8px;
-  border: 2px solid var(--lines);
+  border: 1px solid var(--lines);
   margin: 1em 0;
   width: 100%;
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
 }
 
 /* ------Department----- */
@@ -862,15 +861,18 @@ div.add div.general div.right form div.detachable {
 }
 div.add div.general div.right form div.detachable label[for="department"] {
   display: block;
+  font-size: large;
 }
 div.add div.general div.right form div.detachable .select-category {
-  font-size: 1em;
-  padding: 0.5em;
+  padding: 0.65em;
   border-radius: 8px;
-  border: 2px solid var(--lines);
+  border: 1px solid var(--lines);
   margin: 1em 0;
   width: 100%;
   background-color: white;
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
 }
 
 /* ------Priority----- */
@@ -881,12 +883,8 @@ div.add div.general div.right form div.priority {
   /* padding-bottom: 4em; */
   margin: 2em 0;
 }
-
-/* ------Radio----- */
 div.add div.general div.right form div.priority div.radio-container {
   width: 33.333%;
-  /* align-items: flex-end;
-  align-content: center; */
 }
 div.add
   div.general
@@ -909,31 +907,33 @@ div.add
   .priority-label {
   display: inline-block;
   margin-left: 1em;
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
 }
 
 /* ------TextArea----- */
 div.add div.general div.right form div.texarea div.message {
   display: block;
+  font-size: large;
   /* padding-right: 24em;*/
   /* margin-top: -2.5em; */
 }
 
 div.add div.general div.right form div.texarea div.textarea textarea {
-  margin-top: 1em;
-  /*  max-width: 900px;*/
+  margin-top: 2em;
   width: 100%;
   height: 18em;
   padding-right: 10em;
-  /*margin-left: 2em;*/
   border-radius: 8px;
-  border: 2px solid var(--lines);
+  border: 1px solid var(--lines);
 }
 
 /* ------Checkbox----- */
 div.add div.general div.right form div.selection {
   display: flex;
   justify-content: flex-start;
-  margin: 1em 0;
+  margin: 1.2em 0 1.8em;
 }
 div.add div.general div.right form div.selection div {
   width: 50%;
@@ -944,17 +944,30 @@ vertical-align: middle;
 }
 div.add div.general div.right form div.selection div label {
   margin-left: .5em;
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
 }
 
 div.add div.general div.right form div.selection div input.myCheck {
   border-radius: 10px;
   height: 3em;
   width: 3em;
-  border: 2px solid var(--lines);
+  border: 1px solid var(--lines);
 }
 /* ------Button----- */
-/* ----APLICAR ESTILO DE BOTONES DE MAIN---- */
-
+div.add div.general div.right form div.button button {
+  background-color: white;
+  border: 0.01rem solid var(--lines);
+  border-radius: 300px;
+  margin: 0em 1.5em 5em 0;
+  padding: 1.5em 2.2em;
+  font-size: .6em;
+}
+div.add div.general div.right form div.button button:hover {
+  border-color: var(--hover);
+  color: var(--hover);
+}
 
 /* ------TABLAS------ */
 div.add div.tablas {
@@ -983,8 +996,9 @@ div.add div.tablas div.izquierda h3 {
 div.add div.tablas div.tableRight div.table1 h4,
 div.add div.tablas div.tableRight div.table2 h4 {
   font-size: 2rem;
-  font-weight: 300;
   letter-spacing: -0.1em;
+  font-family: var(--default);
+  font-weight: 200;
 }
 div.add div.tablas div.tableRight {
   width: 70%;
@@ -1003,10 +1017,15 @@ div.add div.tablas div.tableRight div.table1 table {
 }
 div.add div.tablas div.tableRight div.table1 table tr td {
   border-top: 0.1em solid var(--lines);
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
 }
 div.add div.tablas div.tableRight div.table1 table thead tr th{
 padding: 1em;
 text-align: left;
+font-size: large;
+font-family: var(--default);
 font-weight: 500;
 }
 
@@ -1027,12 +1046,14 @@ div.add div.tablas div.tableRight div.table1 table tbody tr.color {
 div.add div.tablas div.tableRight div.table2 thead tr th{
 padding: 1em;
 text-align: left;
+font-size: large;
+font-family: var(--default);
 font-weight: 500;
 }
 
 div.add div.tablas div.tableRight div.table2 {
   /* padding-top: 10em; */
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 }
 div.add div.tablas div.tableRight div.table2 table {
   width: 100%;
@@ -1048,6 +1069,9 @@ div.add div.tablas div.tableRight div.table2 table td {
   /* padding-left: 1.5em; */
   padding: 1em 1em;
   border-top: 0.1em solid var(--lines);/*Agregar lineas horizontales a la tabla*/
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
 }
 div.add div.tablas div.tableRight div.table2 tr:last-child td {
   border: none;
