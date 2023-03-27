@@ -979,62 +979,75 @@ div.add div.tablas div.izquierda h3 {
   font-weight: 300;
   letter-spacing: -0.2rem;
 }
-div.add div.tablas div.tableRight div.tableRight {
-  width: 70%;
-}
+/* ------DERECHA------ */
 div.add div.tablas div.tableRight div.table1 h4,
 div.add div.tablas div.tableRight div.table2 h4 {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: -0.1em;
 }
-
-/* -----Tabla1----- */
-div.add div.tablas div.tableRight div.table1 {
-  /* padding: 9em;
-  text-align: center;
- width: 80%; */
-  /* padding-top: 23em; */
+div.add div.tablas div.tableRight {
+  width: 70%;
 }
+/* -----Tabla1----- */
 
-div.add div.tablas div.tableRight div.table1 table {
+div.add div.tablas div.tableRight div.table1 table {                                                 
   width: 100%;
   font-size: 2rem;
   margin-top: 1em;
-  line-height: 3em;
-  border-spacing: 0px;
+  border-collapse: collapse;
+  /* line-height: 3em; */
+  /*border-spacing: 0px;*/
+
+
 }
 div.add div.tablas div.tableRight div.table1 table tr td {
   border-top: 0.1em solid var(--lines);
 }
-div.add div.tablas div.tableRight div.table1 table thead tr.titulos th:nth-child(2) {
+div.add div.tablas div.tableRight div.table1 table thead tr th{
+padding: 1em;
+text-align: left;
+font-weight: 500;
+}
+
+/*div.add div.tablas div.tableRight div.table1 table thead tr.titulos th:nth-child(2) {
   text-align: left;
   padding-left: 1.4em;
-}
+  font-weight: 500;
+} */
 div.add div.tablas div.tableRight div.table1 table tbody tr td {
-  padding-left: 1.5em;
+  /*padding-left: 1.5em;*/
+  padding: 1em 1em;
 }
 div.add div.tablas div.tableRight div.table1 table tbody tr.color {
   background-color: var(--highligh);
 }
 
 /* -----Tabla2----- */
+div.add div.tablas div.tableRight div.table2 thead tr th{
+padding: 1em;
+text-align: left;
+font-weight: 500;
+}
+
 div.add div.tablas div.tableRight div.table2 {
-  padding-top: 10em;
+  /* padding-top: 10em; */
   margin-bottom: 3em;
 }
 div.add div.tablas div.tableRight div.table2 table {
   width: 100%;
   font-size: 2rem;
   margin-top: 1em;
-  line-height: 3em;
-  border-spacing: 0px;
-  border-collapse: collapse;
+  /* line-height: 3em; */
+ border-spacing: 0px;
+ border-collapse: collapse;
 }
 div.add div.tablas div.tableRight div.table2 table td {
   border-left: 2px solid var(--lines); /* Agregar borde izquierdo a todas las celdas */
   border-right: 2px solid var(--lines); /* Agregar borde derecho a todas las celdas */
-  padding-left: 1.5em;
+  /* padding-left: 1.5em; */
+  padding: 1em 1em;
+  border-top: 0.1em solid var(--lines);/*Agregar lineas horizontales a la tabla*/
 }
 div.add div.tablas div.tableRight div.table2 tr:last-child td {
   border: none;
@@ -1042,7 +1055,9 @@ div.add div.tablas div.tableRight div.table2 tr:last-child td {
   border-right: none;
   border-left: none;
 }
-
+div.add div.tablas div.tableRight div.table2 table tbody tr.color {
+  background-color: var(--highligh);
+}
 /* ------------Images------------ */
 div.images {
   display: flex;
