@@ -283,7 +283,7 @@ div.gallery div.pics img {
   object-position: center;
   object-fit: cover;
 }
-
+div.gallery div.pics img
 /* -----------Addittional Elements-----------  */
 div.add div.additionalElements {
   border-top: 0.1em solid #cccccc;
@@ -732,18 +732,17 @@ div.gallery div.pics img {
   object-position: center;
   object-fit: cover;
 }
-
 /* ------------Definition List---------- */
-div.add div.definition {
+ div.definition {
   display: flex;
   margin: auto;
   max-width: 1400px;
   border-top: 0.1em solid #cccccc;
 }
-div.add div.definition div.definitionList {
+ div.definition div.definitionList {
   width: 30%;
 }
-div.add div.definition div.definitionList h3 {
+ div.definition div.definitionList h3 {
   font-size: 2.8rem;
   font-weight: 300;
   color: #2e2e2e;
@@ -751,16 +750,16 @@ div.add div.definition div.definitionList h3 {
   margin-top: 2.5em;
   margin-left: 0em;
 }
-div.add div.definition div.rightDefinition {
+ div.definition div.rightDefinition {
   width: 70%;
   padding-top: 3em;
 }
-div.add div.definition div.rightDefinition dt {
+ div.definition div.rightDefinition dt {
   margin-top: 2.8em;
   font-weight: 500;
   font-size: 1.5em;
 }
-div.add div.definition div.rightDefinition dd{
+ div.definition div.rightDefinition dd{
   font-size: 1.7rem;
   font-weight: 300;
   margin-left: 2em;
@@ -768,20 +767,20 @@ div.add div.definition div.rightDefinition dd{
   line-height: 1.5em;
 }
 
-div.add div.definition div.rightDefinition dd:last-child{
+ div.definition div.rightDefinition dd:last-child{
   margin-bottom: 3em;
 }
 /* -----------------Blockquote ---------------*/
-div.add div.blockquote{
+ div.blockquote{
   display: flex;
   margin: auto;
   max-width: 1400px;
   border-top: 0.1em solid var(--lines);
 }
-div.add div.blockquote div.leftBl{
+ div.blockquote div.leftBl{
   width: 30%;
 }
-div.add div.blockquote div.leftBl h3{
+ div.blockquote div.leftBl h3{
   font-size: 2.8rem;
     font-weight: 300;
     color: #2e2e2e;
@@ -789,18 +788,18 @@ div.add div.blockquote div.leftBl h3{
     margin-top: 2.5em;
     margin-left: 0em;
 }
-div.add div.blockquote div.rightBl{
+ div.blockquote div.rightBl{
   width: 70%;
   padding-top: 3em; 
 }
-div.add div.blockquote div.rightBl blockquote {
+ div.blockquote div.rightBl blockquote {
   font-size: 1.7rem;
   font-weight: 300;
   font-style: italic;
   border-left: 0.3em solid var(--lines);
   margin-top: 2.5em;
   margin-bottom: 2.5em;
-  padding-left: 2em;
+  padding-left: 5em;
   padding: 1em;
   line-height: 1.8em;
 }
