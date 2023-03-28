@@ -255,7 +255,7 @@ div.gallery div.text {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 7em;
+  padding: 8em 20em;
 }
 div.gallery h2 {
   font-size: 3.5em;
