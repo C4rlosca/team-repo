@@ -4,6 +4,7 @@
   border: 0;
   box-sizing: border-box;
   outline: 0 none;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -16,7 +17,7 @@
   --secondary: #cccccc;
   --footer-icon: #7aa194;
   --footer-icon-border: #65867b;
-  --footer-bg: #504651;
+  --footer-bg: #534b55;
 
   /* FONTS */
   --default: "Inter", sans-serif;
@@ -27,7 +28,19 @@
   font-size: 0.785rem;
 }
 
-/*---------estilos del header---------*/
+/* ---------GENERAL--------- */
+button:active {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+button.d {
+  background-color: white;
+  border: 0.01rem solid var(--lines);
+  border-radius: 2rem;
+  /* padding: 1.2em 2em; */
+}
+
+/*---------HEADER---------*/
 div.header {
   width: 100%;
   height: 100%;
@@ -50,7 +63,7 @@ div.header div.codeteam h1.team i {
   margin-left: -0.2em;
 }
 h1 #firstword {
-  color: #e03636;
+  color: var(--reddish);
   font-size: 0.8em;
   font-weight: 600;
   letter-spacing: -0.05em;
@@ -76,7 +89,7 @@ div.header div.codeteam p a {
   font-weight: 200;
 }
 div.header div.codeteam p a:hover {
-  color: #47d3e5;
+  color: var(--hover);
 }
 div.header div.codeteam div p.secondp {
   font-size: 1.9em;
@@ -87,17 +100,15 @@ div.header div.codeteam div p.secondp {
   letter-spacing: -0.8px;
 }
 div.header div.codeteam p strong {
-  color: black;
   font-weight: 400;
 }
 div.header div.codeteam p.secondp .backgroundword {
-  background-color: #f2f2f2;
+  background-color: var(--highligh);
   padding: 0.6rem;
   border-radius: 7px;
   font-family: var(--code);
   font-size: 1.1em;
   letter-spacing: -0.8px;
-  color: black;
   font-weight: 100;
 }
 div.header div.codeteam p a.details {
@@ -115,10 +126,11 @@ div.header div.img-banner img {
   justify-content: right;
 }
 div.header div.codeteam div button {
+  /* SUSTITUIR */
   font-size: large;
   padding: 1.2em 3.5em;
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--lines);
   border-radius: 50px;
   margin-left: 3.5em;
   margin-top: 3em;
@@ -210,7 +222,6 @@ div.spotlight p strong {
 div.spotlight span.code {
   font-family: var(--code);
   background-color: var(--highligh);
-  color: black;
   font-weight: lighter;
   padding: 0.2em 0.4em;
   border-radius: 0.3em;
@@ -262,8 +273,6 @@ div.gallery p strong {
 div.gallery span.code {
   font-family: var(--code);
   background-color: var(--highligh);
-  color: black;
-  font-weight: lighter;
   padding: 0.2em 0.4em;
   border-radius: 0.3em;
   font-size: 1.05em;
@@ -283,17 +292,22 @@ div.gallery div.pics img {
   object-position: center;
   object-fit: cover;
 }
+<<<<<<< HEAD
 div.gallery div.pics img
+=======
+div.gallery div.text a:hover {
+  color: var(--hover);
+}
+
+>>>>>>> origin/developed_EstefaniaTamCri
 /* -----------Addittional Elements-----------  */
 div.add div.additionalElements {
   border-top: 0.1em solid #cccccc;
   width: 100%;
 }
 div.add div.additionalElements h2 {
-  /* width: 100%; */
   font-size: 3.8rem;
   font-weight: 200;
-  color: #0e0e0e;
   margin-top: 2.5em;
   margin-bottom: 1em;
   letter-spacing: -0.2rem;
@@ -306,15 +320,13 @@ div.add div.additionalElements p.finallyParagraph {
   margin-left: 0.3em;
   text-align: center;
 }
+
+/* -----------------Text------------------ */
 div.add div.text {
-  /* display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  width: 75%;
-  margin: auto;
-  grid-gap: 0.5em 1em; */
   display: flex;
   margin: auto;
   max-width: 1400px;
+  border-bottom: 0.1em solid var(--lines);
 }
 div.add div.text div.leftText {
   padding-top: 12em;
@@ -323,7 +335,6 @@ div.add div.text div.leftText {
 div.add div.text div.leftText h3 {
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 4.5em;
   margin-left: 0em;
@@ -351,38 +362,28 @@ div.add div.text div.rightParagraph .underline {
   text-decoration: underline;
 }
 div.add div.text div.rightParagraph p.spansParagraph code {
-  background-color: #f2f2f2;
+  background-color: var(--highligh);
   padding: 0.5em;
   border-radius: 8px;
-  /* font-family: var(--code); */
+  font-family: var(--code);
   font-size: 1em;
   letter-spacing: -0.8px;
-  color: black;
 }
 div.add div.text div.rightParagraph p.spansParagraph a {
   color: black;
 }
 div.add div.text div.rightParagraph p.spansParagraph a:hover {
-  color: #47d3e5;
+  color: var(--hover);
 }
 
 /* -----------------Add. HEADINGS------------------ */
 div.add div.headings {
-  /* display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  width: 75%;
-  margin: auto;
-  grid-gap: 0.5em 1em; */
   display: flex;
   margin: auto;
   max-width: 1400px;
-  border-top: 0.1em solid #cccccc;
+  border-bottom: 0.1em solid var(--lines);
 }
 div.add div.headings div.leftHeadings {
-  /* padding-top: 1em;
-  margin: auto;
-  justify-content: left;
-  padding-top: 1em; */
   justify-content: right;
   width: 30%;
   padding-top: 3em;
@@ -390,14 +391,11 @@ div.add div.headings div.leftHeadings {
 div.add div.headings div.leftHeadings h3 {
   font-size: 2.8em;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-left: 0em;
   margin-top: 2em;
 }
 div.add div.headings div.rightHeadings {
-  /* justify-content: right;
-  padding-top: 3em; */
   width: 70%;
   padding-bottom: 3em;
   padding-top: 3em;
@@ -434,7 +432,7 @@ div.add div.headings div.rightHeadings div h6 {
   margin-bottom: 5em;
 }
 div.add div.headings div.rightHeadings div.bottom {
-  border-top: 0.1em solid #cccccc;
+  border-top: 0.1em solid var(--lines);
   margin-bottom: 5em;
 }
 div.add div.headings div.rightHeadings div.bottom h3.italic {
@@ -455,36 +453,21 @@ div.add div.headings div.rightHeadings div p {
   text-align: justify;
 }
 
-/*estilos de las listas desordenadas/ordenadas*/
-
-/* ------Lista desordenada------ */
+/* -----------Unordered list----------- */
 div.listUn {
-  /* display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  width: 75%;
-  margin: auto;
-  grid-gap: 0.5em 1em; */
   display: flex;
   margin: auto;
   max-width: 1400px;
-  border-top: 0.1em solid #cccccc;
+  border-bottom: 0.1em solid var(--lines);
 }
 div.add div.listUn div.Unordered {
   justify-content: right;
   padding-top: 3em;
   width: 30%;
-  /* padding-top: 1em;
-  margin: auto;
-  justify-content: left;
-  padding-top: 1em; */
-  /* width: 40%;
-  height: 100%; */
-  /* padding-bottom: 2em; */
 }
 div.add div.listUn div.Unordered h3 {
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 1em;
 }
@@ -498,7 +481,6 @@ div.listUn div.partRight-Unordered div.listUnordered h4,
 div.listUn div.partRight-Unordered div.Alternate h4 {
   font-size: 2rem;
   font-weight: 300;
-  color: #0e0e0e;
   letter-spacing: -0.1em;
 }
 div.listUn div.partRight-Unordered div.listUnordered {
@@ -506,7 +488,6 @@ div.listUn div.partRight-Unordered div.listUnordered {
   padding-top: 3em;
 }
 div.listUnordered ul li {
-  color: rgb(35, 33, 33);
   font-size: 1.7rem;
   padding: 0.5em;
   margin-left: 2em;
@@ -517,17 +498,15 @@ div.partRight-Unordered div.listUnordered ul {
   margin-bottom: 4em;
 }
 div.add div.listUn div.partRight-Unordered div.Alternate p + p {
-  color: black;
   font-size: 1.7rem;
   margin-left: -0.5em;
   padding-top: 1em;
   padding-bottom: 1em;
   font-weight: 300;
-  border-top: 0.1em solid #cccccc;
+  border-top: 0.1em solid var(--lines);
   line-height: 2em;
 }
 div.add div.listUn div.partRight-Unordered div.Alternate h4 + p {
-  color: black;
   font-size: 1.7rem;
   margin-left: -0.5em;
   padding-top: 1em;
@@ -536,18 +515,12 @@ div.add div.listUn div.partRight-Unordered div.Alternate h4 + p {
   line-height: 2em;
 }
 
-/* ------Lista ordenada------ */
+/* -----------Ordered list----------- */
 div.listOr {
-  /* display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  width: 75%;
-  margin: auto;
-  grid-gap: 0.5em 1em; */
   display: flex;
   margin: auto;
   max-width: 1400px;
-  border-top: 0.1em solid #cccccc;
-  border-bottom: 0.1em solid #cccccc;
+  border-bottom: 0.1em solid var(--lines);
 }
 div.add div.listOr div.Ordered {
   justify-content: right;
@@ -557,7 +530,6 @@ div.add div.listOr div.Ordered {
 div.Ordered h3 {
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 1em;
 }
@@ -565,7 +537,6 @@ div.add div.listOr div.listOrdered ol {
   margin-left: 1em;
 }
 div.add div.listOr div.listOrdered ol li {
-  color: black;
   font-size: 1.7rem;
   padding: 0.5em;
   font-weight: 300;
@@ -577,6 +548,7 @@ div.add div.listOr div.listOrdered {
   padding-bottom: 3em;
 }
 
+<<<<<<< HEAD
 /* ----------SPOTLIGHT---------- */
 div.spotlight {
   max-width: 100vw;
@@ -732,12 +704,14 @@ div.gallery div.pics img {
   object-position: center;
   object-fit: cover;
 }
+=======
+>>>>>>> origin/developed_EstefaniaTamCri
 /* ------------Definition List---------- */
  div.definition {
   display: flex;
   margin: auto;
   max-width: 1400px;
-  border-top: 0.1em solid #cccccc;
+  border-bottom: 0.1em solid var(--lines);
 }
  div.definition div.definitionList {
   width: 30%;
@@ -745,7 +719,6 @@ div.gallery div.pics img {
  div.definition div.definitionList h3 {
   font-size: 2.8rem;
   font-weight: 300;
-  color: #2e2e2e;
   letter-spacing: -0.2rem;
   margin-top: 2.5em;
   margin-left: 0em;
@@ -759,38 +732,61 @@ div.gallery div.pics img {
   font-weight: 500;
   font-size: 1.5em;
 }
+<<<<<<< HEAD
  div.definition div.rightDefinition dd{
+=======
+div.add div.definition div.rightDefinition dd {
+>>>>>>> origin/developed_EstefaniaTamCri
   font-size: 1.7rem;
   font-weight: 300;
   margin-left: 2em;
   margin-top: 2em;
   line-height: 1.5em;
 }
+<<<<<<< HEAD
 
  div.definition div.rightDefinition dd:last-child{
+=======
+div.add div.definition div.rightDefinition dd:last-child {
+>>>>>>> origin/developed_EstefaniaTamCri
   margin-bottom: 3em;
 }
+
 /* -----------------Blockquote ---------------*/
+<<<<<<< HEAD
  div.blockquote{
+=======
+div.add div.blockquote {
+>>>>>>> origin/developed_EstefaniaTamCri
   display: flex;
   margin: auto;
   max-width: 1400px;
-  border-top: 0.1em solid var(--lines);
+  border-bottom: 0.1em solid var(--lines);
 }
+<<<<<<< HEAD
  div.blockquote div.leftBl{
   width: 30%;
 }
  div.blockquote div.leftBl h3{
-  font-size: 2.8rem;
-    font-weight: 300;
-    color: #2e2e2e;
-    letter-spacing: -0.2rem;
-    margin-top: 2.5em;
-    margin-left: 0em;
+=======
+div.add div.blockquote div.leftBl {
+  width: 30%;
 }
+div.add div.blockquote div.leftBl h3 {
+>>>>>>> origin/developed_EstefaniaTamCri
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 2.5em;
+  margin-left: 0em;
+}
+<<<<<<< HEAD
  div.blockquote div.rightBl{
+=======
+div.add div.blockquote div.rightBl {
+>>>>>>> origin/developed_EstefaniaTamCri
   width: 70%;
-  padding-top: 3em; 
+  padding-top: 3em;
 }
  div.blockquote div.rightBl blockquote {
   font-size: 1.7rem;
@@ -803,3 +799,603 @@ div.gallery div.pics img {
   padding: 1em;
   line-height: 1.8em;
 }
+<<<<<<< HEAD
+=======
+
+/* ------------Buttons------------ */
+div.buttons {
+  display: flex;
+  padding-top: 5em;
+  margin: auto;
+  border-bottom: 0.1em solid var(--lines);
+  max-width: 1400px;
+  font-family: var(--default);
+}
+div.buttons div.buttons-right {
+  width: 70%;
+  margin-bottom: 5em;
+}
+div.headertext-buttons-span {
+  width: 30%;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  /* margin-top: 1em; */
+}
+div.buttons-right button {
+  background-color: white;
+  border: 0.01rem solid var(--lines);
+  border-radius: 4rem;
+  /* padding: 1.2em 2em; - */
+}
+div.buttons-right button:hover {
+  border-color: var(--hover);
+  color: var(--hover);
+}
+div.buttons-right button.black:hover {
+  background-color: var(--hover);
+  color: white;
+}
+div.buttons-right div.button1 button {
+  margin: 0em 1.5em 2em 0;
+  padding: 1.2em 2em;
+  width: 10em;
+}
+div.buttons-right div.button2 button:first-of-type {
+  margin: 0 2em 2em 0;
+  padding: 1.5em 2em;
+  width: 10em;
+}
+div.buttons-right div.button2 button {
+  margin: 0 2em 2em 0;
+  padding: 1em 2em;
+  width: 10em;
+}
+div.buttons-right div.button2 {
+  display: flex;
+  align-items: flex-start;
+}
+div.buttons-right div.button2 button:last-of-type {
+  padding: 1em 2em;
+  width: 7em;
+  color: var(--hover);
+  font-size: x-small;
+  border-color: var(--hover);
+  border-top: var(--lines);
+}
+div.buttons-right div.button2 .button-small:hover {
+  color: white;
+  background-color: var(--hover);
+  border-color: transparent;
+}
+div.buttons-right div.button3 button {
+  margin: 0 1em 3em 0;
+  padding: 1em 1.5em;
+  width: 12em;
+}
+div.buttons-right div.button4 button {
+  margin: 0 1em 3em 0;
+  padding: 0.9em 2em;
+  width: 12em;
+}
+div.buttons-right div.button5 button {
+  margin: 0 2em 2em 0;
+  padding: 1.3em 2em;
+  width: 10em;
+  text-align: center;
+}
+div.buttons-right div.button6 button:first-of-type {
+  padding: 1.3em 2em;
+  width: 10em;
+  color: white;
+  background-color: var(--primary);
+  margin-right: 2em;
+}
+div.buttons-right div.button5 button i {
+  padding: 0 0.5em 0 0;
+}
+div.buttons-right div.button6 button {
+  margin: 1.7em 2em 0 0;
+  border: none;
+}
+div.buttons-right div.button6 button:last-of-type {
+  padding: 1.3em 2.5em;
+  border: 1px solid;
+  color: var(--lines);
+}
+div.buttons-right div.button6 button:first-of-type:hover {
+  background-color: var(--hover);
+  border-color: transparent;
+}
+div.buttons-right div.button6 button:last-of-type:hover {
+  border-color: var(--hover);
+  background-color: transparent;
+  color: var(--hover);
+}
+div.buttons-right .black {
+  background-color: black;
+  color: white;
+  font-size: small;
+}
+
+/* ------------Actions------------ */
+div.actions {
+  display: flex;
+  max-width: 1400px;
+  padding: 2em 0 5em 0;
+  margin: auto;
+  border-bottom: 0.1em solid var(--lines);
+}
+div.actions-right {
+  width: 70%;
+  padding: 4em 0 1em 0;
+}
+div.headertext-actions {
+  width: 30%;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
+}
+div.actions-right span {
+  font-size: medium;
+  font-weight: 300;
+}
+
+div.action1 button {
+  padding: 1em;
+  border-radius: 2rem;
+  margin: 1em 1em 2em 0;
+  width: 9em;
+}
+div.actions-right button.black-action:hover {
+  background-color: var(--hover);
+  border-color: transparent;
+}
+div.actions-right button.grey-action:hover {
+  color: var(--hover);
+  border-color: var(--hover);
+}
+div.actions div.action2 button {
+  padding: 1.5em;
+  border-radius: 2rem;
+  margin: 1em 1em 2em 0;
+  width: 10em;
+  font-size: xx-small;
+}
+div.actions div.action3 button {
+  display: block;
+  padding: 1em;
+  border-radius: 2rem;
+  margin: 1em 1em 2em 0;
+  width: 9em;
+  font-size: small;
+}
+div.actions div.action4 button {
+  display: block;
+  padding: 1em;
+  border-radius: 2rem;
+  margin: 1em 1em 1.5em 0;
+  width: 22em;
+  font-size: small;
+}
+div.actions .black-action {
+  background-color: black;
+  color: white;
+}
+div.actions .grey-action {
+  background-color: transparent;
+  border: 0.1em solid grey;
+}
+
+/* ------------Form------------ */
+div.add .general {
+  border-bottom: 0.1em solid var(--lines);
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+}
+div.add div.general div.left {
+  padding-top: 3em;
+  width: 30%;
+}
+div.add div.general div.left h3 {
+  font-weight: 300;
+  font-size: 2.8rem;
+  letter-spacing: -0.2rem;
+  color: #2e2e2e;
+}
+
+/* ------RIGHT----- */
+div.add div.general div.right {
+  width: 70%;
+  padding-top: 3em;
+}
+
+/* ------Name & Email----- */
+div.add div.general div.right form div.register {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  /* min-width: 100%; */
+  justify-content: space-between;
+}
+
+div.add div.general div.right form div.unoinput,
+div.dosinput {
+  min-width: 48%;
+}
+div.add div.general div.right form div.unoinput .formulario-label1,
+div.add div.general div.right form div.dosinput .formulario-label2 {
+  display: block;
+  font-size: large;
+}
+div.add div.general div.right form div.unoinput .primer-input,
+div.add div.general div.right form div.dosinput .segundo-input {
+  padding: 0.65em;
+  border-radius: 8px;
+  border: 1px solid var(--lines);
+  margin: 1em 0;
+  width: 100%;
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
+}
+
+/* ------Department----- */
+div.add div.general div.right form div.detachable {
+  margin-top: .7em;
+}
+div.add div.general div.right form div.detachable label[for="department"] {
+  display: block;
+  font-size: large;
+}
+div.add div.general div.right form div.detachable .select-category {
+  padding: 0.65em;
+  border-radius: 8px;
+  border: 1px solid var(--lines);
+  margin: 1em 0;
+  width: 100%;
+  background-color: white;
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
+}
+
+/* ------Priority----- */
+div.add div.general div.right form div.priority {
+  display: flex;
+  justify-content: flex-start;
+  /* padding-top: 1em; */
+  /* padding-bottom: 4em; */
+  margin: 2em 0;
+}
+div.add div.general div.right form div.priority div.radio-container {
+  width: 33.333%;
+}
+div.add
+  div.general
+  div.right
+  form
+  div.priority
+  div.radio-container
+  .priority-radio {
+  transform: scale(3);
+  border-radius: 50%;
+  margin-left: 1em;
+}
+
+div.add
+  div.general
+  div.right
+  form
+  div.priority
+  div.radio-container
+  .priority-label {
+  display: inline-block;
+  margin-left: 1em;
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
+}
+
+/* ------TextArea----- */
+div.add div.general div.right form div.texarea div.message {
+  display: block;
+  font-size: large;
+  /* padding-right: 24em;*/
+  /* margin-top: -2.5em; */
+}
+
+div.add div.general div.right form div.texarea div.textarea textarea {
+  margin-top: 2em;
+  width: 100%;
+  height: 18em;
+  padding-right: 10em;
+  border-radius: 8px;
+  border: 1px solid var(--lines);
+}
+
+/* ------Checkbox----- */
+div.add div.general div.right form div.selection {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1.2em 0 1.8em;
+}
+div.add div.general div.right form div.selection div {
+  width: 50%;
+  align-content: center;
+}
+div.add div.general div.right form div.selection div [type="checkbox"] { 
+vertical-align: middle;
+}
+div.add div.general div.right form div.selection div label {
+  margin-left: .5em;
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
+}
+
+div.add div.general div.right form div.selection div input.myCheck {
+  border-radius: 10px;
+  height: 3em;
+  width: 3em;
+  border: 1px solid var(--lines);
+}
+/* ------Button----- */
+div.add div.general div.right form div.button button {
+  background-color: white;
+  border: 0.01rem solid var(--lines);
+  border-radius: 300px;
+  margin: 0em 1.5em 5em 0;
+  padding: 1.5em 2.2em;
+  font-size: .6em;
+}
+div.add div.general div.right form div.button button:hover {
+  border-color: var(--hover);
+  color: var(--hover);
+}
+
+/* ------TABLAS------ */
+div.add div.tablas {
+  /* padding-top: 20em;
+  text-align: center; */
+  /*display: flex;*/
+  /*margin: auto;*/
+  border-bottom: 0.1em solid var(--lines);
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  padding-top: 5em;
+}
+
+/* -----Izquierda----- */
+div.add div.tablas div.izquierda {
+  width: 30%;
+}
+
+div.add div.tablas div.izquierda h3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+}
+/* ------DERECHA------ */
+div.add div.tablas div.tableRight div.table1 h4,
+div.add div.tablas div.tableRight div.table2 h4 {
+  font-size: 2rem;
+  letter-spacing: -0.1em;
+  font-family: var(--default);
+  font-weight: 200;
+}
+div.add div.tablas div.tableRight {
+  width: 70%;
+}
+/* -----Tabla1----- */
+
+div.add div.tablas div.tableRight div.table1 table {                                                 
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 1em;
+  border-collapse: collapse;
+  /* line-height: 3em; */
+  /*border-spacing: 0px;*/
+
+
+}
+div.add div.tablas div.tableRight div.table1 table tr td {
+  border-top: 0.1em solid var(--lines);
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
+}
+div.add div.tablas div.tableRight div.table1 table thead tr th{
+padding: 1em;
+text-align: left;
+font-size: large;
+font-family: var(--default);
+font-weight: 500;
+}
+
+/*div.add div.tablas div.tableRight div.table1 table thead tr.titulos th:nth-child(2) {
+  text-align: left;
+  padding-left: 1.4em;
+  font-weight: 500;
+} */
+div.add div.tablas div.tableRight div.table1 table tbody tr td {
+  /*padding-left: 1.5em;*/
+  padding: 1em 1em;
+}
+div.add div.tablas div.tableRight div.table1 table tbody tr.color {
+  background-color: var(--highligh);
+}
+
+/* -----Tabla2----- */
+div.add div.tablas div.tableRight div.table2 thead tr th{
+padding: 1em;
+text-align: left;
+font-size: large;
+font-family: var(--default);
+font-weight: 500;
+}
+
+div.add div.tablas div.tableRight div.table2 {
+  /* padding-top: 10em; */
+  margin-bottom: 5em;
+}
+div.add div.tablas div.tableRight div.table2 table {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 1em;
+  /* line-height: 3em; */
+ border-spacing: 0px;
+ border-collapse: collapse;
+}
+div.add div.tablas div.tableRight div.table2 table td {
+  border-left: 2px solid var(--lines); /* Agregar borde izquierdo a todas las celdas */
+  border-right: 2px solid var(--lines); /* Agregar borde derecho a todas las celdas */
+  /* padding-left: 1.5em; */
+  padding: 1em 1em;
+  border-top: 0.1em solid var(--lines);/*Agregar lineas horizontales a la tabla*/
+  font-family: var(--default);
+  font-size: .85em;
+  font-weight: 200;
+}
+div.add div.tablas div.tableRight div.table2 tr:last-child td {
+  border: none;
+  border-top: 2px solid var(--lines); /* Agregar borde a la penúltima fila */
+  border-right: none;
+  border-left: none;
+}
+div.add div.tablas div.tableRight div.table2 table tbody tr.color {
+  background-color: var(--highligh);
+}
+/* ------------Images------------ */
+div.images {
+  display: flex;
+  max-width: 1400px;
+  padding-bottom: 2em;
+  margin: auto;
+  border-bottom: 0.1em solid var(--lines);
+}
+div.images div.images-left {
+  padding-top: 5em 0 1 3em;
+  width: 30%;
+}
+div.images div.images-right {
+  width: 70%;
+  margin-bottom: 3em;
+}
+div.images div.images-right .text-left-right {
+  font-size: x-large;
+  font-weight: 200;
+}
+div.images div.headertext-images-span {
+  width: 30%;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
+}
+div.images div.images-right .banner {
+  width: 100%;
+  height: auto;
+}
+div.images div.images-right .pic01 {
+  width: 20%;
+  height: auto;
+  float: left;
+  margin: 0 1.5em 1em 0;
+}
+div.images div.images-right .pic02 {
+  width: 20%;
+  height: auto;
+  float: right;
+  margin: 0 0 2em 2em;
+}
+div.images div.images-right .texthead {
+  display: block;
+  font-size: 2em;
+  margin: 2em 0 1em 0;
+  font-weight: 200;
+}
+
+/* ------------Box------------ */
+div.box {
+  display: flex;
+  max-width: 1400px;
+  padding: 1em 0 0 0;
+  margin: auto;
+}
+div.headertext-box-span {
+  width: 30%;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
+}
+div.box .box-right {
+  font-size: medium;
+  margin: 2em 0 5em 0;
+  border-radius: 0.4rem;
+  padding: 1.7em;
+  border: 1px solid var(--lines);
+  font-size: x-large;
+  font-weight: 200;
+  width: 70%;
+}
+
+/* ------------footer------------ */
+footer {
+  color: white;
+  min-height: 150px;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--footer-bg);
+  padding: 6em 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer div.made {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3rem;
+}
+footer div.made span a {
+  color: var(--footer-icon);
+  text-align: center;
+}
+footer div.made span a:hover {
+  text-decoration: none;
+  color: var(--hover);
+}
+footer div.iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5em;
+}
+footer div.iconos i {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  padding: 1.5em 1em;
+  width: 3em;
+  height: 3em;
+  background-color: var(--footer-icon);
+  border-radius: 50%;
+}
+
+footer div.iconos .fa-facebook-f {
+  padding-left: 1.15em;
+}
+footer div.iconos i:hover {
+  cursor: pointer;
+  color: var(--hover);
+  background-color: white;
+  outline: 2px solid var(--hover);
+  border-radius: 50%;
+}
+>>>>>>> origin/developed_EstefaniaTamCri
