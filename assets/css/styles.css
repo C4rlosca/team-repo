@@ -90,6 +90,7 @@ div.header div.codeteam p a {
 }
 div.header div.codeteam p a:hover {
   color: var(--hover);
+  text-decoration: none;
 }
 div.header div.codeteam div p.secondp {
   font-size: 1.9em;
@@ -106,8 +107,8 @@ div.header div.codeteam p.secondp .backgroundword {
   background-color: var(--highligh);
   padding: 0.6rem;
   border-radius: 7px;
-  font-family: var(--code);
-  font-size: 1.1em;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
   letter-spacing: -0.8px;
   font-weight: 100;
 }
@@ -292,14 +293,10 @@ div.gallery div.pics img {
   object-position: center;
   object-fit: cover;
 }
-<<<<<<< HEAD
-div.gallery div.pics img
-=======
+
 div.gallery div.text a:hover {
   color: var(--hover);
 }
-
->>>>>>> origin/developed_EstefaniaTamCri
 /* -----------Addittional Elements-----------  */
 div.add div.additionalElements {
   border-top: 0.1em solid #cccccc;
@@ -308,17 +305,15 @@ div.add div.additionalElements {
 div.add div.additionalElements h2 {
   font-size: 3.8rem;
   font-weight: 200;
-  margin-top: 2.5em;
-  margin-bottom: 1em;
+  margin: 2.5em 0 1em 0;
   letter-spacing: -0.2rem;
   text-align: center;
 }
 div.add div.additionalElements p.finallyParagraph {
   font-size: 1.7rem;
   font-weight: 300;
-  margin-bottom: -8em;
-  margin-left: 0.3em;
   text-align: center;
+  margin: 0 0 -8em 0.3em;
 }
 
 /* -----------------Text------------------ */
@@ -337,20 +332,17 @@ div.add div.text div.leftText h3 {
   font-weight: 300;
   letter-spacing: -0.2rem;
   margin-top: 4.5em;
-  margin-left: 0em;
 }
 div.add div.text div.rightParagraph {
   width: 70%;
   padding-top: 3em;
-  /* margin-left: -7em; */
 }
 div.add div.text div.rightParagraph p.spansParagraph {
   width: 100%;
   font-size: 1.7rem;
   font-weight: 300;
-  margin-top: 12em;
   line-height: 1.8em;
-  margin-bottom: 3em;
+  margin: 12em 0 3em 0;
 }
 div.add div.text div.rightParagraph p.spansParagraph .firstSpan {
   font-weight: bold;
@@ -366,7 +358,8 @@ div.add div.text div.rightParagraph p.spansParagraph code {
   padding: 0.5em;
   border-radius: 8px;
   font-family: var(--code);
-  font-size: 1em;
+  font-size: 0.9em;
+  font-family: 'Courier New', monospace;
   letter-spacing: -0.8px;
 }
 div.add div.text div.rightParagraph p.spansParagraph a {
@@ -392,44 +385,41 @@ div.add div.headings div.leftHeadings h3 {
   font-size: 2.8em;
   font-weight: 300;
   letter-spacing: -0.2rem;
-  margin-left: 0em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 div.add div.headings div.rightHeadings {
   width: 70%;
-  padding-bottom: 3em;
-  padding-top: 3em;
+  padding: 3em 0 3em 0;
 }
 div.add div.headings div.rightHeadings div h1 {
-  font-size: 5.5rem;
-  font-weight: 300;
-  margin-top: 0.8em;
-}
-div.add div.headings div.rightHeadings div h2 {
   font-size: 3.5rem;
   font-weight: 300;
   margin-top: 0.8em;
 }
+div.add div.headings div.rightHeadings div h2 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-top: 0.8em;
+}
 div.add div.headings div.rightHeadings div h3 {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   font-weight: 300;
   margin-top: 1em;
 }
 div.add div.headings div.rightHeadings div h4 {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   font-weight: 300;
   margin-top: 1.2em;
 }
 div.add div.headings div.rightHeadings div h5 {
-  font-size: 1.4em;
+  font-size: 0.9rem;
   font-weight: 300;
   margin-top: 1.8em;
 }
 div.add div.headings div.rightHeadings div h6 {
-  font-size: 1.1em;
+  font-size: 0.7rem;
   font-weight: 200;
-  margin-top: 2em;
-  margin-bottom: 5em;
+  margin: 2em 0 5em 0;
 }
 div.add div.headings div.rightHeadings div.bottom {
   border-top: 0.1em solid var(--lines);
@@ -474,8 +464,7 @@ div.add div.listUn div.Unordered h3 {
 div.partRight-Unordered {
   justify-content: right;
   width: 70%;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: 3em 0 3em 0;
 }
 div.listUn div.partRight-Unordered div.listUnordered h4,
 div.listUn div.partRight-Unordered div.Alternate h4 {
@@ -484,8 +473,7 @@ div.listUn div.partRight-Unordered div.Alternate h4 {
   letter-spacing: -0.1em;
 }
 div.listUn div.partRight-Unordered div.listUnordered {
-  padding-bottom: 3em;
-  padding-top: 3em;
+  padding: 3em 0 3em 0;
 }
 div.listUnordered ul li {
   font-size: 1.7rem;
@@ -494,14 +482,12 @@ div.listUnordered ul li {
   font-weight: 300;
 }
 div.partRight-Unordered div.listUnordered ul {
-  margin-top: 2.5em;
-  margin-bottom: 4em;
+  margin: 2.5em 0 4em 0;
 }
 div.add div.listUn div.partRight-Unordered div.Alternate p + p {
   font-size: 1.7rem;
   margin-left: -0.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 0 1em 0;
   font-weight: 300;
   border-top: 0.1em solid var(--lines);
   line-height: 2em;
@@ -509,8 +495,7 @@ div.add div.listUn div.partRight-Unordered div.Alternate p + p {
 div.add div.listUn div.partRight-Unordered div.Alternate h4 + p {
   font-size: 1.7rem;
   margin-left: -0.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 0 1em 0;
   font-weight: 300;
   line-height: 2em;
 }
@@ -544,263 +529,78 @@ div.add div.listOr div.listOrdered ol li {
 div.add div.listOr div.listOrdered {
   justify-content: right;
   width: 70%;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: 3em 0 3em 0;
 }
 
-<<<<<<< HEAD
-/* ----------SPOTLIGHT---------- */
-div.spotlight {
-  max-width: 100vw;
-  display: grid;
-  grid-template-columns: 5fr 4fr 5fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-div.spotlight div.card {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  aspect-ratio: 5/4;
-}
-div.spotlight div.card,
-div.spotlight div.text {
-  border-bottom: 1px solid var(--lines);
-}
-div.spotlight div.c1,
-div.spotlight div.t1 {
-  border-top: 1px solid var(--lines);
-}
-div.spotlight div.c1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  background-image: url("../../images/spotlight01.jpg");
-}
-div.spotlight div.c2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  background-image: url("../../images/spotlight02.jpg");
-}
-div.spotlight div.c3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  background-image: url("../../images/spotlight03.jpg");
-}
-div.spotlight div.t1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-div.spotlight div.t2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-div.spotlight div.t3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-div.spotlight div.text {
-  flex-grow: 6;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  padding: 6em;
-}
-div.spotlight h2 {
-  font-size: 3.5em;
-  font-weight: 200;
-}
-div.spotlight p {
-  font-size: 1.7em;
-  font-weight: 100;
-  line-height: 1.7em;
-}
-div.spotlight p strong {
-  font-weight: 300;
-}
-div.spotlight span.code {
-  font-family: var(--code);
-  background-color: var(--highligh);
-  color: black;
-  font-weight: lighter;
-  padding: 0.2em 0.4em;
-  border-radius: 0.3em;
-  font-size: 1.05em;
-}
-div.spotlight a {
-  color: black;
-}
-div.spotlight div button {
-  background-color: inherit;
-  border: 1px solid var(--lines);
-  border-radius: 2em;
-  padding: 1.2em 2em;
-  font-family: var(--default);
-}
-div.spotlight div button:hover {
-  border: 1px solid var(--hover);
-  color: var(--hover);
-}
-div.spotlight a:hover {
-  color: var(--hover);
-}
-
-/* ---------GALLERY--------- */
-div.gallery {
-  display: flex;
-  flex-direction: column;
-}
-div.gallery div.text {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 7em;
-}
-div.gallery h2 {
-  font-size: 3.5em;
-  font-weight: 200;
-  padding-bottom: 1em;
-}
-div.gallery p {
-  font-size: 1.7em;
-  font-weight: 100;
-  line-height: 1.7em;
-}
-div.gallery p strong {
-  font-weight: 300;
-}
-div.gallery span.code {
-  font-family: var(--code);
-  background-color: var(--highligh);
-  color: black;
-  font-weight: lighter;
-  padding: 0.2em 0.4em;
-  border-radius: 0.3em;
-  font-size: 1.05em;
-}
-div.gallery a {
-  color: black;
-}
-div.gallery div.pics {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-div.gallery div.pics img {
-  max-width: 45em;
-  object-position: center;
-  object-fit: cover;
-}
-=======
->>>>>>> origin/developed_EstefaniaTamCri
 /* ------------Definition List---------- */
- div.definition {
+div.definition {
   display: flex;
   margin: auto;
   max-width: 1400px;
   border-bottom: 0.1em solid var(--lines);
 }
- div.definition div.definitionList {
+div.definition div.definitionList {
   width: 30%;
 }
- div.definition div.definitionList h3 {
+div.definition div.definitionList h3 {
   font-size: 2.8rem;
   font-weight: 300;
   letter-spacing: -0.2rem;
-  margin-top: 2.5em;
-  margin-left: 0em;
+  margin: 2.5em 0 0 0;
 }
- div.definition div.rightDefinition {
+div.definition div.rightDefinition {
   width: 70%;
   padding-top: 3em;
 }
- div.definition div.rightDefinition dt {
+div.definition div.rightDefinition dl {
+  margin-left: -2em;
+}
+div.definition div.rightDefinition dt {
   margin-top: 2.8em;
   font-weight: 500;
   font-size: 1.5em;
 }
-<<<<<<< HEAD
- div.definition div.rightDefinition dd{
-=======
 div.add div.definition div.rightDefinition dd {
->>>>>>> origin/developed_EstefaniaTamCri
   font-size: 1.7rem;
   font-weight: 300;
-  margin-left: 2em;
-  margin-top: 2em;
+  margin: 2em 0 0 2em;
   line-height: 1.5em;
 }
-<<<<<<< HEAD
 
- div.definition div.rightDefinition dd:last-child{
-=======
-div.add div.definition div.rightDefinition dd:last-child {
->>>>>>> origin/developed_EstefaniaTamCri
+div.definition div.rightDefinition dd:last-child {
   margin-bottom: 3em;
 }
 
 /* -----------------Blockquote ---------------*/
-<<<<<<< HEAD
- div.blockquote{
-=======
 div.add div.blockquote {
->>>>>>> origin/developed_EstefaniaTamCri
   display: flex;
   margin: auto;
   max-width: 1400px;
   border-bottom: 0.1em solid var(--lines);
 }
-<<<<<<< HEAD
- div.blockquote div.leftBl{
-  width: 30%;
-}
- div.blockquote div.leftBl h3{
-=======
 div.add div.blockquote div.leftBl {
   width: 30%;
 }
 div.add div.blockquote div.leftBl h3 {
->>>>>>> origin/developed_EstefaniaTamCri
   font-size: 2.8rem;
   font-weight: 300;
   letter-spacing: -0.2rem;
-  margin-top: 2.5em;
-  margin-left: 0em;
+  margin: 2.5em 0 0 0;
 }
-<<<<<<< HEAD
- div.blockquote div.rightBl{
-=======
 div.add div.blockquote div.rightBl {
->>>>>>> origin/developed_EstefaniaTamCri
   width: 70%;
   padding-top: 3em;
+  margin-left: -2em;
 }
- div.blockquote div.rightBl blockquote {
+div.blockquote div.rightBl blockquote {
   font-size: 1.7rem;
   font-weight: 300;
   font-style: italic;
   border-left: 0.3em solid var(--lines);
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
-  padding-left: 5em;
-  padding: 1em;
+  margin: 2.5em 0 2.5em 0;
+  padding: 0.5em 0 0.5em 2em;
   line-height: 1.8em;
 }
-<<<<<<< HEAD
-=======
 
 /* ------------Buttons------------ */
 div.buttons {
@@ -1039,13 +839,13 @@ div.add div.general div.right form div.dosinput .segundo-input {
   margin: 1em 0;
   width: 100%;
   font-family: var(--default);
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: 200;
 }
 
 /* ------Department----- */
 div.add div.general div.right form div.detachable {
-  margin-top: .7em;
+  margin-top: 0.7em;
 }
 div.add div.general div.right form div.detachable label[for="department"] {
   display: block;
@@ -1059,7 +859,7 @@ div.add div.general div.right form div.detachable .select-category {
   width: 100%;
   background-color: white;
   font-family: var(--default);
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: 200;
 }
 
@@ -1096,7 +896,7 @@ div.add
   display: inline-block;
   margin-left: 1em;
   font-family: var(--default);
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: 200;
 }
 
@@ -1127,13 +927,13 @@ div.add div.general div.right form div.selection div {
   width: 50%;
   align-content: center;
 }
-div.add div.general div.right form div.selection div [type="checkbox"] { 
-vertical-align: middle;
+div.add div.general div.right form div.selection div [type="checkbox"] {
+  vertical-align: middle;
 }
 div.add div.general div.right form div.selection div label {
-  margin-left: .5em;
+  margin-left: 0.5em;
   font-family: var(--default);
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: 200;
 }
 
@@ -1150,7 +950,7 @@ div.add div.general div.right form div.button button {
   border-radius: 300px;
   margin: 0em 1.5em 5em 0;
   padding: 1.5em 2.2em;
-  font-size: .6em;
+  font-size: 0.6em;
 }
 div.add div.general div.right form div.button button:hover {
   border-color: var(--hover);
@@ -1193,28 +993,26 @@ div.add div.tablas div.tableRight {
 }
 /* -----Tabla1----- */
 
-div.add div.tablas div.tableRight div.table1 table {                                                 
+div.add div.tablas div.tableRight div.table1 table {
   width: 100%;
   font-size: 2rem;
   margin-top: 1em;
   border-collapse: collapse;
   /* line-height: 3em; */
   /*border-spacing: 0px;*/
-
-
 }
 div.add div.tablas div.tableRight div.table1 table tr td {
   border-top: 0.1em solid var(--lines);
   font-family: var(--default);
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: 200;
 }
-div.add div.tablas div.tableRight div.table1 table thead tr th{
-padding: 1em;
-text-align: left;
-font-size: large;
-font-family: var(--default);
-font-weight: 500;
+div.add div.tablas div.tableRight div.table1 table thead tr th {
+  padding: 1em;
+  text-align: left;
+  font-size: large;
+  font-family: var(--default);
+  font-weight: 500;
 }
 
 /*div.add div.tablas div.tableRight div.table1 table thead tr.titulos th:nth-child(2) {
@@ -1231,12 +1029,12 @@ div.add div.tablas div.tableRight div.table1 table tbody tr.color {
 }
 
 /* -----Tabla2----- */
-div.add div.tablas div.tableRight div.table2 thead tr th{
-padding: 1em;
-text-align: left;
-font-size: large;
-font-family: var(--default);
-font-weight: 500;
+div.add div.tablas div.tableRight div.table2 thead tr th {
+  padding: 1em;
+  text-align: left;
+  font-size: large;
+  font-family: var(--default);
+  font-weight: 500;
 }
 
 div.add div.tablas div.tableRight div.table2 {
@@ -1248,17 +1046,17 @@ div.add div.tablas div.tableRight div.table2 table {
   font-size: 2rem;
   margin-top: 1em;
   /* line-height: 3em; */
- border-spacing: 0px;
- border-collapse: collapse;
+  border-spacing: 0px;
+  border-collapse: collapse;
 }
 div.add div.tablas div.tableRight div.table2 table td {
   border-left: 2px solid var(--lines); /* Agregar borde izquierdo a todas las celdas */
   border-right: 2px solid var(--lines); /* Agregar borde derecho a todas las celdas */
   /* padding-left: 1.5em; */
   padding: 1em 1em;
-  border-top: 0.1em solid var(--lines);/*Agregar lineas horizontales a la tabla*/
+  border-top: 0.1em solid var(--lines); /*Agregar lineas horizontales a la tabla*/
   font-family: var(--default);
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: 200;
 }
 div.add div.tablas div.tableRight div.table2 tr:last-child td {
@@ -1398,4 +1196,3 @@ footer div.iconos i:hover {
   outline: 2px solid var(--hover);
   border-radius: 50%;
 }
->>>>>>> origin/developed_EstefaniaTamCri
