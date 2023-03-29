@@ -4,7 +4,7 @@
   border: 0;
   box-sizing: border-box;
   outline: 0 none;
-  font-family: "Inter", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 :root {
@@ -20,7 +20,7 @@
   --footer-bg: #534b55;
 
   /* FONTS */
-  --default: "Inter", sans-serif;
+  --default: "Source Sans Pro", sans-serif;
   --code: "Cutive Mono", monospace;
 
   /* DEFAULTS */
@@ -287,10 +287,32 @@ div.gallery div.pics {
   flex-wrap: nowrap;
   overflow-x: auto;
 }
+/*----ARREGLAR*/
+div.gallery div.pics div.img1,
+div.gallery div.pics div.img2,
+div.gallery div.pics div.img3,
+div.gallery div.pics div.img4,
+div.gallery div.pics div.img5,
+div.gallery div.pics div.img6,
+div.gallery div.pics div.img7,
+div.gallery div.pics div.img8,
+div.gallery div.pics div.img9 {
+  background-color: black;
+}
+div.gallery div.pics div.img1 h4,
+div.gallery div.pics div.img1 p,
+div.gallery div.pics div.img1 button {
+  color: white;
+  /* z-index: -39; */
+}
+
 div.gallery div.pics img {
   max-width: 45em;
   object-position: center;
   object-fit: cover;
+}
+div.gallery div.pics img:hover {
+  opacity: 65%;
 }
 div.gallery div.text a:hover {
   color: var(--hover);
@@ -950,7 +972,7 @@ div.actions .grey-action {
 /* ------------Form------------ */
 div.add .general {
   border-bottom: 0.1em solid var(--lines);
-  font-family: "Inter", sans-serif;
+  font-family: var(--default);
   font-size: 2em;
   display: flex;
   margin: auto;
@@ -1258,21 +1280,21 @@ div.images div.headertext-images-span {
 div.images div.images-right .banner {
   width: 100%;
   height: auto;
-  box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 1px 11px -3px rgba(0, 0, 0, 0.5);
 }
 div.images div.images-right .pic01 {
   width: 20%;
   height: auto;
   float: left;
   margin: 0 1.5em 1em 0;
-  box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 1px 11px -3px rgba(0, 0, 0, 0.5);
 }
 div.images div.images-right .pic02 {
   width: 20%;
   height: auto;
   float: right;
   margin: 0 0 2em 2em;
-  box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 1px 11px -3px rgba(0, 0, 0, 0.5);
 }
 div.images div.images-right .texthead {
   display: block;
