@@ -4,7 +4,7 @@
   border: 0;
   box-sizing: border-box;
   outline: 0 none;
-  font-family: "Inter", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 :root {
@@ -20,7 +20,7 @@
   --footer-bg: #534b55;
 
   /* FONTS */
-  --default: "Inter", sans-serif;
+  --default: "Source Sans Pro", sans-serif;
   --code: "Cutive Mono", monospace;
 
   /* DEFAULTS */
@@ -256,7 +256,7 @@ div.gallery div.text {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 7em;
+  padding: 8em 20em;
 }
 div.gallery h2 {
   font-size: 3.5em;
@@ -288,15 +288,130 @@ div.gallery div.pics {
   flex-wrap: nowrap;
   overflow-x: auto;
 }
+/*----ARREGLAR*/
+div.gallery div.pics div.img1,
+div.gallery div.pics div.img2,
+div.gallery div.pics div.img3,
+div.gallery div.pics div.img4,
+div.gallery div.pics div.img5,
+div.gallery div.pics div.img6,
+div.gallery div.pics div.img7,
+div.gallery div.pics div.img8,
+div.gallery div.pics div.img9 {
+  background-color: black;
+}
+div.gallery div.pics div.img1 h4,
+div.gallery div.pics div.img1 p,
+div.gallery div.pics div.img1 button {
+  color: white;
+  /* z-index: -39; */
+}
 div.gallery div.pics img {
   max-width: 45em;
   object-position: center;
   object-fit: cover;
 }
-
+div.gallery div.pics img:hover {
+  opacity: 65%;
+}
 div.gallery div.text a:hover {
   color: var(--hover);
 }
+
+/*------------------TEXTO ENCABEZADO DE ITEMS---------------------*/
+.items {
+  text-align: center;
+  padding: 2rem;
+  color: rgb(145, 145, 145);
+  line-height: 2rem;
+  letter-spacing: -0.5; /* PARA ESTABLECER ESPACION ENTRE LETRAS PARA AJUSTARSE AL MARGEN*/
+}
+
+.items p {
+  font-size: 1.5rem;
+  margin: 0% 13%;
+}
+/*TITULO ITEMS*/
+.itemsName {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  color: rgb(100, 99, 99);
+}
+/*DISPODICION Y DISTRIBUCION EN GRID DE LAS COLUMNAS EN LA PAGINA */
+.gridColumn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: space-around;
+  height: 100%;
+  padding: 8% 15%;
+  text-align: center;
+}
+/*PADDIN INTERIOR DE DIVS INTERNOS Y TIPO DE MARGEN*/
+.gridColumn .boxone,
+.boxtwo,
+.boxthree,
+.boxfour,
+.boxfive,
+.boxsix,
+.boxseven,
+.boxeight,
+.boxnine,
+.boxten,
+.boxeleven,
+.boxtwelve {
+  border: 1px solid rgb(221, 218, 218);
+  padding: 2.1rem 3rem;
+}
+/*BORDES PARA CADA COLUMNA PERSONALIZADO */
+.gridColumn .boxone,
+.boxtwo,
+.boxthree {
+  border-top: none;
+}
+
+.gridColumn .boxthree,
+.boxsix,
+.boxnine,
+.boxtwelve {
+  border-right: none;
+}
+
+.gridColumn .boxone,
+.boxfour,
+.boxseven,
+.boxten {
+  border-left: none;
+}
+
+.gridColumn .boxten,
+.boxeleven,
+.boxtwelve {
+  border-bottom: none;
+}
+/*  ESTILO ICONOS DE CADA COLUMNA POSICION Y MARGENES///*/
+.gridColumn i {
+  padding: 1.5rem;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 100px;
+  font-size: 2em;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+/*ESTILO Y POSICION DE CADA H2(BOXES) NUMERADOS EN TEXTO*/
+.gridColumn h2 {
+  margin-bottom: 10%;
+  font-size: 2rem;
+  color: rgb(143, 143, 143);
+}
+/*DISPOSICON DEL TEXTO, COLOR Y ENTRELINEADO DEL TEXTO INTERIOR COLUMNAS*/
+.gridColumn p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: rgb(124, 124, 124);
+  margin-bottom: 1.5rem;
+}
+
 /* -----------Addittional Elements-----------  */
 div.add div.additionalElements {
   border-top: 0.1em solid #cccccc;
@@ -602,6 +717,69 @@ div.blockquote div.rightBl blockquote {
   line-height: 1.8em;
 }
 
+/*--------Icons-----------*/
+/* DISPOSICON DE LOS DIVS GENERALES DE LA SECCION ICONS*/
+.iconsFile {
+  display: flex;
+  flex-direction: wrap;
+  padding: 2%;
+}
+/* DIV QUE CONTIENE LAS TRES SECCIONES //ICONS//STYLE1//STYLE2   */
+.iconsFile div {
+  padding: 2% 8% 5% 5%;
+}
+
+/*  SECCION CON LA PALABRA ICONS*/
+.wordIcons {
+  margin-left: 9%;
+  text-align: center;
+}
+.wordIcons h2 {
+  font-size: 2rem;
+}
+/*SECCION QUE CONTIENE STYLE1 E ICONOS*/
+.style p {
+  font-size: 1.8rem;
+}
+.styleIcon1 {
+  margin-top: -2rem;
+}
+
+/*SEPARACION ENTRE ICONOS STYLE1*/
+.styleIcon1 i {
+  margin-right: 1.1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+/* CONTENEDOR DE LOS STYLE1 Y STYLE2*/
+.style {
+  width: 70%;
+}
+
+/* SECCION STYLE 2 PARA DAR FORMA A LOS ICONOS*/
+.iconRadius i {
+  border-radius: 100%;
+  border: 1px solid rgb(167, 166, 166);
+  padding: 1.7rem;
+  margin-right: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.iconRadius {
+  margin: 0% 2% 0% -6%;
+}
+
+/*ALINEACION DEL PRIMER ICONO DEL DIV STYLE2
+.styleIcon2 .fa-twitter {
+  margin-left: -.4em;
+}/*
+/* AMPLIAR EL MAXIMO DEL RADIO-BORDE DEL ICONO FACEBOOK*/
+.iconRadius .fa-facebook-f {
+  width: 5.5rem;
+  text-align: center;
+}
+
 /* ------------Buttons------------ */
 div.buttons {
   display: flex;
@@ -637,17 +815,17 @@ div.buttons-right button.black:hover {
   color: white;
 }
 div.buttons-right div.button1 button {
-  margin: 0em 1.5em 2em 0;
-  padding: 1.2em 2em;
+  margin: 0em 2em 2em 0;
+  padding: 1.3em 2em;
   width: 10em;
 }
 div.buttons-right div.button2 button:first-of-type {
-  margin: 0 2em 2em 0;
+  margin: 0 2.5em 3em 0;
   padding: 1.5em 2em;
   width: 10em;
 }
 div.buttons-right div.button2 button {
-  margin: 0 2em 2em 0;
+  margin: 0 2em 2.5em 0;
   padding: 1em 2em;
   width: 10em;
 }
@@ -669,18 +847,18 @@ div.buttons-right div.button2 .button-small:hover {
   border-color: transparent;
 }
 div.buttons-right div.button3 button {
-  margin: 0 1em 3em 0;
-  padding: 1em 1.5em;
-  width: 12em;
+  margin: 0 3em 3em 0;
+  padding: 1.35em 1.5em;
+  width: 15em;
 }
 div.buttons-right div.button4 button {
-  margin: 0 1em 3em 0;
-  padding: 0.9em 2em;
-  width: 12em;
+  margin: 0 3em 3em 0;
+  padding: 1em 2em;
+  width: 15em;
 }
 div.buttons-right div.button5 button {
   margin: 0 2em 2em 0;
-  padding: 1.3em 2em;
+  padding: 1.5em 2em;
   width: 10em;
   text-align: center;
 }
@@ -703,15 +881,7 @@ div.buttons-right div.button6 button:last-of-type {
   border: 1px solid;
   color: var(--lines);
 }
-div.buttons-right div.button6 button:first-of-type:hover {
-  background-color: var(--hover);
-  border-color: transparent;
-}
-div.buttons-right div.button6 button:last-of-type:hover {
-  border-color: var(--hover);
-  background-color: transparent;
-  color: var(--hover);
-}
+
 div.buttons-right .black {
   background-color: black;
   color: white;
@@ -741,12 +911,11 @@ div.actions-right span {
   font-size: medium;
   font-weight: 300;
 }
-
 div.action1 button {
-  padding: 1em;
+  padding: 1.3em 2.5em;
   border-radius: 2rem;
-  margin: 1em 1em 2em 0;
-  width: 9em;
+  margin: 1em 2em 5em 0;
+  width: 10em;
 }
 div.actions-right button.black-action:hover {
   background-color: var(--hover);
@@ -757,26 +926,26 @@ div.actions-right button.grey-action:hover {
   border-color: var(--hover);
 }
 div.actions div.action2 button {
-  padding: 1.5em;
+  padding: 1.35em 1em 1.35em 1em;
   border-radius: 2rem;
-  margin: 1em 1em 2em 0;
+  margin: 1em 1em 6em 0;
   width: 10em;
   font-size: xx-small;
 }
 div.actions div.action3 button {
   display: block;
-  padding: 1em;
+  padding: 1.3em 2.5em;
   border-radius: 2rem;
-  margin: 1em 1em 2em 0;
-  width: 9em;
+  margin: 1.5em 1em 2em 0;
+  width: 11em;
   font-size: small;
 }
 div.actions div.action4 button {
   display: block;
-  padding: 1em;
+  padding: 1.35em 1em 1.35em 1em;
   border-radius: 2rem;
-  margin: 1em 1em 1.5em 0;
-  width: 22em;
+  margin: 2em 1em 1.5em 0;
+  width: 35em;
   font-size: small;
 }
 div.actions .black-action {
@@ -791,7 +960,7 @@ div.actions .grey-action {
 /* ------------Form------------ */
 div.add .general {
   border-bottom: 0.1em solid var(--lines);
-  font-family: "Inter", sans-serif;
+  font-family: var(--default);
   font-size: 2em;
   display: flex;
   margin: auto;
@@ -1068,6 +1237,7 @@ div.add div.tablas div.tableRight div.table2 tr:last-child td {
 div.add div.tablas div.tableRight div.table2 table tbody tr.color {
   background-color: var(--highligh);
 }
+
 /* ------------Images------------ */
 div.images {
   display: flex;
@@ -1087,29 +1257,32 @@ div.images div.images-right {
 div.images div.images-right .text-left-right {
   font-size: x-large;
   font-weight: 200;
+  line-height: 1.4em;
 }
 div.images div.headertext-images-span {
   width: 30%;
   font-size: 2.8rem;
   font-weight: 300;
-  letter-spacing: -0.2rem;
   margin-top: 1em;
 }
 div.images div.images-right .banner {
   width: 100%;
   height: auto;
+  box-shadow: -1px 1px 11px -3px rgba(0, 0, 0, 0.5);
 }
 div.images div.images-right .pic01 {
   width: 20%;
   height: auto;
   float: left;
   margin: 0 1.5em 1em 0;
+  box-shadow: -1px 1px 11px -3px rgba(0, 0, 0, 0.5);
 }
 div.images div.images-right .pic02 {
   width: 20%;
   height: auto;
   float: right;
   margin: 0 0 2em 2em;
+  box-shadow: -1px 1px 11px -3px rgba(0, 0, 0, 0.5);
 }
 div.images div.images-right .texthead {
   display: block;
@@ -1129,11 +1302,12 @@ div.headertext-box-span {
   width: 30%;
   font-size: 2.8rem;
   font-weight: 300;
-  letter-spacing: -0.2rem;
   margin-top: 1em;
+  line-height: 1.4em;
 }
 div.box .box-right {
   font-size: medium;
+  letter-spacing: 0.1rem;
   margin: 2em 0 5em 0;
   border-radius: 0.4rem;
   padding: 1.7em;
@@ -1159,10 +1333,12 @@ footer div.made {
   display: inline-block;
   text-align: center;
   font-size: 1.3rem;
+  font-weight: 300;
 }
 footer div.made span a {
   color: var(--footer-icon);
   text-align: center;
+  font-weight: 700;
 }
 footer div.made span a:hover {
   text-decoration: none;
@@ -1185,7 +1361,6 @@ footer div.iconos i {
   background-color: var(--footer-icon);
   border-radius: 50%;
 }
-
 footer div.iconos .fa-facebook-f {
   padding-left: 1.15em;
 }
