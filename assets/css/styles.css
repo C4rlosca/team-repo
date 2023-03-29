@@ -3,14 +3,11 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  outline: none;
+  outline: 0 none;
   font-family: "Inter", sans-serif;
 }
-:root {
-  font-family: "Inter", sans-serif;
-  font-size: 0.785rem;
-  font-family: var(--default);
 
+:root {
   /* COLORS */
   --reddish: #e03636;
   --highligh: #f2f2f2;
@@ -20,12 +17,757 @@
   --secondary: #cccccc;
   --footer-icon: #7aa194;
   --footer-icon-border: #65867b;
-  --footer-bg: #504651;
+  --footer-bg: #534b55;
 
   /* FONTS */
-
   --default: "Inter", sans-serif;
   --code: "Cutive Mono", monospace;
+
+  /* DEFAULTS */
+  font-family: var(--default);
+  font-size: 0.785rem;
+}
+
+/* ---------GENERAL--------- */
+button:active {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+button.d {
+  background-color: white;
+  border: 0.01rem solid var(--lines);
+  border-radius: 2rem;
+  /* padding: 1.2em 2em; */
+}
+
+/*---------HEADER---------*/
+div.header {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+}
+div.codeteam {
+  width: 50%;
+  margin-top: 10em;
+  margin-left: 2em;
+}
+div.header div.codeteam h1.team {
+  margin-left: 1em;
+  font-size: 7em;
+  color: black;
+  font-weight: 100;
+  font-style: italic;
+}
+div.header div.codeteam h1.team i {
+  margin-left: -0.2em;
+}
+h1 #firstword {
+  color: var(--reddish);
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  margin-left: -0.3em;
+}
+div.header div h1 .secondword {
+  font-size: 0.8em;
+  font-weight: 200;
+  letter-spacing: -0.1em;
+  margin-left: -0.1em;
+}
+div.header div.codeteam div p.firstp {
+  font-size: 2.2em;
+  font-family: var(--default);
+  font-weight: 200;
+  line-height: 1.8em;
+  margin: 1.1em 5em 1.8em 2.6em;
+  color: black;
+  letter-spacing: -1px;
+}
+div.header div.codeteam p a {
+  color: black;
+  font-weight: 200;
+}
+div.header div.codeteam p a:hover {
+  color: var(--hover);
+}
+div.header div.codeteam div p.secondp {
+  font-size: 1.9em;
+  font-weight: 200;
+  line-height: 1.7em;
+  margin-left: 2.8em;
+  margin-right: 3.5em;
+  letter-spacing: -0.8px;
+}
+div.header div.codeteam p strong {
+  font-weight: 400;
+}
+div.header div.codeteam p.secondp .backgroundword {
+  background-color: var(--highligh);
+  padding: 0.6rem;
+  border-radius: 7px;
+  font-family: var(--code);
+  font-size: 1.1em;
+  letter-spacing: -0.8px;
+  font-weight: 100;
+}
+div.header div.codeteam p a.details {
+  text-decoration-line: underline;
+}
+div.header div.img-banner {
+  width: 50%;
+}
+div.header div.img-banner img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-position: center;
+  object-fit: cover;
+  justify-content: right;
+}
+div.header div.codeteam div button {
+  /* SUSTITUIR */
+  font-size: large;
+  padding: 1.2em 3.5em;
+  background-color: white;
+  border: 1px solid var(--lines);
+  border-radius: 50px;
+  margin-left: 3.5em;
+  margin-top: 3em;
+}
+div.header div.codeteam div button:hover {
+  border: 1px solid var(--hover);
+  color: var(--hover);
+}
+
+/* ----------SPOTLIGHT---------- */
+div.spotlight {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 5fr 4fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+div.spotlight div.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 5/4;
+}
+div.spotlight div.card,
+div.spotlight div.text {
+  border-bottom: 1px solid var(--lines);
+}
+div.spotlight div.c1,
+div.spotlight div.t1 {
+  border-top: 1px solid var(--lines);
+}
+div.spotlight div.c1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url("../../images/spotlight01.jpg");
+}
+div.spotlight div.c2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-image: url("../../images/spotlight02.jpg");
+}
+div.spotlight div.c3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url("../../images/spotlight03.jpg");
+}
+div.spotlight div.t1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+div.spotlight div.t2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+div.spotlight div.t3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+div.spotlight div.text {
+  flex-grow: 6;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  padding: 6em;
+}
+div.spotlight h2 {
+  font-size: 3.5em;
+  font-weight: 200;
+}
+div.spotlight p {
+  font-size: 1.7em;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+div.spotlight p strong {
+  font-weight: 300;
+}
+div.spotlight span.code {
+  font-family: var(--code);
+  background-color: var(--highligh);
+  font-weight: lighter;
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+  font-size: 1.05em;
+}
+div.spotlight a {
+  color: black;
+}
+div.spotlight div button {
+  background-color: inherit;
+  border: 1px solid var(--lines);
+  border-radius: 2em;
+  padding: 1.2em 2em;
+  font-family: var(--default);
+}
+div.spotlight div button:hover {
+  border: 1px solid var(--hover);
+  color: var(--hover);
+}
+div.spotlight a:hover {
+  color: var(--hover);
+}
+
+/* ---------GALLERY--------- */
+div.gallery {
+  display: flex;
+  flex-direction: column;
+}
+div.gallery div.text {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 7em;
+}
+div.gallery h2 {
+  font-size: 3.5em;
+  font-weight: 200;
+  padding-bottom: 1em;
+}
+div.gallery p {
+  font-size: 1.7em;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+div.gallery p strong {
+  font-weight: 300;
+}
+div.gallery span.code {
+  font-family: var(--code);
+  background-color: var(--highligh);
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+  font-size: 1.05em;
+}
+div.gallery a {
+  color: black;
+}
+div.gallery div.pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+div.gallery div.pics img {
+  max-width: 45em;
+  object-position: center;
+  object-fit: cover;
+}
+div.gallery div.text a:hover {
+  color: var(--hover);
+}
+
+/*------------------TEXTO ENCABEZADO DE ITEMS---------------------*/
+.items {
+  text-align: center;
+  padding: 2rem;
+  color: rgb(145, 145, 145);
+  line-height: 2rem;
+  letter-spacing: -0.5; /* PARA ESTABLECER ESPACION ENTRE LETRAS PARA AJUSTARSE AL MARGEN*/
+}
+
+.items p {
+  font-size: 1.5rem;
+  margin: 0% 13%;
+}
+/*TITULO ITEMS*/
+.itemsName {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  color: rgb(100, 99, 99);
+}
+/*DISPODICION Y DISTRIBUCION EN GRID DE LAS COLUMNAS EN LA PAGINA */
+.gridColumn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: space-around;
+  height: 100%;
+  padding: 8% 15%;
+  text-align: center;
+}
+/*PADDIN INTERIOR DE DIVS INTERNOS Y TIPO DE MARGEN*/
+.gridColumn .boxone,
+.boxtwo,
+.boxthree,
+.boxfour,
+.boxfive,
+.boxsix,
+.boxseven,
+.boxeight,
+.boxnine,
+.boxten,
+.boxeleven,
+.boxtwelve {
+  border: 1px solid rgb(221, 218, 218);
+  padding: 2.1rem 3rem;
+}
+/*BORDES PARA CADA COLUMNA PERSONALIZADO */
+.gridColumn .boxone,
+.boxtwo,
+.boxthree {
+  border-top: none;
+}
+
+.gridColumn .boxthree,
+.boxsix,
+.boxnine,
+.boxtwelve {
+  border-right: none;
+}
+
+.gridColumn .boxone,
+.boxfour,
+.boxseven,
+.boxten {
+  border-left: none;
+}
+
+.gridColumn .boxten,
+.boxeleven,
+.boxtwelve {
+  border-bottom: none;
+}
+/*  ESTILO ICONOS DE CADA COLUMNA POSICION Y MARGENES///*/
+.gridColumn i {
+  padding: 1.5rem;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 100px;
+  font-size: 2em;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+/*ESTILO Y POSICION DE CADA H2(BOXES) NUMERADOS EN TEXTO*/
+.gridColumn h2 {
+  margin-bottom: 10%;
+  font-size: 2rem;
+  color: rgb(143, 143, 143);
+}
+/*DISPOSICON DEL TEXTO, COLOR Y ENTRELINEADO DEL TEXTO INTERIOR COLUMNAS*/
+.gridColumn p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: rgb(124, 124, 124);
+  margin-bottom: 1.5rem;
+}
+/* -----------Addittional Elements-----------  */
+div.add div.additionalElements {
+  border-top: 0.1em solid #cccccc;
+  width: 100%;
+}
+div.add div.additionalElements h2 {
+  font-size: 3.8rem;
+  font-weight: 200;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  letter-spacing: -0.2rem;
+  text-align: center;
+}
+div.add div.additionalElements p.finallyParagraph {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: -8em;
+  margin-left: 0.3em;
+  text-align: center;
+}
+
+/* -----------------Text------------------ */
+div.add div.text {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  border-bottom: 0.1em solid var(--lines);
+}
+div.add div.text div.leftText {
+  padding-top: 12em;
+  width: 30%;
+}
+div.add div.text div.leftText h3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 4.5em;
+  margin-left: 0em;
+}
+div.add div.text div.rightParagraph {
+  width: 70%;
+  padding-top: 3em;
+  /* margin-left: -7em; */
+}
+div.add div.text div.rightParagraph p.spansParagraph {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-top: 12em;
+  line-height: 1.8em;
+  margin-bottom: 3em;
+}
+div.add div.text div.rightParagraph p.spansParagraph .firstSpan {
+  font-weight: bold;
+}
+div.add div.text div.rightParagraph p.spansParagraph .italic {
+  font-style: italic;
+}
+div.add div.text div.rightParagraph .underline {
+  text-decoration: underline;
+}
+div.add div.text div.rightParagraph p.spansParagraph code {
+  background-color: var(--highligh);
+  padding: 0.5em;
+  border-radius: 8px;
+  font-family: var(--code);
+  font-size: 1em;
+  letter-spacing: -0.8px;
+}
+div.add div.text div.rightParagraph p.spansParagraph a {
+  color: black;
+}
+div.add div.text div.rightParagraph p.spansParagraph a:hover {
+  color: var(--hover);
+}
+
+/* -----------------Add. HEADINGS------------------ */
+div.add div.headings {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  border-bottom: 0.1em solid var(--lines);
+}
+div.add div.headings div.leftHeadings {
+  justify-content: right;
+  width: 30%;
+  padding-top: 3em;
+}
+div.add div.headings div.leftHeadings h3 {
+  font-size: 2.8em;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-left: 0em;
+  margin-top: 2em;
+}
+div.add div.headings div.rightHeadings {
+  width: 70%;
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+div.add div.headings div.rightHeadings div h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  margin-top: 0.8em;
+}
+div.add div.headings div.rightHeadings div h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 0.8em;
+}
+div.add div.headings div.rightHeadings div h3 {
+  font-size: 2.3rem;
+  font-weight: 300;
+  margin-top: 1em;
+}
+div.add div.headings div.rightHeadings div h4 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 1.2em;
+}
+div.add div.headings div.rightHeadings div h5 {
+  font-size: 1.4em;
+  font-weight: 300;
+  margin-top: 1.8em;
+}
+div.add div.headings div.rightHeadings div h6 {
+  font-size: 1.1em;
+  font-weight: 200;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+div.add div.headings div.rightHeadings div.bottom {
+  border-top: 0.1em solid var(--lines);
+  margin-bottom: 5em;
+}
+div.add div.headings div.rightHeadings div.bottom h3.italic {
+  font-style: italic;
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+div.add div.headings div.rightHeadings div.bottom h4 {
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 200;
+}
+div.add div.headings div.rightHeadings div p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 2em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+/* -----------Unordered list----------- */
+div.listUn {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  border-bottom: 0.1em solid var(--lines);
+}
+div.add div.listUn div.Unordered {
+  justify-content: right;
+  padding-top: 3em;
+  width: 30%;
+}
+div.add div.listUn div.Unordered h3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
+}
+div.partRight-Unordered {
+  justify-content: right;
+  width: 70%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+div.listUn div.partRight-Unordered div.listUnordered h4,
+div.listUn div.partRight-Unordered div.Alternate h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.1em;
+}
+div.listUn div.partRight-Unordered div.listUnordered {
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+div.listUnordered ul li {
+  font-size: 1.7rem;
+  padding: 0.5em;
+  margin-left: 2em;
+  font-weight: 300;
+}
+div.partRight-Unordered div.listUnordered ul {
+  margin-top: 2.5em;
+  margin-bottom: 4em;
+}
+div.add div.listUn div.partRight-Unordered div.Alternate p + p {
+  font-size: 1.7rem;
+  margin-left: -0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: 300;
+  border-top: 0.1em solid var(--lines);
+  line-height: 2em;
+}
+div.add div.listUn div.partRight-Unordered div.Alternate h4 + p {
+  font-size: 1.7rem;
+  margin-left: -0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+/* -----------Ordered list----------- */
+div.listOr {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  border-bottom: 0.1em solid var(--lines);
+}
+div.add div.listOr div.Ordered {
+  justify-content: right;
+  padding-top: 3em;
+  width: 30%;
+}
+div.Ordered h3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
+}
+div.add div.listOr div.listOrdered ol {
+  margin-left: 1em;
+}
+div.add div.listOr div.listOrdered ol li {
+  font-size: 1.7rem;
+  padding: 0.5em;
+  font-weight: 300;
+}
+div.add div.listOr div.listOrdered {
+  justify-content: right;
+  width: 70%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+/* ------------Definition List---------- */
+div.add div.definition {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  border-bottom: 0.1em solid var(--lines);
+}
+div.add div.definition div.definitionList {
+  width: 30%;
+}
+div.add div.definition div.definitionList h3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 2.5em;
+  margin-left: 0em;
+}
+div.add div.definition div.rightDefinition {
+  width: 70%;
+  padding-top: 3em;
+}
+div.add div.definition div.rightDefinition dt {
+  margin-top: 2.8em;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+div.add div.definition div.rightDefinition dd {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-left: 2em;
+  margin-top: 2em;
+  line-height: 1.5em;
+}
+div.add div.definition div.rightDefinition dd:last-child {
+  margin-bottom: 3em;
+}
+
+/* -----------------Blockquote ---------------*/
+div.add div.blockquote {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  border-bottom: 0.1em solid var(--lines);
+}
+div.add div.blockquote div.leftBl {
+  width: 30%;
+}
+div.add div.blockquote div.leftBl h3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 2.5em;
+  margin-left: 0em;
+}
+div.add div.blockquote div.rightBl {
+  width: 70%;
+  padding-top: 3em;
+}
+div.add div.blockquote div.rightBl blockquote {
+  font-size: 1.7rem;
+  font-weight: 300;
+  font-style: italic;
+  border-left: 0.3em solid var(--lines);
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  padding-left: 2em;
+  padding: 1em;
+  line-height: 1.8em;
+}
+
+/*--------Icons-----------*/
+/* DISPOSICON DE LOS DIVS GENERALES DE LA SECCION ICONS*/
+.iconsFile {
+  display: flex;
+  flex-direction: wrap;
+  padding: 2%;
+}
+/* DIV QUE CONTIENE LAS TRES SECCIONES //ICONS//STYLE1//STYLE2   */
+.iconsFile div {
+  padding: 2% 8% 5% 5%;
+}
+
+/*  SECCION CON LA PALABRA ICONS*/
+.wordIcons {
+  margin-left: 9%;
+  text-align: center;
+}
+.wordIcons h2 {
+  font-size: 2rem;
+}
+/*SECCION QUE CONTIENE STYLE1 E ICONOS*/
+.style p {
+  font-size: 1.8rem;
+}
+.styleIcon1 {
+  margin-top: -2rem;
+}
+
+/*SEPARACION ENTRE ICONOS STYLE1*/
+.styleIcon1 i {
+  margin-right: 1.1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+/* CONTENEDOR DE LOS STYLE1 Y STYLE2*/
+.style {
+  width: 70%;
+}
+
+/* SECCION STYLE 2 PARA DAR FORMA A LOS ICONOS*/
+.iconRadius i {
+  border-radius: 100%;
+  border: 1px solid rgb(167, 166, 166);
+  padding: 1.7rem;
+  margin-right: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.iconRadius {
+  margin: 0% 2% 0% -6%;
+}
+
+/*ALINEACION DEL PRIMER ICONO DEL DIV STYLE2
+.styleIcon2 .fa-twitter {
+  margin-left: -.4em;
+}/*
+/* AMPLIAR EL MAXIMO DEL RADIO-BORDE DEL ICONO FACEBOOK*/
+.iconRadius .fa-facebook-f {
+  width: 5.5rem;
+  text-align: center;
 }
 
 /* ------------Buttons------------ */
@@ -135,6 +877,7 @@ div.buttons-right .black {
   color: white;
   font-size: small;
 }
+
 /* ------------Actions------------ */
 div.actions {
   display: flex;
@@ -202,6 +945,287 @@ div.actions .black-action {
 div.actions .grey-action {
   background-color: transparent;
   border: 0.1em solid grey;
+}
+
+/* ------------Form------------ */
+div.add .general {
+  border-bottom: 0.1em solid var(--lines);
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+}
+div.add div.general div.left {
+  padding-top: 3em;
+  width: 30%;
+}
+div.add div.general div.left h3 {
+  font-weight: 300;
+  font-size: 2.8rem;
+  letter-spacing: -0.2rem;
+  color: #2e2e2e;
+}
+
+/* ------RIGHT----- */
+div.add div.general div.right {
+  width: 70%;
+  padding-top: 3em;
+}
+
+/* ------Name & Email----- */
+div.add div.general div.right form div.register {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  /* min-width: 100%; */
+  justify-content: space-between;
+}
+
+div.add div.general div.right form div.unoinput,
+div.dosinput {
+  min-width: 48%;
+}
+div.add div.general div.right form div.unoinput .formulario-label1,
+div.add div.general div.right form div.dosinput .formulario-label2 {
+  display: block;
+  font-size: large;
+}
+div.add div.general div.right form div.unoinput .primer-input,
+div.add div.general div.right form div.dosinput .segundo-input {
+  padding: 0.65em;
+  border-radius: 8px;
+  border: 1px solid var(--lines);
+  margin: 1em 0;
+  width: 100%;
+  font-family: var(--default);
+  font-size: 0.85em;
+  font-weight: 200;
+}
+
+/* ------Department----- */
+div.add div.general div.right form div.detachable {
+  margin-top: 0.7em;
+}
+div.add div.general div.right form div.detachable label[for="department"] {
+  display: block;
+  font-size: large;
+}
+div.add div.general div.right form div.detachable .select-category {
+  padding: 0.65em;
+  border-radius: 8px;
+  border: 1px solid var(--lines);
+  margin: 1em 0;
+  width: 100%;
+  background-color: white;
+  font-family: var(--default);
+  font-size: 0.85em;
+  font-weight: 200;
+}
+
+/* ------Priority----- */
+div.add div.general div.right form div.priority {
+  display: flex;
+  justify-content: flex-start;
+  /* padding-top: 1em; */
+  /* padding-bottom: 4em; */
+  margin: 2em 0;
+}
+div.add div.general div.right form div.priority div.radio-container {
+  width: 33.333%;
+}
+div.add
+  div.general
+  div.right
+  form
+  div.priority
+  div.radio-container
+  .priority-radio {
+  transform: scale(3);
+  border-radius: 50%;
+  margin-left: 1em;
+}
+
+div.add
+  div.general
+  div.right
+  form
+  div.priority
+  div.radio-container
+  .priority-label {
+  display: inline-block;
+  margin-left: 1em;
+  font-family: var(--default);
+  font-size: 0.85em;
+  font-weight: 200;
+}
+
+/* ------TextArea----- */
+div.add div.general div.right form div.texarea div.message {
+  display: block;
+  font-size: large;
+  /* padding-right: 24em;*/
+  /* margin-top: -2.5em; */
+}
+
+div.add div.general div.right form div.texarea div.textarea textarea {
+  margin-top: 2em;
+  width: 100%;
+  height: 18em;
+  padding-right: 10em;
+  border-radius: 8px;
+  border: 1px solid var(--lines);
+}
+
+/* ------Checkbox----- */
+div.add div.general div.right form div.selection {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1.2em 0 1.8em;
+}
+div.add div.general div.right form div.selection div {
+  width: 50%;
+  align-content: center;
+}
+div.add div.general div.right form div.selection div [type="checkbox"] {
+  vertical-align: middle;
+}
+div.add div.general div.right form div.selection div label {
+  margin-left: 0.5em;
+  font-family: var(--default);
+  font-size: 0.85em;
+  font-weight: 200;
+}
+
+div.add div.general div.right form div.selection div input.myCheck {
+  border-radius: 10px;
+  height: 3em;
+  width: 3em;
+  border: 1px solid var(--lines);
+}
+/* ------Button----- */
+div.add div.general div.right form div.button button {
+  background-color: white;
+  border: 0.01rem solid var(--lines);
+  border-radius: 300px;
+  margin: 0em 1.5em 5em 0;
+  padding: 1.5em 2.2em;
+  font-size: 0.6em;
+}
+div.add div.general div.right form div.button button:hover {
+  border-color: var(--hover);
+  color: var(--hover);
+}
+
+/* ------TABLAS------ */
+div.add div.tablas {
+  /* padding-top: 20em;
+  text-align: center; */
+  /*display: flex;*/
+  /*margin: auto;*/
+  border-bottom: 0.1em solid var(--lines);
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  padding-top: 5em;
+}
+
+/* -----Izquierda----- */
+div.add div.tablas div.izquierda {
+  width: 30%;
+}
+
+div.add div.tablas div.izquierda h3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+}
+/* ------DERECHA------ */
+div.add div.tablas div.tableRight div.table1 h4,
+div.add div.tablas div.tableRight div.table2 h4 {
+  font-size: 2rem;
+  letter-spacing: -0.1em;
+  font-family: var(--default);
+  font-weight: 200;
+}
+div.add div.tablas div.tableRight {
+  width: 70%;
+}
+/* -----Tabla1----- */
+
+div.add div.tablas div.tableRight div.table1 table {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 1em;
+  border-collapse: collapse;
+  /* line-height: 3em; */
+  /*border-spacing: 0px;*/
+}
+div.add div.tablas div.tableRight div.table1 table tr td {
+  border-top: 0.1em solid var(--lines);
+  font-family: var(--default);
+  font-size: 0.85em;
+  font-weight: 200;
+}
+div.add div.tablas div.tableRight div.table1 table thead tr th {
+  padding: 1em;
+  text-align: left;
+  font-size: large;
+  font-family: var(--default);
+  font-weight: 500;
+}
+
+/*div.add div.tablas div.tableRight div.table1 table thead tr.titulos th:nth-child(2) {
+  text-align: left;
+  padding-left: 1.4em;
+  font-weight: 500;
+} */
+div.add div.tablas div.tableRight div.table1 table tbody tr td {
+  /*padding-left: 1.5em;*/
+  padding: 1em 1em;
+}
+div.add div.tablas div.tableRight div.table1 table tbody tr.color {
+  background-color: var(--highligh);
+}
+
+/* -----Tabla2----- */
+div.add div.tablas div.tableRight div.table2 thead tr th {
+  padding: 1em;
+  text-align: left;
+  font-size: large;
+  font-family: var(--default);
+  font-weight: 500;
+}
+
+div.add div.tablas div.tableRight div.table2 {
+  /* padding-top: 10em; */
+  margin-bottom: 5em;
+}
+div.add div.tablas div.tableRight div.table2 table {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 1em;
+  /* line-height: 3em; */
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+div.add div.tablas div.tableRight div.table2 table td {
+  border-left: 2px solid var(--lines); /* Agregar borde izquierdo a todas las celdas */
+  border-right: 2px solid var(--lines); /* Agregar borde derecho a todas las celdas */
+  /* padding-left: 1.5em; */
+  padding: 1em 1em;
+  border-top: 0.1em solid var(--lines); /*Agregar lineas horizontales a la tabla*/
+  font-family: var(--default);
+  font-size: 0.85em;
+  font-weight: 200;
+}
+div.add div.tablas div.tableRight div.table2 tr:last-child td {
+  border: none;
+  border-top: 2px solid var(--lines); /* Agregar borde a la penúltima fila */
+  border-right: none;
+  border-left: none;
+}
+div.add div.tablas div.tableRight div.table2 table tbody tr.color {
+  background-color: var(--highligh);
 }
 
 /* ------------Images------------ */
@@ -306,7 +1330,6 @@ footer div.made span a {
   text-align: center;
   font-weight: 700;
 }
-
 footer div.made span a:hover {
   text-decoration: none;
   color: var(--hover);
