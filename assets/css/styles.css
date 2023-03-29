@@ -716,27 +716,56 @@ div.blockquote div.rightBl blockquote {
   padding: 0.5em 0 0.5em 2em;
   line-height: 1.8em;
 }
-
+/* --------------CODE ----------------*/
+div.add div.code {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+  border-bottom: 0.1em solid var(--lines);
+  padding-top: 3em;
+}
+div.add div.code div.left {
+  width: 30%;
+}
+div.add div.code div.left h3 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin-top: 1em;
+}
+div.add div.code div.right {
+  width: 70%;
+  padding: 3em 0 6em 0;
+}
+div.add div.code div.right pre{
+  border-radius: 10px;
+  background-color: var(--highligh);
+  width: 100%;
+  margin-left: -2em;
+}
+div.add div.code div.right pre code{
+  font-family: var(--code);
+  font-size: 1.7em;
+ 
+}
 /*--------Icons-----------*/
 /* DISPOSICON DE LOS DIVS GENERALES DE LA SECCION ICONS*/
-.iconsFile {
+div.add section.iconsFile {
   display: flex;
-  flex-direction: wrap;
-  padding: 2%;
+  margin: auto;
+  max-width: 1400px;
+  border-bottom: 0.1em solid var(--lines);
 }
-/* DIV QUE CONTIENE LAS TRES SECCIONES //ICONS//STYLE1//STYLE2   */
-.iconsFile div {
-  padding: 2% 8% 5% 5%;
+div.add section.iconsFile div.wordIcons{
+  width: 30%;
 }
-
-/*  SECCION CON LA PALABRA ICONS*/
-.wordIcons {
-  margin-left: 9%;
-  text-align: center;
+div.add section.iconsFile div.wordIcons h3{
+font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+  margin: 2.5em 0 0 0;
 }
-.wordIcons h2 {
-  font-size: 2rem;
-}
+/* ----------------------------EN PROCESO ----------*/
 /*SECCION QUE CONTIENE STYLE1 E ICONOS*/
 .style p {
   font-size: 1.8rem;
