@@ -158,7 +158,6 @@ div.actions-right span {
   font-size: medium;
   font-weight: 300;
 }
-
 div.action1 button {
   padding: 1.3em 2.5em;
   border-radius: 2rem;
@@ -224,12 +223,12 @@ div.images div.images-right {
 div.images div.images-right .text-left-right {
   font-size: x-large;
   font-weight: 200;
+  line-height: 1.4em;
 }
 div.images div.headertext-images-span {
   width: 30%;
   font-size: 2.8rem;
   font-weight: 300;
-  letter-spacing: -0.2rem;
   margin-top: 1em;
 }
 div.images div.images-right .banner {
@@ -269,11 +268,12 @@ div.headertext-box-span {
   width: 30%;
   font-size: 2.8rem;
   font-weight: 300;
-  letter-spacing: -0.2rem;
   margin-top: 1em;
+  line-height: 1.4em;
 }
 div.box .box-right {
   font-size: medium;
+  letter-spacing: 0.1rem;
   margin: 2em 0 5em 0;
   border-radius: 0.4rem;
   padding: 1.7em;
@@ -299,11 +299,14 @@ footer div.made {
   display: inline-block;
   text-align: center;
   font-size: 1.3rem;
+  font-weight: 300;
 }
 footer div.made span a {
   color: var(--footer-icon);
   text-align: center;
+  font-weight: 700;
 }
+
 footer div.made span a:hover {
   text-decoration: none;
   color: var(--hover);
@@ -325,7 +328,6 @@ footer div.iconos i {
   background-color: var(--footer-icon);
   border-radius: 50%;
 }
-
 footer div.iconos .fa-facebook-f {
   padding-left: 1.15em;
 }
