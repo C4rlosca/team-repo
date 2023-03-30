@@ -999,14 +999,18 @@ div.add div.general div.right form div.dosinput .segundo-input {
   padding: 0.65em;
   border-radius: 8px;
   border: 1px solid var(--lines);
-  margin: 1em 0;
-  width: 100%;
   font-family: var(--default);
   font-size: 0.85em;
   font-weight: 200;
+  width: 100%;
+  margin: 1em 0;
 }
 div.add div.general div.right form div.unoinput .primer-input:hover,
 div.add div.general div.right form div.dosinput .segundo-input:hover {
+border-color: var(--hover);
+}
+div.add div.general div.right form div.unoinput .primer-input:focus,
+div.add div.general div.right form div.dosinput .segundo-input:focus {
 border-color: var(--hover);
 }
 
@@ -1032,6 +1036,9 @@ div.add div.general div.right form div.detachable .select-category {
 div.add div.general div.right form div.detachable .select-category:hover{
   border-color: var(--hover);
 }
+div.add div.general div.right form div.detachable .select-category:focus{
+  border-color: var(--hover);
+}
 /* ------Priority----- */
 div.add div.general div.right form div.priority {
   display: flex;
@@ -1042,7 +1049,7 @@ div.add div.general div.right form div.priority div.radio-container {
   width: 33.333%;
 
 }
-div.add
+/*div.add
   div.general
   div.right
   form
@@ -1051,20 +1058,25 @@ div.add
   .priority-radio {
    transform: scale(1.6); 
      margin-left: 1em;   
-      /* background-position: center center;   */
-   
+      background-position: center center;   
 
-}
+}*/
 div.add div.general div.right form div.priority div.radio-container input[type="radio"] {
   appearance: none; 
-   -webkit-appearance: none; 
-   -moz-appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
   height: 20px;
   width: 20px;
   border-radius: 50%;
-   border: 1px solid #ccc; 
+  border: 1px solid #ccc; 
+  transform: scale(1.6); 
+  margin-left: 1em;  
   /* margin-right: 10px; */
 }
+div.add div.general div.right form div.priority div.radio-container input[type="radio"]:not(:checked):hover {
+  border-color: var(--hover);
+}
+
 div.add div.general div.right form div.priority div.radio-container .priority-radio:checked {
  background-color: black; 
 }
@@ -1109,11 +1121,17 @@ div.add div.general div.right form div.texarea div.textarea textarea {
   margin-top: 2em;
   width: 100%;
   height: 18em;
-  padding-right: 10em;
+  font-size: 0.85em;
+  padding: 0.65em;
   border-radius: 8px;
   border: 1px solid var(--lines);
+  font-family: var(--default);
+  font-weight: 200;
 }
 div.add div.general div.right form div.texarea div.textarea textarea:hover{
+  border-color: var(--hover);
+} 
+div.add div.general div.right form div.texarea div.textarea textarea:focus{
   border-color: var(--hover);
 } 
 /* ------Checkbox----- */
@@ -1135,14 +1153,24 @@ div.add div.general div.right form div.selection div label {
   font-size: 0.85em;
   font-weight: 200;
 }
-
-div.add div.general div.right form div.selection div input.myCheck {
+div.add div.general div.right form div.selection div input.myCheck{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: 10px;
   height: 3em;
   width: 3em;
   border: 1px solid var(--lines);
+}
+div.add div.general div.right form div.selection div input.myCheck:checked {
+   background-color: black;
+   background-image: url(/team-repo/images/icons.png) ;
+   background-repeat: no-repeat; 
+   background-position: center center;
+
 
 }
+
 /* ------Button----- */
 div.add div.general div.right form div.button button {
   background-color: white;
