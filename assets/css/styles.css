@@ -474,7 +474,7 @@ div.add div.text div.rightParagraph p.spansParagraph code {
   border-radius: 8px;
   font-family: var(--code);
   font-size: 0.9em;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   letter-spacing: -0.8px;
 }
 div.add div.text div.rightParagraph p.spansParagraph a {
@@ -737,16 +737,15 @@ div.add div.code div.right {
   width: 70%;
   padding: 3em 0 6em 0;
 }
-div.add div.code div.right pre{
+div.add div.code div.right pre {
   border-radius: 10px;
   background-color: var(--highligh);
   width: 100%;
   margin-left: -2em;
 }
-div.add div.code div.right pre code{
+div.add div.code div.right pre code {
   font-family: var(--code);
   font-size: 1.7em;
- 
 }
 /*--------Icons-----------*/
 /* DISPOSICON DE LOS DIVS GENERALES DE LA SECCION ICONS*/
@@ -756,11 +755,11 @@ div.add section.iconsFile {
   max-width: 1400px;
   border-bottom: 0.1em solid var(--lines);
 }
-div.add section.iconsFile div.wordIcons{
+div.add section.iconsFile div.wordIcons {
   width: 30%;
 }
-div.add section.iconsFile div.wordIcons h3{
-font-size: 2.8rem;
+div.add section.iconsFile div.wordIcons h3 {
+  font-size: 2.8rem;
   font-weight: 300;
   letter-spacing: -0.2rem;
   margin: 2.5em 0 0 0;
@@ -1303,7 +1302,7 @@ div.images div.images-right .pic01 {
   width: 20%;
   height: auto;
   float: left;
-  margin: 0 1.5em 1em 0;
+  margin: 0 2em 0.6em 0;
   box-shadow: -1px 1px 11px -3px rgba(0, 0, 0, 0.5);
 }
 div.images div.images-right .pic02 {
@@ -1361,7 +1360,7 @@ footer {
 footer div.made {
   display: inline-block;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 footer div.made span a {
