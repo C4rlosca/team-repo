@@ -413,18 +413,18 @@ div.gallery div.text a:hover {
 }
 
 /* -----------Addittional Elements-----------  */
-div.add div.additionalElements {
+div.add div.addTittle {
   border-top: 0.1em solid #cccccc;
   width: 100%;
 }
-div.add div.additionalElements h2 {
+div.add div.addTittle h2 {
   font-size: 3.8rem;
   font-weight: 200;
   margin: 2.5em 0 1em 0;
   letter-spacing: -0.2rem;
   text-align: center;
 }
-div.add div.additionalElements p.finallyParagraph {
+div.add div.addTittle p.finallyParagraph {
   font-size: 1.7rem;
   font-weight: 300;
   text-align: center;
@@ -484,7 +484,7 @@ div.add div.text div.rightParagraph p.spansParagraph a:hover {
   color: var(--hover);
 }
 
-/* -----------------Add. HEADINGS------------------ */
+/* -----------------Headings------------------ */
 div.add div.headings {
   display: flex;
   margin: auto;
@@ -808,7 +808,7 @@ div.add section.iconsFile div.wordIcons h3 {
   text-align: center;
 }
 
-/* ------------Buttons------------ */
+/* -----------------Buttons---------------*/
 div.buttons {
   display: flex;
   padding-top: 5em;
