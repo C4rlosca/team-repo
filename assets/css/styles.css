@@ -11,6 +11,7 @@
   /* COLORS */
   --reddish: #e03636;
   --highligh: #f2f2f2;
+  --division: #e1e1e1;
   --lines: #cccccc;
   --hover: #47d3e5;
   --primary: #c0c0c0;
@@ -49,8 +50,9 @@ div.header {
 }
 div.codeteam {
   width: 50%;
-  margin-top: 10em;
-  margin-left: 2em;
+  padding-top: 10em;
+  padding-left: 2em;
+  box-shadow: inset -5px 0px 10px -5px rgba(0, 0, 0, 0.3);
 }
 div.header div.codeteam h1.team {
   margin-left: 1em;
@@ -156,11 +158,11 @@ div.spotlight div.card {
 }
 div.spotlight div.card,
 div.spotlight div.text {
-  border-bottom: 1px solid var(--lines);
+  border-bottom: 1px solid #e1e1e1;
 }
 div.spotlight div.c1,
 div.spotlight div.t1 {
-  border-top: 1px solid var(--lines);
+  border-top: 1px solid #e1e1e1;
 }
 div.spotlight div.c1 {
   grid-row-start: 1;
@@ -188,61 +190,70 @@ div.spotlight div.t1 {
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 4;
+  box-shadow: inset 5px 0px 10px -5px rgba(0, 0, 0, 0.3);
 }
 div.spotlight div.t2 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 3;
+  box-shadow: inset -5px 0px 10px -5px rgba(0, 0, 0, 0.3);
 }
 div.spotlight div.t3 {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 4;
+  box-shadow: inset 5px 0px 10px -5px rgba(0, 0, 0, 0.3);
 }
 div.spotlight div.text {
   flex-grow: 6;
   display: flex;
   flex-wrap: wrap;
   align-content: space-evenly;
-  padding: 6em;
+  padding: 5em 7em;
 }
 div.spotlight h2 {
-  font-size: 3.5em;
-  font-weight: 200;
+  font-size: 4.25rem;
+  font-weight: 300;
+  letter-spacing: -.2rem;
 }
 div.spotlight p {
-  font-size: 1.7em;
-  font-weight: 100;
-  line-height: 1.7em;
+  font-size: 1.9rem;
+  font-weight: 200;
+  line-height: 3rem;
 }
 div.spotlight p strong {
-  font-weight: 300;
+  font-weight: 400;
 }
 div.spotlight span.code {
-  font-family: var(--code);
-  background-color: var(--highligh);
-  font-weight: lighter;
   padding: 0.2em 0.4em;
   border-radius: 0.3em;
-  font-size: 1.05em;
+  margin: 0 .3em;
+  background-color: var(--highligh);
+  font-family: var(--code);
+  font-size: 2rem;
+  letter-spacing: -.1rem;
 }
 div.spotlight a {
   color: black;
 }
+div.spotlight a:hover {
+  color: var(--hover);
+  text-decoration: none;
+}
 div.spotlight div button {
   background-color: inherit;
-  border: 1px solid var(--lines);
+  border: 2px solid var(--lines);
   border-radius: 2em;
-  padding: 1.2em 2em;
+  padding: 1.2em 2.5em;
   font-family: var(--default);
+  font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: .2em;
 }
 div.spotlight div button:hover {
-  border: 1px solid var(--hover);
-  color: var(--hover);
-}
-div.spotlight a:hover {
+  border: 2px solid var(--hover);
   color: var(--hover);
 }
 
@@ -259,8 +270,9 @@ div.gallery div.text {
   padding: 8em 20em;
 }
 div.gallery h2 {
-  font-size: 3.5em;
-  font-weight: 200;
+  font-size: 4.25em;
+  font-weight: 300;
+  letter-spacing: -1.9px;
   padding-bottom: 1em;
 }
 div.gallery p {
@@ -269,14 +281,17 @@ div.gallery p {
   line-height: 1.7em;
 }
 div.gallery p strong {
-  font-weight: 300;
+  font-weight: 400;
 }
 div.gallery span.code {
   font-family: var(--code);
   background-color: var(--highligh);
+  font-weight: lighter;
   padding: 0.2em 0.4em;
   border-radius: 0.3em;
   font-size: 1.05em;
+  margin: 0 .3em;
+  letter-spacing: -1.9px;
 }
 div.gallery a {
   color: black;
@@ -319,26 +334,27 @@ div.gallery div.text a:hover {
 }
 
 /*------------------TEXTO ENCABEZADO DE ITEMS---------------------*/
-.items {
+div.items {
   text-align: center;
   padding: 2rem;
-  color: rgb(145, 145, 145);
-  line-height: 2rem;
-  letter-spacing: -0.5; /* PARA ESTABLECER ESPACION ENTRE LETRAS PARA AJUSTARSE AL MARGEN*/
 }
 
-.items p {
-  font-size: 1.5rem;
-  margin: 0% 13%;
+div.items p {
+  font-size: 1.9rem;
+  font-weight: 200;
+  line-height: 3rem;
+}
+div.items p strong {
+  font-weight: 400;
 }
 /*TITULO ITEMS*/
-.itemsName {
-  padding-bottom: 2rem;
-  font-size: 3rem;
-  color: rgb(100, 99, 99);
+div.items h2.itemsName {
+  font-size: 4.25rem;
+  font-weight: 300;
+  letter-spacing: -.2rem;
 }
 /*DISPODICION Y DISTRIBUCION EN GRID DE LAS COLUMNAS EN LA PAGINA */
-.gridColumn {
+section.gridColumn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: space-around;
