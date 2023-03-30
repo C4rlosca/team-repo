@@ -333,12 +333,11 @@ div.gallery div.text a:hover {
   color: var(--hover);
 }
 
-/*------------------TEXTO ENCABEZADO DE ITEMS---------------------*/
+/*------------------ITEMS---------------------*/
 div.items {
   text-align: center;
-  padding: 2rem;
+  padding: 8em 20em;
 }
-
 div.items p {
   font-size: 1.9rem;
   font-weight: 200;
@@ -347,13 +346,12 @@ div.items p {
 div.items p strong {
   font-weight: 400;
 }
-/*TITULO ITEMS*/
 div.items h2.itemsName {
   font-size: 4.25rem;
   font-weight: 300;
   letter-spacing: -.2rem;
+  padding-bottom: 1em;
 }
-/*DISPODICION Y DISTRIBUCION EN GRID DE LAS COLUMNAS EN LA PAGINA */
 section.gridColumn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -362,7 +360,6 @@ section.gridColumn {
   padding: 8% 15%;
   text-align: center;
 }
-/*PADDIN INTERIOR DE DIVS INTERNOS Y TIPO DE MARGEN*/
 .gridColumn .boxone,
 .boxtwo,
 .boxthree,
@@ -375,10 +372,9 @@ section.gridColumn {
 .boxten,
 .boxeleven,
 .boxtwelve {
-  border: 1px solid rgb(221, 218, 218);
+  border: 1px solid var(--lines);
   padding: 2.1rem 3rem;
 }
-/*BORDES PARA CADA COLUMNA PERSONALIZADO */
 .gridColumn .boxone,
 .boxtwo,
 .boxthree {
@@ -404,33 +400,28 @@ section.gridColumn {
 .boxtwelve {
   border-bottom: none;
 }
-/*  ESTILO ICONOS DE CADA COLUMNA POSICION Y MARGENES///*/
 .gridColumn i {
   padding: 1.5rem;
-  border: 1px solid rgb(216, 216, 216);
+  border: 1px solid var(--lines);
   border-radius: 100px;
   font-size: 2em;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
 }
-/*ESTILO Y POSICION DE CADA H2(BOXES) NUMERADOS EN TEXTO*/
 .gridColumn h2 {
   margin-bottom: 10%;
   font-size: 2rem;
-  color: rgb(143, 143, 143);
 }
-/*DISPOSICON DEL TEXTO, COLOR Y ENTRELINEADO DEL TEXTO INTERIOR COLUMNAS*/
 .gridColumn p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   text-align: center;
-  color: rgb(124, 124, 124);
   margin-bottom: 1.5rem;
 }
 
 /* -----------Addittional Elements-----------  */
 div.add div.addTittle {
-  border-top: 0.1em solid #cccccc;
+  border-top: 0.1em solid var(--division);
   width: 100%;
 }
 div.add div.addTittle h2 {
