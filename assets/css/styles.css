@@ -55,8 +55,8 @@ div.codeteam {
   box-shadow: inset -5px 0px 10px -5px rgba(0, 0, 0, 0.3);
 }
 div.header div.codeteam h1.team {
-  margin-left: 1em;
-  font-size: 7em;
+  margin-left: 1.2em;
+  font-size: 6rem;
   color: black;
   font-weight: 100;
   font-style: italic;
@@ -66,23 +66,22 @@ div.header div.codeteam h1.team i {
 }
 h1 #firstword {
   color: var(--reddish);
-  font-size: 0.8em;
+  font-size: 7rem;
   font-weight: 600;
-  letter-spacing: -0.05em;
-  margin-left: -0.3em;
+  letter-spacing: -0.09em;
 }
 div.header div h1 .secondword {
-  font-size: 0.8em;
+  font-size: 7rem;
   font-weight: 200;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.04em;
   margin-left: -0.1em;
 }
 div.header div.codeteam div p.firstp {
-  font-size: 2.2em;
+  font-size: 2.5rem;
   font-family: var(--default);
   font-weight: 200;
-  line-height: 1.8em;
-  margin: 1.1em 5em 1.8em 2.6em;
+  line-height: 1.7em;
+  margin: 0.8em 5em 1.8em 2.2em;
   color: black;
   letter-spacing: -1px;
 }
@@ -95,24 +94,23 @@ div.header div.codeteam p a:hover {
   text-decoration: none;
 }
 div.header div.codeteam div p.secondp {
-  font-size: 1.9em;
+  font-size: 2.1rem;
   font-weight: 200;
   line-height: 1.7em;
-  margin-left: 2.8em;
-  margin-right: 3.5em;
+  margin: 0 3.5em 0 2.6em;
   letter-spacing: -0.8px;
 }
 div.header div.codeteam p strong {
   font-weight: 400;
 }
 div.header div.codeteam p.secondp .backgroundword {
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+  margin: 0 .3em;
   background-color: var(--highligh);
-  padding: 0.6rem;
-  border-radius: 7px;
-  font-family: "Courier New", monospace;
-  font-size: 0.9em;
-  letter-spacing: -0.8px;
-  font-weight: 100;
+  font-family: var(--code);
+  font-size: 2rem;
+  letter-spacing: -.1rem;
 }
 div.header div.codeteam p a.details {
   text-decoration-line: underline;
@@ -425,17 +423,18 @@ div.add div.addTittle {
   width: 100%;
 }
 div.add div.addTittle h2 {
-  font-size: 3.8rem;
+  font-size: 4.25rem;
   font-weight: 200;
   margin: 2.5em 0 1em 0;
   letter-spacing: -0.2rem;
   text-align: center;
 }
 div.add div.addTittle p.finallyParagraph {
-  font-size: 1.7rem;
-  font-weight: 300;
   text-align: center;
   margin: 0 0 -8em 0.3em;
+  font-size: 1.9rem;
+  font-weight: 200;
+  line-height: 3rem;
 }
 
 /* -----------------Text------------------ */
@@ -461,13 +460,17 @@ div.add div.text div.rightParagraph {
 }
 div.add div.text div.rightParagraph p.spansParagraph {
   width: 100%;
-  font-size: 1.7rem;
-  font-weight: 300;
-  line-height: 1.8em;
+  font-size: 1.9rem;
+  font-weight: 200;
+  line-height: 3rem;
   margin: 12em 0 3em 0;
 }
 div.add div.text div.rightParagraph p.spansParagraph .firstSpan {
-  font-weight: bold;
+  font-weight: 400;
+}
+div.add div.text div.rightParagraph p.spansParagraph strong{
+  font-weight: 400;
+
 }
 div.add div.text div.rightParagraph p.spansParagraph .italic {
   font-style: italic;
@@ -476,16 +479,17 @@ div.add div.text div.rightParagraph .underline {
   text-decoration: underline;
 }
 div.add div.text div.rightParagraph p.spansParagraph code {
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+  margin: 0 .3em;
   background-color: var(--highligh);
-  padding: 0.5em;
-  border-radius: 8px;
   font-family: var(--code);
-  font-size: 0.9em;
-  font-family: "Courier New", monospace;
-  letter-spacing: -0.8px;
+  font-size: 2rem;
+  letter-spacing: -.1rem;
 }
 div.add div.text div.rightParagraph p.spansParagraph a {
   color: black;
+  text-decoration: none;
 }
 div.add div.text div.rightParagraph p.spansParagraph a:hover {
   color: var(--hover);
@@ -514,32 +518,32 @@ div.add div.headings div.rightHeadings {
   padding: 3em 0 3em 0;
 }
 div.add div.headings div.rightHeadings div h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+div.add div.headings div.rightHeadings div h2 {
   font-size: 3.5rem;
   font-weight: 300;
   margin-top: 0.8em;
 }
-div.add div.headings div.rightHeadings div h2 {
-  font-size: 2.25rem;
-  font-weight: 300;
-  margin-top: 0.8em;
-}
 div.add div.headings div.rightHeadings div h3 {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   font-weight: 300;
   margin-top: 1em;
 }
 div.add div.headings div.rightHeadings div h4 {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   font-weight: 300;
   margin-top: 1.2em;
 }
 div.add div.headings div.rightHeadings div h5 {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: 300;
   margin-top: 1.8em;
 }
 div.add div.headings div.rightHeadings div h6 {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   font-weight: 200;
   margin: 2em 0 5em 0;
 }
@@ -558,8 +562,9 @@ div.add div.headings div.rightHeadings div.bottom h4 {
   font-weight: 200;
 }
 div.add div.headings div.rightHeadings div p {
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 1.9rem;
+  font-weight: 200;
+  line-height: 3rem;
   margin-top: 2em;
   line-height: 1.5em;
   text-align: justify;
@@ -592,16 +597,16 @@ div.listUn div.partRight-Unordered div.listUnordered h4,
 div.listUn div.partRight-Unordered div.Alternate h4 {
   font-size: 2rem;
   font-weight: 300;
-  letter-spacing: -0.1em;
 }
 div.listUn div.partRight-Unordered div.listUnordered {
   padding: 3em 0 3em 0;
 }
 div.listUnordered ul li {
-  font-size: 1.7rem;
-  padding: 0.5em;
-  margin-left: 2em;
-  font-weight: 300;
+  margin-left: 1em;
+  padding-left: 0.5em;
+  font-size: 1.9rem;
+  font-weight: 200;
+  line-height: 3rem;
 }
 div.partRight-Unordered div.listUnordered ul {
   margin: 2.5em 0 4em 0;
