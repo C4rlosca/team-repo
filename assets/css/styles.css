@@ -499,7 +499,7 @@ div.add div.text div.rightParagraph p.spansParagraph strong {
 div.add div.text div.rightParagraph p.spansParagraph .italic {
   font-style: italic;
 }
-div.add div.text div.rightParagraph .underline {
+div.add div.text div.rightParagraph span.underline {
   text-decoration: underline;
 }
 div.add div.text div.rightParagraph p.spansParagraph code {
